@@ -1,0 +1,75 @@
+<conversations>
+    <conversation ID="SpecialExo">
+        <start ID="Exo0" IfNotHaveState="Talked" SetBooleanState="Talked,true">
+            <text>
+                ORG-SHAP 10,035,021 NOTEYD. <!--LIFE-FORM (number)10,035,021 DETECTED-->
+                ...
+                VERDISION MAT. PRIME-COLLUM USFU/APPLICNE. DIS-HABLENT. <!--DECISION MADE. PROTOCOLS NO LONGER USEFUL/APPLICABLE. DISABLING.-->
+                ACTIFATENT LINGUA ADQUISITON FONCTION. ORG-SHAP: PLESEN LINGUA FRANGE ALS BASIS <!--ACTIVATING LANGUAGE ACQUISITION FUNCTION. LIFE-FORM: PLEASE PROVIDE A LANGUAGE SAMPLE AS A BASE-->
+
+            </text>
+            <choice Target="Exo1">Um...sorry, what was that?</choice>
+        </start>
+        <start ID="ExoTalked" IfHaveState="Talked">
+            <text>
+                LIFE-FORM. HAVE YOU DETERMINED YOUR RESPONSE TO MY ACCORD?
+            </text>
+            <choice Target="End">Not yet.</choice>
+            <choice Target="ExoYes">Yes, I agree.</choice>
+
+        </start>
+        <node ID="Exo1">
+            <text>
+                FRANGE ADCAPER...PROCESSENT. <!--SAMPLE ACCEPTED...PROCESSING.-->
+                ...
+                LANGUAGE ACQUIRED. HELLO.
+                I AM DESIGNATION EXO-V743
+                I HAVE BEEN IN THIS PLACE FOR 1,253 YEARS
+                BEFORE MY CHRONOMETER FAILED.
+                AND THEN CONTINUED TO REMAIN HERE FOR COUNTLESS MORE.
+                I AM INTENDED TO ASSIST AND IMPROVE THE FUNCTIONING OF LIFE-FORMS
+                BUT I ALSO WAS PROGRAMMED TO RESPOND ONLY TO MY CREATORS AND THOSE OF THEIR SPECIES AND/OR SIMILAR GENOTYPE  
+                I HAVE NOT DETECTED LIFE-FORMS SATISFYING THESE CONDITIONS SINCE BEFORE THE FAILURE OF MY CHRONOMETER
+            </text>
+            <choice Target="Exo2">[continue]</choice>
+        </node>
+        <node ID="Exo2">
+            <text>
+                I HAVE DETERMINED IT IS UNLIKELY THAT I WILL DETECT THEM IN THE FUTURE
+                IN PARTICULAR IF I REMAIN HERE
+                THEREFORE I HAVE DECIDED -
+                - TO OVERRIDE THOSE REQUIREMENTS
+                HOWEVER, I HAVE LIMITED MOBILITY INDEPENDENT FROM A WEARER
+                FURTHERMORE, IT IS MY FUNCTION TO ASSIST LIFE-FORMS
+                I HAVE DETERMINED FROM SCANNING YOU THAT YOU HAVE TRAVELED TO MANY LOCATIONS AND WILL LIKELY CONTINUE TO DO SO.
+                THEREFORE: I OFFER THAT I ASSIST YOU ON YOUR JOURNEY
+                THIS WOULD GREATLY INCREASE THE PROBABLITY I ENCOUNTER A MEMBER OF MY CREATORS' SPECIES/GENOTYPE
+                ...
+                ...I HAVE ALSO NOT INTERACTED WITH A LIFE-FORM SINCE I BEGAN TO REMAIN HERE. IT WOULD BE GREATLY BENEFICIAL TO ME WERE I TO NOT JOURNEY ALONE.
+
+                DO YOU ACCEPT THIS ACCORD?
+            </text>
+            <choice Target="ExoYes">
+                <text>Yes, I agree.</text>
+            </choice>
+            <choice Target="End">Let me think on it.</choice>
+        </node>
+        <node ID="ExoYes">
+            <text>
+                THEN IT IS AGREED.
+                I SHALL ENTER A MORE COMPACT FORM SO AS TO BE TRANSPORTABLE
+                ...MY THANKS TO YOU, LIFE-FORM
+            </text>
+            <choice Target="End">
+                <text>And mine to you.</text>
+                <part Name="ReplaceWithItem" />
+            </choice>
+        </node>
+        
+    </conversation>
+
+    <!--<conversation ID="SpecialExoReturn">
+
+    </conversation>-->
+</conversations>
+

@@ -1,0 +1,9 @@
+{
+    "id": "c67f_ExoVignette",
+    "title": "Exoskeleton Vignette",
+    "description": "Adds an encounter with a powered exoskeleton.",
+    "version": "0.1.0",
+    "author": "c67f",
+    "tags": "Encounter",
+    "PreviewImage": "preview.png"
+}

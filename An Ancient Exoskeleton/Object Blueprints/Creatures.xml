@@ -1,0 +1,11 @@
+<objects>
+    <object Name="c67f_ExoVignette_Special Exo NPC" Inherits="Chromeling">
+        <part Name="Description" Short="Rusted slate tubes assemebled to scaffold the human form - except these ones scaffold nothing but air, yet retain a form of their own nonetheless" />
+        <part Name="Render" DisplayName="rusted powered exoskeleton" Tile="Assets_Content_Textures_Items_sw_exoskeleton.bmp" ColorString="&amp;r" DetailColor="c" />
+        <part Name="ConversationScript" ConversationID="SpecialExo" />
+        <!-- <part Name="Speed" Value="1" /> -->
+        <stat Name="AV" Value="6" />
+        <stat Name="HitPoints" Value="200" />
+        <part Name="Brain" Wanders="false" />
+    </object>
+</objects>

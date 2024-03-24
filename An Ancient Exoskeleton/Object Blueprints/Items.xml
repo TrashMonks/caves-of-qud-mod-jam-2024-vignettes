@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<objects>
+  <object Name="c67f_ExoVignette_Special Exo Item" Inherits="Strength Exo">
+    <part Name = "Render" DisplayName="EXO-V743" Tile="Assets_Content_Textures_Items_sw_exoskeleton.bmp" ColorString="&amp;r" TileColor="&amp;r" DetailColor="W" RenderString="]" />
+    <!--<tag Name="Tier" Value="7">-->
+    <part Name="AddMod" Mods="ModFlexiweaved,ModLanterned,ModCleated,ModNav,ModRecycling,ModRefractive,ModReinforced,ModVisored"/> <!--ModSpringloaded,-->
+    <tag Name="ExcludeFromDynamicEncounters" />
+    <xtagGrammar Proper="true" />
+  </object>
+</objects>
