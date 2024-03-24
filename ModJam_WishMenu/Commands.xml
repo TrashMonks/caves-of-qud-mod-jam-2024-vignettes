@@ -1,0 +1,5 @@
+<commands>
+    <command ID="ModJam_Wish_Menu" DisplayText="Mod Jam Wish Menu" Category="Debug" Layer="Adventure" Auto="DownPass">
+        <keyboardBind Modifier="ctrl,shift" Key="w" />
+    </command>
+</commands>

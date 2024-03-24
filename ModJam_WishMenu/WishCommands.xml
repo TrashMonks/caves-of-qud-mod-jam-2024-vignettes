@@ -1,0 +1,8 @@
+<wishcommands>
+  <wish DisplayName="Toggle Godmode" Commands="idkfa" Icon="Mutations/light_manipulation.bmp" ColorPair="wW"/>
+  <wish DisplayName="Calm creatures" Commands="calm" Icon="Mutations/narcolepsy.bmp" ColorPair="wW"/>
+  <wish DisplayName="Swap bodies" Commands="swap" Icon="Mutations/domination.bmp" ColorPair="wW"/>
+  <wish DisplayName="Beguile creature" Commands="beguile" Icon="Mutations/beguiling.bmp" ColorPair="wW"/>
+  <wish DisplayName="Set all faction rep to 2000" Commands="allloved" Icon="Mutations/two-hearted.bmp" ColorPair="wW"/>
+  <wish DisplayName="Gear up" Commands="stage6" Icon="Items/sw_longblade_1.bmp" ColorPair="wW"/>
+</wishcommands>
