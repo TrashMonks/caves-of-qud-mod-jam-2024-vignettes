@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<objects>
+
+	<!-- Add a tag to the base Sign object so we can easily search for any sign. -->
+	<object Name="Sign" Load="Merge">
+		<tag Name="Gearlink_GIVEMEASIGN_LovableSign"/>
+	</object>
+
+	<object Name="Gearlink_GIVEMEASIGN_SignLoveNote" Inherits="Book">
+    <part Name="Render" DisplayName="{{W|folder sheet of paper}}" ColorString="&amp;w" DetailColor="W" RenderString="=" RenderLayer="5" Tile="Items/sw_paper.bmp" />
+    <part Name="Description" Short="A sheet of brinestalk paper tucked into itself. It smells of lush wine." />
+    <part Name="Book" ID="Gearlink_GIVEMEASIGN_SignLoveNote" />
+    <part Name="LiquidStainedObject" Liquid="wine" Volume="1" />
+    <part Name="Commerce" Value="10" />
+		<xtagGrammar Proper="false" adjunctNoun="" />
+    <tag Name="NoSparkingQuest" />
+    <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
+  </object>
+
+</objects>
