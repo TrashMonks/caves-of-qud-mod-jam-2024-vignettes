@@ -186,6 +186,6 @@ public class ModJam_PlayerMutator : IPlayerMutator
     {
         // modify the player object when a New Game begins
         // for example, add a custom part to the player:
-        player.AddPart<XRL.World.Parts.ModJam_Wish_Handler>();
+        player.RequirePart<XRL.World.Parts.ModJam_Wish_Handler>();
     }
 }
