@@ -1,0 +1,8 @@
+{
+  "WorkshopId": 3185807934,
+  "Title": "Chair Enthusiast",
+  "Description": "Adds the comfiest and nearest chair to the point of interest menu.\n\nAlso adds the geomagnetic folding chair.\n\n-----\n\nThis mod was written for the Caves of Qud Mod Jam: Vignettes\nSource: https://bitbucket.org/gnarf37/qud-chair-enthusiast/src/main/",
+  "Tags": "ux,stable,item",
+  "Visibility": "2",
+  "ImagePath": "preview.png"
+}

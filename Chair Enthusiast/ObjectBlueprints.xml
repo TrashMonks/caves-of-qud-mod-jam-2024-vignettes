@@ -1,0 +1,34 @@
+<objects>
+  <object Name="Gnarf_GeomagneticChair" Inherits="Trinket">
+    <part Name="Physics" Weight="1" Takeable="true" Solid="false" Category="Thrown Weapons" />
+    <part Name="Render" ColorString="&amp;c" DisplayName="{{c|geomagnetic folding chair}}" DetailColor="Y" Tile="gnarf/geo_fc.png" />
+    <part Name="Examiner" Unknown="UnknownStrangeTubes" Alternate="UnknownStrangeTubes" Complexity="1" />
+    <part Name="Description" Short="In a laboratory now ground to dust, a hermitic Eater once spent her nights tuning ionic waveforms and shaping aquamarines, her only comfort the scraping old seat in which she slumped, exasperated, after every failed test. Tune, throw, sit. Tune, throw, sit. Until a terrible thought arose." />
+    <part Name="Chair" Level="3" />
+    <part Name="Metal" />
+    <part Name="ModAirfoil" />
+    <part Name="MeleeWeapon" PenBonus="1" MaxStrengthBonus="3" BaseDamage="2d4" Skill="Cudgel" Stat="Strength" />
+    <tag Name="Mods" Value="CommonMods,WeaponMods,CudgelMods,ElectronicsMods,ThrownWeaponMods" />
+    <part Name="ThrownWeapon" />
+    <part Name="GeomagneticDisc" Damage="2d6" ChargeUse="100" Bounces="5" />
+    <part Name="EnergyCellSocket" SlotType="EnergyCell" />
+    <part Name="AIOffensiveEnergyCellReload" />
+    <part Name="AIPassiveEnergyCellReload" />
+    <part Name="Examiner" Complexity="6" />
+    <part Name="Commerce" Value="750" />
+    <tag Name="PathAsIfFlying" />
+    <tag Name="PathAsIfCannotOpenDoors" />
+    <tag Name="Tier" Value="6" />
+    <part Name="TinkerItem" Bits="00126" CanDisassemble="true" CanBuild="true" />
+    <stag Name="Thrown" />
+    <tag Name="HeroNameTitleDescriptor" Value="Comfy,Short-Legged,Straight-Backed,Sturdy,Three-Legged" />
+    <tag Name="HeroNameTitleClientele" Value="Backs,Lumbar,the Tired" />
+    <tag Name="NamingTag" Value="Animated" />
+    <tag Name="BodyType" Value="Chair" />
+    <part Name="Animated" ChanceOneIn="15000" />
+    <part Name="MissileCover" Percentage="10" />
+    <tag Name="Animatable" />
+    <tag Name="DynamicObjectsTable:AnimatableFurniture" />
+    <tag Name="Class" Value="chair" />
+  </object>
+</objects>
