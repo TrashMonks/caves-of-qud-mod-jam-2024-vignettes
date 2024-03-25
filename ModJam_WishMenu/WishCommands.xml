@@ -1,8 +1,31 @@
 <wishcommands>
+  <!-- utility wishes -->
   <wish DisplayName="Toggle Godmode" Commands="idkfa" Icon="Mutations/light_manipulation.bmp" ColorPair="wW"/>
   <wish DisplayName="Calm creatures" Commands="calm" Icon="Mutations/narcolepsy.bmp" ColorPair="wW"/>
   <wish DisplayName="Swap bodies" Commands="swap" Icon="Mutations/domination.bmp" ColorPair="wW"/>
   <wish DisplayName="Beguile creature" Commands="beguile" Icon="Mutations/beguiling.bmp" ColorPair="wW"/>
   <wish DisplayName="Set all faction rep to 2000" Commands="allloved" Icon="Mutations/two-hearted.bmp" ColorPair="wW"/>
   <wish DisplayName="Gear up" Commands="stage6" Icon="Items/sw_longblade_1.bmp" ColorPair="wW"/>
+  <!-- wishes that grant items -->
+  <wish ModName="Chair Enthusiast" DisplayName="Spawn geomagnetic folding chair" Author="gnarf, ontoclasm" Commands="Gnarf_GeomagneticChair" Icon="Textures/gnarf/geo_fc.png" ColorPair="cY"/>
+  <wish ModName="A Primer on Xeno-Nutrition" DisplayName="Spawn Xenonutrition" Author="hops99" Commands="Xenonutrition" Icon="Items/sw_book_4.bmp" ColorPair="WY"/>
+  <wish ModName="Lost Media" DisplayName="Spawn Lost Media" Author="Dr. Bread" Commands="BookbyBread" Icon="Items/sw_book_1.bmp" ColorPair="wG"/>
+  <wish ModName="Wavering Laser Pistol" DisplayName="Spawn wavering laser pistol" Author="JuneTooJuly" Commands="Tabbygun" Icon="Items/sw_techpistol_1.bmp" ColorPair="Mw"/>
+  <!-- wishes that spawn creatures -->
+  <wish ModName="Ancient Exoskeleton" DisplayName="Spawn rusted powered exoskeleton" Author="c67f" Commands="c67f_ExoVignette_Special Exo NPC" Icon="Assets_Content_Textures_Items_sw_exoskeleton.bmp" ColorPair="rW"/>
+  <wish ModName="Water Bandits" DisplayName="Spawn water bandits" Author="RainbowDragoon" Commands="RainbowDragoon_WaterBandits_Water Bandit,RainbowDragoon_WaterBandits_Salt Wyrmling" Icon="RainbowDragoon_WaterBandits/water_bandit.png" ColorPair="Yw"/>
+  <!-- wishes that teleport to a location -->
+  <wish ModName="Xoteotin, Mechanical Guardian" DisplayName="Go to Xoteotin" Author="kernelmethod" Commands="kernelmethod_vignettes2024:goto" Icon="Kernelmethod_Vignettes2024/Mech.png" ColorPair="Mg"/>
+  <wish ModName="Cacaphony" DisplayName="Go to casino" Author="MONOPOLATOR" Commands="modjam_revealandgoto:$sophie_vignettes2024" Icon="Monosophy_Caco/slotmachinel.png" ColorPair="yR"/>
+  <wish ModName="Astral Medusae" DisplayName="Go to trailing manubrium" Author="snakefangox" Commands="modjam_revealandgoto:$snakefangox_astralmedusae_trailingmanubrium" Icon="Snakefangox_AstralMedusae/AstralPlanula.png" ColorPair="bm"/>
+  <wish ModName="Putus Outpost" DisplayName="Go to templar outpost" Author="Pwyllion" Commands="goto:JoppaWorld.41.12.1.1.10" Icon="Terrain/Putus outlook.png" ColorPair="YW"/>
+  <wish ModName="The Perfect Cup" DisplayName="Go to an interesting cup" Author="Big Simple" Commands="modjam_revealandgoto:$Perfect_Cup_Secret" Icon="Bigsimple_Cup/Cup.png" ColorPair="wy"/>
+  <wish ModName="Slowly, Slowly" DisplayName="Go to Senpat" Author="SwanLord" Commands="modjam_revealandgoto:$lark_vignette_senpat" Icon="lark/lark_senpat.png" ColorPair="yW"/>
+  <wish ModName="Ambivalent Animators" DisplayName="Go to Safra" Author="Sarcose" Commands="modjam_revealandgoto:sarcose_safrasecret" Icon="Items/sw_basket.bmp" ColorPair="CB"/>
+  <wish ModName="Mummified Ape" DisplayName="Go to mummified ape" Author="Trollemperor" Commands="modjam_revealandgoto:$CrabEmperor_ApeMummy_mummifiedApe" Icon="VignetteTextures/ApeMummy.png" ColorPair="Yw"/>
+  <wish ModName="A Man has Fallen into the Sacred Well in The Six Day Stilt!" DisplayName="Go to Six Day Stilt" Author="Hazzary453" Commands="goto:JoppaWorld.5.2.1.2.10" Icon="Hazzary453_amhf/WellCrane.png" ColorPair="rC"/>
+  <wish ModName="Gilda The Lost" DisplayName="Go to wrecked mecha" Author="AurySystem" Commands="modjam_revealandgoto:$auwreckedmechalost" Icon="Creatures/AUWreckedMecha_scrapmech.png" ColorPair="cW"/>
+  <!-- wishes that do more complicated stuff -->
+  <wish ModName="Give Me A Sign" DisplayName="Force sign vignette to spawn" Author="Gearlink" Commands="GIVEMEASIGNforcespawn" Icon="Items/sw_sign_apple.bmp" ColorPair="yr"/>
+  <wish ModName="The Cask of Rose Wine" DisplayName="Force cask of wine to spawn" Author="Gearlink" Commands="CASKOFROSEWINEforcespawn" Icon="Items/sw_clay_pot.bmp" ColorPair="wy"/>
 </wishcommands>
