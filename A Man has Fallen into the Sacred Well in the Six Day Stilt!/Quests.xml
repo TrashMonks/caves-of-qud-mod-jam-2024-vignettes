@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<quests>
+	<quest Name="Fix the Plasmatic Core" Factions="Mechanimists,Wardens" Reputation="200" Level="20"
+		Accomplishment="You fixed the plasmatic Core"
+		Hagiograph="In the month of =month= of =year=, =name= decended into the sacred well, purged it of the intruder, and restored the Kasaphesense."
+		HagiographCategory="DoesSomethingRad">
+
+		<step Name="Decend into the Well" XP="50">
+			<text>Use the Rappelling Crane to enter the Sacred Well.</text>
+		</step>
+
+		<step Name="Kill the Intruder" XP="500">
+			<text>Kill what remains of the pilgrim who fell into the well.</text>
+		</step>
+
+		<step Name="Repair the Plasmatic Core" XP="500">
+			<text>Fix the broken core of the well.</text>
+		</step>
+
+		<step Name="Report your success to Sheba" XP="2000">
+			<text>Tell Sheba Hegadias of your success.</text>
+		</step>
+
+	</quest>
+</quests>

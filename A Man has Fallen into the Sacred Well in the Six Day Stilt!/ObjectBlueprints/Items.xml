@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<objects>
+	<object Name="Hazzary453_amhf_WellCrane" Inherits="InorganicObject">
+		<part Name="Render" DisplayName="Rappelling Crane" RenderString="^" Tile="Hazzary453_amhf/WellCrane.png" ColorString="&amp;r" DetailColor="C"/>
+		<part Name="Description" Short="A rust-coloured metal frame from which hangs a spool of cable that ends in a rounded hook."/>
+		<part Name="MentalShield"/>
+		<part Name="Physics" Weight="15" Category="Quest Items"/>
+		<part Name="Metal"/>
+		
+		<tag Name="QuestItem"/>
+    	<tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
+    	<tag Name="NoSparkingQuest" Value="*noinherit" />
+
+    	<property Name="WontSell"/>
+	</object>
+
+	<object Name="Hazzary453_amhf_WellDiary" Inherits="Book">
+    	<part Name="Render" DisplayName="{{W|Record of Events: The pilgrim in the well}}" ColorString="&amp;w" RenderString="=" RenderLayer="5" Tile="Items/sw_book_1.bmp" TileColor="&amp;w" DetailColor="r" />
+    	<part Name="Book" ID="Hazzary453_amhf_WellDiary"/>
+    	<part Name="Commerce" Value="20" />
+    	<tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
+    	<tag Name="NoSparkingQuest"/>  
+  </object>
+
+</objects>

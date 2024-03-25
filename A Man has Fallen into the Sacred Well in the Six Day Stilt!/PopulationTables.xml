@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<populations>
+	<population Name="Hazzary453_amhf_Memphimin_Inventory">
+		
+		<group Name="Items" Stlye="pickeach">
+      		<object Blueprint="Hunk of Cheese"/>
+      		<object Blueprint="Bandage" Number="1-3" Chance="50"/>
+      		<table Name="Ingredients" Number="2-5"/>
+      		<table Name="Guns 5"/>
+      		<table Name="Explosives 3" Number="1d4+1"/>
+      		<object Blueprint="Nuclear Cell"/>
+      		<object Blueprint="Vibro Blade"/>
+
+      		<group Name="Head" Chance="75" Style="pickone">
+      			<object Weight="5" Blueprint="Psychic Meridian"/>
+      			<object Weight="10" Blueprint="Enigma Cap"/>
+      			<object Weight="20" Blueprint="Miner's Helmet" Hint="SetBonusModChance:30"/>
+      			<group Weight="40" Name="PoweredHeadPlusCell" Style="pickeach">
+      				<group Name="HeadCell" Style="pickone">
+      					<object Weight="30" Number="2" Blueprint="Chem Cell" Hint="SetBonusModChance:50"/>
+      					<object Weight="15" Blueprint="Full Combustion Cell" Hint="SetBonusModChance:50"/>
+      					<object Weight="10" Blueprint="Nuclear Cell" Hint="SetBonusModChance:50"/>
+      				</group>
+      				<group Name="PoweredHead" Style="pickone">
+      					<object Weight="15" Blueprint="Psychodyne Helmet" Hint="SetBonusModChance:30"/>
+      					<object Weight="25" Blueprint="Ganglionic Teleprojector" Hint="SetBonusModChance:30"/>
+      				</group>
+      			</group> 
+      		</group>
+      		
+      		<group Name="Body" Style="pickone">
+      			<object Weight="30" Blueprint="Recycling Suit" Hint="SetBonusModChance:30"/>
+      			<object Weight="20" Blueprint="Plastifer Chem Vest"/>
+      			<group Weight="30" Name="PoweredBodyPlusCell" Style="pickeach">
+      				<group Name="BodyCell" Style="pickone">
+      					<object Weight="30" Number="2" Blueprint="Chem Cell" Hint="SetBonusModChance:50"/>
+      					<object Weight="15" Blueprint="Full Combustion Cell" Hint="SetBonusModChance:50"/>
+      					<object Weight="10" Blueprint="Nuclear Cell" Hint="SetBonusModChance:50"/>
+      				</group>
+      				<group Name="PoweredBody" Style="pickone">
+      					<object Weight="20" Blueprint="Thermo Cask" Hint="SetBonusModChance:30"/>
+      					<object Weight="10" Blueprint="High-Energy Thermo Cask" Hint="SetBonusModChance:30"/>
+      				</group>
+      			</group>      			
+      		</group>
+
+      		<group Name="Back" Style="pickone">
+      			<object Weight="5" Blueprint="Palladium Mesh Tabard" Hint="SetBonusModChance:30"/>
+      			<object Weight="25" Blueprint="Mechanical Wings" Hint="SetBonusModChance:30"/>
+      			<object Weight="15" Blueprint="Gyrocopter Backpack" Hint="SetBonusModChance:30"/>
+      			<object Weight="10" Blueprint="Quartzfur Cloak" Hint="SetBonusModChance:30"/>
+      			<group Weight="50" Name="PoweredBackPlusCell" Style="pickeach">
+      				<group Name="BackCell" Style="pickone">
+      					<object Weight="10" Number="2" Blueprint="Chem Cell" Hint="SetBonusModChance:50"/>
+      					<object Weight="20" Number="2" Blueprint="Lead-Acid Cell" Hint="SetBonusModChance:50"/>
+      					<object Weight="15" Blueprint="Full Combustion Cell" Hint="SetBonusModChance:50"/>
+      					<object Weight="10" Blueprint="Nuclear Cell" Hint="SetBonusModChance:50"/>
+      				</group>
+      				<group Name="PoweredBack" Style="pickone">
+      					<object Weight="25" Blueprint="Gas Tumbler" Hint="SetBonusModChance:30"/>
+      					<object Weight="15" Blueprint="Mercurial Cloak" Hint="SetBonusModChance:30"/>
+      					<object Weight="10" Blueprint="Strength Exo" Hint="SetBonusModChance:30"/>
+      				</group>
+      			</group>
+      		</group>
+
+      		<group Name="Arm" Chance="75" Style="pickone">
+      			<object Weight="20" Blueprint="Slip Ring" Hint="SetBonusModChance:30"/>
+      			<object Weight="10" Blueprint="Compass Bracelet" Hint="SetBonusModChance:30"/>
+      			<group Weight="55" Name="PoweredArmPlusCell" Style="pickeach">
+      				<group Name="ArmCell" Style="pickone">
+      					<object Weight="30" Number="2" Blueprint="Chem Cell" Hint="SetBonusModChance:50"/>
+      					<object Weight="15" Blueprint="Full Combustion Cell" Hint="SetBonusModChance:50"/>
+      					<object Weight="10" Blueprint="Nuclear Cell" Hint="SetBonusModChance:50"/>
+      				</group>
+      				<group Name="PoweredArm" Style="pickone">
+      					<object Weight="10" Blueprint="Wrist Fan" Hint="SetBonusModChance:30"/>
+      					<object Weight="15" Blueprint="Structural Scanning Bracelet" Hint="SetBonusModChance:30"/>
+      					<object Weight="20" Blueprint="Hologram Bracelet" Hint="SetBonusModChance:30"/>
+      					<object Weight="5" Blueprint="Tri-Hologram Bracelet" Hint="SetBonusModChance:30"/>
+      					<object Weight="5" Blueprint="Force Bracelet" Hint="SetBonusModChance:30"/>
+      				</group>
+      			</group>
+      		</group>
+
+      		<group Name="Arm2" Chance="25" Style="pickone">
+      			<object Weight="20" Blueprint="Slip Ring" Hint="SetBonusModChance:30"/>
+      			<object Weight="10" Blueprint="Compass Bracelet" Hint="SetBonusModChance:30"/>
+      			<group Weight="55" Name="PoweredArmPlusCell2" Style="pickeach">
+      				<group Name="ArmCell2" Style="pickone">
+      					<object Weight="30" Number="2" Blueprint="Chem Cell" Hint="SetBonusModChance:50"/>
+      					<object Weight="15" Blueprint="Full Combustion Cell" Hint="SetBonusModChance:50"/>
+      					<object Weight="10" Blueprint="Nuclear Cell" Hint="SetBonusModChance:50"/>
+      				</group>
+      				<group Name="PoweredArm2" Style="pickone">
+      					<object Weight="10" Blueprint="Wrist Fan" Hint="SetBonusModChance:30"/>
+      					<object Weight="15" Blueprint="Structural Scanning Bracelet" Hint="SetBonusModChance:30"/>
+      					<object Weight="20" Blueprint="Hologram Bracelet" Hint="SetBonusModChance:30"/>
+      					<object Weight="5" Blueprint="Tri-Hologram Bracelet" Hint="SetBonusModChance:30"/>
+      					<object Weight="5" Blueprint="Force Bracelet" Hint="SetBonusModChance:30"/>
+      				</group>
+      			</group>
+      		</group>
+
+      		<group Name="Face" Chance="80" Style="pickone">
+      			<object Weight="5" Blueprint="Dazzle Cheek" Hint="SetBonusModChance:30"/>
+      			<object Weight="5" Blueprint="Telescopic Monocle" Hint="SetBonusModChance:30"/>
+      			<object Weight="5" Blueprint="Spectables" Hint="SetBonusModChance:30"/>
+      			<object Weight="15" Blueprint="Gas Mask" Hint="SetBonusModChance:30"/>
+      			<group Weight="50" Name="PoweredFacePlusCell" Style="pickeach">
+      				<group Name="FaceCell" Style="pickone">
+      					<object Weight="30" Number="2" Blueprint="Chem Cell" Hint="SetBonusModChance:50"/>
+      					<object Weight="15" Blueprint="Full Combustion Cell" Hint="SetBonusModChance:50"/>
+      					<object Weight="10" Blueprint="Nuclear Cell" Hint="SetBonusModChance:50"/>
+      				</group>
+      				<group Name="PoweredFace" Style="pickone">
+      					<object Weight="10" Blueprint="Night-Sight Interpolators" Hint="SetBonusModChance:30"/>
+      					<object Weight="15" Blueprint="Telemetric Visor" Hint="SetBonusModChance:30"/>
+      					<object Weight="15" Blueprint="Night-vision Goggles" Hint="SetBonusModChance:30"/>
+      					<object Weight="10" Blueprint="VISAGE" Hint="SetBonusModChance:30"/>
+      				</group>
+      			</group>
+      		</group>
+
+      		<group Name="Hands" Chance="75" Style="pickone">
+      			<object Weight="15" Blueprint="Elastyne Gloves" Hint="SetBonusModChance:30"/>
+      			<object Weight="10" Blueprint="Quartzfur Gloves" Hint="SetBonusModChance:30"/>
+      			<group Weight="20" Name="PoweredHandsPlusCell" Style="pickeach">
+      				<group Name="HandsCell" Style="pickone">
+      					<object Weight="30" Number="2" Blueprint="Chem Cell" Hint="SetBonusModChance:50"/>
+      					<object Weight="15" Blueprint="Full Combustion Cell" Hint="SetBonusModChance:50"/>
+      					<object Weight="10" Blueprint="Nuclear Cell" Hint="SetBonusModChance:50"/>
+      				</group>
+      				<group Name="PoweredHands" Style="pickone">
+      					<object Weight="5" Blueprint="Precision Nanon Fingers" Hint="SetBonusModChance:30"/>
+      					<object Weight="15" Blueprint="Ulnar Stimulators" Hint="SetBonusModChance:30"/>
+      				</group>
+      			</group>
+      		</group>
+
+      		<group Name="Feet" Chance="100" Style="pickone">
+      			<object Weight="20" Blueprint="Rocket Skates" Hint="SetBonusModChance:30"/>
+      			<object Weight="10" Blueprint="Spring Boots" Hint="SetBonusModChance:30"/>
+      			<group Weight="30" Name="PoweredFeetPlusCell" Style="pickeach">
+      				<group Name="FeetCell" Style="pickone">
+      					<object Weight="30" Number="2" Blueprint="Chem Cell" Hint="SetBonusModChance:50"/>
+      					<object Weight="15" Blueprint="Full Combustion Cell" Hint="SetBonusModChance:50"/>
+      					<object Weight="10" Blueprint="Nuclear Cell" Hint="SetBonusModChance:50"/>
+      				</group>
+      				<group Name="PoweredFeet" Style="pickone">
+      					<object Weight="10" Blueprint="Anti-Gravity Boots" Hint="SetBonusModChance:30"/>
+      					<object Weight="5" Blueprint="3D Cobblers" Hint="SetBonusModChance:30"/>
+      					<object Weight="10" Blueprint="Step Sowers" Hint="SetBonusModChance:30"/>
+      					<object Weight="5" Blueprint="Ninefold Boots" Hint="SetBonusModChance:30"/>
+      				</group>
+      			</group>
+      		</group>
+
+
+		</group>
+	</population>
+</populations>
