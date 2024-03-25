@@ -117,9 +117,12 @@ namespace XRL.World.Parts
                 }
                 else
                 {
-                    if (firstCommand.StartsWith("item:")) firstCommand = firstCommand.Substring(5);
+                    if (firstCommand.StartsWith("item:"))
+                    {
+                        firstCommand = firstCommand.Substring(5);
+                    }
                     TryCreateSample(firstCommand, out var sample);
-                    data.DisplayName = $"Spawn {sample.a}{sample.DisplayName}";
+                    data.DisplayName = $"Spawn {sample.an(AsIfKnown: true)}";
                     data.Renderable = new Renderable(sample.RenderForUI());
                 }
             }
