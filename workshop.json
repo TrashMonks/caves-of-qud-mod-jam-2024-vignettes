@@ -1,3 +1,8 @@
 {
-  "WorkshopId": 3200984750
+  "WorkshopId": 3200984750,
+  "Title": "Vignettes Mash-Up",
+  "Visibility": "2",
+  "ImagePath": "pack.png",
+  "Tags": "Stable,Item,Creature,Building,Faction,Lore,Map,Quest",
+  "Description": "[quote]You trip on a cord in time's silly carpet, and right yourself with a tenuous grasp on the constellation that your presence has formed with an earlier one. Surroundings collapse and crystallize. As you snatch up the shiny bits, they project tales into thoughtspace. What happened here?[/quote]\n\nCompilation mod pack for the [url=https://itch.io/jam/caves-of-qud-modding-jam-2]Caves of Qud Modding Jam: Vignettes[/url], which ran in March 2024. See all of the entries [url=https://itch.io/jam/caves-of-qud-modding-jam-2/entries]here[/url]!\n\nA gigantic lanterned scaled thanks to all who participated!\n— The mod jam organizers\n\nWish for `modjampack` or press ctrl-shift-W (Mod Jam Wish Menu) to open a menu for easy wishing for the pack's contents (thanks gnarf!).\n\n[b]A note on balance:[/b] this pack is intended to let one sample from the various things added by all of the mods and will likely result a slightly chaotic Caves of Qud run. Each of these mods is available individually at the submissions page linked above, should you wish for a more curated experience.\n\nThis pack is for the (now) stable 206.X version of Caves of Qud.\n\n[b]Warning:[/b] Do not run this pack simultaneous with any of the mods contained within.\n\n[url=https://itch.io/jam/caves-of-qud-modding-jam-2]Mod jam page (itch)[/url] | [url=https://itch.io/jam/caves-of-qud-modding-jam-2/entries]Mod jam entries (itch)[/url] | [url=TODO]Submissions collection (Steam)[/url] | [url=https://github.com/TrashMonks/caves-of-qud-mod-jam-2024-vignettes]Source Code (GitHub)[/url]"
 }
