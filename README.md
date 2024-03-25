@@ -14,8 +14,8 @@ This version of the pack is for the 206.X version of Caves of Qud.
 ## Installation
 
 * [GitHub](https://github.com/TrashMonks/caves-of-qud-mod-jam-2024-vignettes/archive/refs/heads/main.zip)
-TODO: Steam workshop link
-TODO: Steam workshop collection link
+* [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=3200984750)
+* [Steam Workshop Collection](https://steamcommunity.com/sharedfiles/filedetails/?id=3199902804)
 
 Please refer to the Caves of Qud Wiki for [mod installation instructions](https://wiki.cavesofqud.com/wiki/Modding:Installing_a_mod).
 
