@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<populations>
+
+  <population Name="MummyInventory">
+    <group Name="Items" Style="pickeach">
+      <object Blueprint="Ape_Fang" Weight="100" />
+      <object Blueprint="cut_gem_necklace" Weight="100" />
+      <object Blueprint="EmptyCanteen" Weight="100" />
+      <object Blueprint="Rubber Tree Seed" Weight="100" />
+    </group>
+  </population>
+
+</populations>

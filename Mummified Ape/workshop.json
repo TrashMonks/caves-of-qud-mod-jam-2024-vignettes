@@ -1,0 +1,8 @@
+{
+  "WorkshopId": 3197002884,
+  "Title": "Mummified Ape",
+  "Description": "Adds the mummified ape as a random encounter to the hills biome. An unfortunate albino ape pilgrim did not survive the journey to Oboroqoru yet their mortal remains may yield some aid to a savvy adventurer.\nUse the wish revealsecret:$CrabEmperor_ApeMummy_mummifiedApe to find the location of it under the oddities tab.",
+  "Tags": "Lore",
+  "Visibility": "2",
+  "ImagePath": "preview.png"
+}

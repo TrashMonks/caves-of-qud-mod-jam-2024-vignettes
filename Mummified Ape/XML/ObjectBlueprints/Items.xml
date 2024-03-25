@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<objects>
+  <object Name="Ape_Mummy" Inherits="Chest">
+    <part Name="Render" RenderLayer="6" DisplayName="{{Y|mummified ape}}" Tile="VignetteTextures/ApeMummy.png" ColorString="&amp;Y" TileColor="&amp;Y" DetailColor="w"/>
+    <part Name="Description" Short="Its the mortal remnants of an ape long dead, now calcified by the none-gentle caresses of the wind into a mummy. The withered body clutches strange trinkets to its chest, having shielded them in their moments of death by violence or natural perils." />
+    <tag Name="InventoryPopulationTable" Value="MummyInventory" />
+    <part Name="Food" Message="Falling apart at the seams, rather crunchy, yet a remarkable delight in spite of its vast age." />
+    <tag Name="NoSparkingQuest" />
+    <tag Name="Gender" Value="plural" />
+    <intproperty Name="Bleeds" Value="0" />
+    <part Name="Physics" Weight="20" Organic="true" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+
+  <object Name="Ape_Fang" Inherits="BaseDagger">
+    <part Name="Render" DisplayName="ape fang" Tile="VignetteTextures/ApeFang.png" ColorString="&amp;Y" />
+    <part Name="MeleeWeapon" HitBonus="1" MaxStrengthBonus="7" BaseDamage="1d4" />
+    <part Name="Commerce" Value="100" />
+    <part Name="Description" Short="The ancient fang of a long dead ape of mighty proportions. It is far older than the mummy who once held it and no ape of such ilk has existed in many ages, save perhaps the mighty Oboroqoru. Perhaps the misfortunate ape sought to deliver this relic as a gift to their god." />
+    <part Name="Physics" Weight="1" Organic="true" />
+<tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
+  </object>
+  <object Name="cut_gem_necklace" Inherits="BaseArmlet">
+    <part Name="Armor" AV="1" DV="0" WornOn="Arm" />
+    <part Name="Render" DisplayName="Ape tooth necklace" RenderString="]" Tile="VignetteTextures/DiamondNecklace.png" ColorString="&amp;w" DetailColor="Y" />
+    <part Name="Commerce" Value="300" />
+    <part Name="Description" Short="An ancient necklace with an ancient scratched diamond ensconced within. The light refracts off of it strangely and the smell of ape still inexplicably clings to it." />
+    <part Name="Physics" Weight="1" />
+    <part Name="AddsRep" Faction="Apes" Value="150" />
+<tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
+  </object>
+
+
+</objects>

@@ -1,0 +1,9 @@
+{
+    "id": "ApeMummy",
+    "title": "Mummified Ape",
+    "description": "Adds a mummified ape as a random encounter in the hills biome. For the Caves Of Qud Vignette modding jam 2024.",
+    "version": "1.0",
+    "author": "Crabemperor",
+    
+    "PreviewImage": "preview.png"
+}
