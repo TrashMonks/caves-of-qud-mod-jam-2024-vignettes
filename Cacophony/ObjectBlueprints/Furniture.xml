@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<objects>
+	<object Name="MonosophyCacoSlotMachineL" Inherits="HighTechInstallation">
+    <part Name="Render" DisplayName="slot machine" RenderString="220" ColorString="&amp;y" DetailColor="R" Tile="Monosophy_Caco/slotmachinel.png" RenderLayer="6" />
+    <part Name="Physics" Weight="50" />
+    <part Name="Description" Short="The flashing lights and booming sounds of the machine simultaneously repulse and entice you. Your head pounds. This is a lure meant for an extinct species." />
+    <!--part Name="ElectricalPowerTransmission" ChargeRate="10000" IsConsumer="true" />
+    <part Name="ChargeSink" ChargeUse="75" NameForStatus="Processor" /-->
+    <!-- part Name="Examiner" Complexity="4" /-->
+    <tag Name="TechTier" Value="4" />
+    <stag Name="Crafts" />
+    <stag Name="Power" />
+    <stag Name="DeepPower" />
+    <stag Name="SurfacePower" />
+    <stag Name="ElectricalPower" />
+    <stag Name="ElectricalPowerConsumer" />
+    <stag Name="DeepElectricalPowerConsumer" />
+    <tag Name="AggregateWith" Value="Unicomputer" />
+	<part Name="ConfusionAura" />
+	</object>
+	<object Name="MonosophyCacoSlotMachineR" Inherits="MonosophyCacoSlotMachineL">
+    <part Name="Render" DisplayName="slot machine" RenderString="220" ColorString="&amp;y" DetailColor="R" Tile="Monosophy_Caco/slotmachiner.png" RenderLayer="6" />
+	</object>
+	<object Name="MonosophyCacoMetalStool" Inherits="Stool">
+	<part Name="Render" DisplayName="metal stool" RenderString="220" ColorString="&amp;y" DetailColor="R" Tile="Monosophy_Caco/uncomfortablestool.png" RenderLayer="6" />
+    <part Name="Physics" Weight="50" />
+	<part Name="Metal" />
+    <part Name="Description" Short="Metal mushroom sprouting from the unfertile ground." />
+	</object>
+</objects>

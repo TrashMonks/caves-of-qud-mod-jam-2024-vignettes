@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<objects>
+	<!-- start of creatures -->
+	<!-- Attempting to harvest Templar Mecha for car parts. -->
+	<!-- Templar mecha -->
+	<object Name="MonosophyCacoVehicleBaseCar" Inherits="BaseRobot">
+		<part Name="Body" Anatomy="WheeledCreature" />
+		<part Name="Brain" Factions="Playerneutral-100"  />
+		<!-- since the vehicle is not autonomous and shuts down without a driver, make it neutral unpiloted, uses driver faction when piloted as usual -->
+		<part Name="CannotBeInfluenced" Messages="Beguiling::The place where a mind should be is blank and smooth in =subject.t=.;;Persuasion_Proselytize::=subject.T's= commitment to =pronouns.possessive= cause is unwavering.;;LoveTonicApplicator::The tonic has no effect on =subject.t=.;;default::=subject.T= =verb:are= insensible to your blandishments." />
+		<stat Name="Level" Value="10" />
+		<stat Name="AV" Value="8" />
+		<stat Name="HeatResistance" Value="50" />
+		<stat Name="ColdResistance" Value="50" />
+		<stat Name="Hitpoints" Value="99" />
+		<!--skill Name="Acrobatics_Jump" /-->
+		<tag Name="Species" Value="mecha" />
+		<part Name="Interior" Cell="TempleMechaMkI" FallDistance="1" />
+		<part Name="Vehicle" ChargeMinimum="1000" Type="TemplarMech" Autonomous="false" IsEMPSensitive="true" IsTechScannable="true" BindBlueprint="MonosophyCarKey" />
+		<!--part Name="VehiclePilotPopulation" Blueprint="Templar Squire,Gunner-Knight Templar" /-->
+		<part Name="VehicleMeleeInfiltration" />
+		<part Name="VehicleSocketSeal" />
+		<!-- <part Name="VehicleIntercom" StartText="{{B|[{{C|=subject.T's= intercom crackles to life}}]}}" ChargeUse="500" IsEMPSensitive="true" IsTechScannable="true" /> -->
+		<!-- temp testing, enables speaking as/to the pilot -->
+		<!--part Name="StunningForceOnJump" Level="6" Distance="1" /-->
+		<part Name="DisabledNaturalHealing" />
+		<part Name="RulesDescription" Text="This creature doesn't heal naturally and must be repaired." />
+		<part Name="EnergyCellSocket" ChanceSlotted="100" SlotType="Engine" SlottedType="@DynamicInheritsTable:PowerCore:Tier{zonetier}" VisibleInDisplayName="false" VisibleInDescription="true" />
+		<part Name="ActionChargeCost" Percentage="5" />
+		<part Name="EnergyCellChargeLevel" ChargeMinimum="1000" VeryLow="low power:Nearly drained of core power."  />
+		<part Name="IntegralAnatomy" MortalOnly="true" />
+		<removepart Name="MaintenanceSystems" />
+		<tag Name="Gender" Value="neuter" />
+		<!--tag Name="Mecha" />
+		<tag Name="AssociatedFactions" Value="Templar" />
+		<tag Name="NamingTag" Value="TemplarMecha" /-->
+		<tag Name="RepairCost" Value="Y" />
+		<tag Name="Unenslavable" />
+		<tag Name="BaseObject" Value="*noinherit" />
+	</object>
+	<object Name="Mech_Kick" Inherits="NaturalWeapon">
+		<part Name="Render" DisplayName="kick" />
+		<part Name="MeleeWeapon" BaseDamage="4d4" Skill="Cudgel" Stat="Strength" Slot="Feet" />
+	</object>
+	<object Name="MonosophyCacoVehicleTestCar" Inherits="MonosophyCacoVehicleBaseCar">
+		<!--part Name="Body" Anatomy="BipedalRobotWithArmatures" /-->
+		<part Name="Render" DisplayName="beetle chariot" Tile="Monosophy_Caco/car.png" ColorString="&amp;c" TileColor="r" DetailColor="r"/>
+		<part Name="Description" Short="Light shines off the carapace of this beetle-themed chariot from the age of the sultans. It is remarkably well preserved; likely so it could continue to function as a lure. It's outlasted the roads it was meant to drive on." />
+		<!--What does the type field on this actually do?-->
+		<part Name="Vehicle" Type="Car" />
+		<stat Name="MoveSpeed" Value="15" />
+		<!--part Name="ConfusionAura" /-->
+		<!--part Name="VehiclePilotPopulation" Blueprint="Knight Templar" Table="" /-->
+		<!--inventoryobject Blueprint="MachinedEdge" Number="1" /-->
+		<inventoryobject Blueprint="Mech_Kick" Number="1" />
+		<!--skill Name="LongBlades" />
+		<skill Name="LongBladesProficiency" />
+		<skill Name="LongBladesLunge" />
+		<skill Name="LongBladesSwipe" />
+		<skill Name="LongBladesDuelingStance" />
+		<skill Name="LongBladesImprovedAggressiveStance" />
+		<skill Name="LongBladesImprovedDefensiveStance" />
+		<skill Name="LongBladesImprovedDuelistStance" /-->
+		<skill Name="Tactics_Charge" />
+		<intproperty Name="ChargeRangeModifier" Value="10" />
+		<part Name="DamageOnCreate" MinPercent="0" MaxPercent="90" />
+	</object>
+	<object Name="PowerCore" Inherits="Item">
+		<part Name="Render" DisplayName="[power core]" RenderString="'" RenderLayer="5" Tile="Items/power_core.bmp" ColorString="&amp;m" DetailColor="c" />
+		<part Name="Physics" Weight="10" Category="Energy Cell" />
+		<part Name="Examiner" Complexity="1" />
+		<part Name="EnergyCell" SlotType="PowerCore" Charge="100000" MaxCharge="100000" />
+		<part Name="Metal" />
+		<part Name="TinkerItem" Bits="001" CanDisassemble="true" CanBuild="true" />
+		<tag Name="Ammo" />
+		<tag Name="Mods" Value="EnergyCellMods" />
+		<tag Name="BaseObject" Value="*noinherit" />
+		<stag Name="Energy" />
+	</object>
+	<object Name="MonosophyCacoCarGuts" Inherits="PowerCore">
+		<part Name="Render" DisplayName="car guts" />
+		<part Name="Description" Short="Metal digestive system." />
+		<part Name="Physics" Weight="70" />
+		<part Name="Examiner" Complexity="5" />
+		<removepart Name="EnergyCell" SlotType="PowerCore" Charge="100000" MaxCharge="100000" />
+		<!--part Name="EnergyCell" SlotType="PowerCore" Charge="500000" MaxCharge="500000" RechargeValue="250000" RechargeBit="M" /-->
+		<part Name="LiquidFueledEnergyCell" SlotType="Engine" Liquid="oil" ChargePerDram="750" />
+		<part Name="LiquidVolume" MaxVolume="128" Volume="0" StartVolume="0-128" InitialLiquid="oil-1000" />
+		<part Name="Commerce" Value="4000" />
+		<part Name="TinkerItem" Bits="55" />
+		<tag Name="Tier" Value="5" />
+	</object>
+	<object Name="MonosophyCarKey" Inherits="Security Card">
+    <part Name="Render" DisplayName="chariot key" ColorString="&amp;r" Tile="Monosophy_Caco/carkey.png" />
+	<part Name="Description" Short="This small key is meant to be inserted into a slot inside a beetle chariot." />
+    <part Name="Commerce" Value="100" />
+	</object>
+	<!-- start of natural weapons -->
+	
+	<!-- start of corpses -->
+	
+</objects>

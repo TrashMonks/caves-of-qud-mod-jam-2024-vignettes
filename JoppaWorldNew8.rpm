@@ -1,0 +1,9 @@
+<Map
+  Width="80"
+  Height="25">
+  <cell
+    X="12"
+    Y="22">
+    <object Name="My_TerrainEastJoppa"></object>
+  </cell>
+</Map>
