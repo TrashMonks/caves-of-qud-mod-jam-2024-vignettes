@@ -164,19 +164,18 @@ namespace XRL.World.Parts
             }
         }
 
-        [WishCommand("revealandgoto")]
+        [WishCommand("modjam_revealandgoto")]
         public static void RevealAndGoto(string rest)
         {
             var note = Qud.API.JournalAPI.GetMapNote(rest);
-            if (note != null && !note.Revealed)
-            {
-                Qud.API.JournalAPI.RevealMapNote(note);
-            }
             if (note != null)
             {
+                if (!note.Revealed)
+                {
+                    Qud.API.JournalAPI.RevealMapNote(note);
+                }
                 XRL.World.Capabilities.Wishing.HandleWish(The.Player, $"goto:{note.ZoneID}");
             }
-
         }
 
         public override bool WantEvent(int ID, int cascade)
