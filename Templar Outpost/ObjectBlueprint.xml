@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<objects>
+
+  <object Name="Corrupt_Templar" Inherits="Templar">
+       <part Name="Render"  TileColor="G"  Tile="Creatures/Corrupt Templar" DetailColor="Y" DisplayName="Corrupt Templar" />
+    <part Name="Description" Short="Bloodied and Defiled mail hang across =pronouns.possessive= crooked spine and Misshapen jaw. The color too was sucked out of =pronouns.possessive= irises by =pronouns.possessive= tangled lineage, and =pronouns.possessive= abnormal mutations coursed across =pronouns.possessive= body intertwining with chrome polished augmentations." />
+    <part Name="Brain" Hostile="True" Factions="Putus Templar -600" />
+    <stat Name="Level" Value="24" />
+    <stat Name="Hitpoints" Value="120" />
+    <stat Name="Strength" Boost="4" />
+    <stat Name="Toughness" Boost="3" />
+    <stat Name="Willpower" Boost="-4" />
+    <stat Name="HeatResistance" Value="50" />
+    <stat Name="ColdResistance" Value="25" />
+    <stat Name="ElectricResistance" Value="25" />
+    <tag Name="InventoryPopulationTable" Value="Knight Templar Extra Armor" />
+    <inventoryobject Blueprint="Fullerite Plate Mail" />
+    <inventoryobject Blueprint="Long Sword5" Number="3" />
+    <inventoryobject Blueprint="Fullerite Shield" />
+    <inventoryobject Blueprint="@Templar Grenades" Number="4" />
+    <skill Name="Shield_StaggeringBlock" />
+    <skill Name="Shield_DeftBlocking" />
+    <skill Name="Shield_SwiftBlocking" />
+    <skill Name="Shield_Slam" />
+    <skill Name="Multiweapon_Fighting"/>
+    <skill Name="Multiweapon_Flurry"/>
+    <skill Name="Multiweapon_Mastery"/>
+    <mutation Name="FlamingRay" Level="8" />
+    <mutation Name="MultipleArms" Level="8" />
+    <mutation Name="Regeneration" Level="10" />
+    <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
+    <part Name="CyberneticsHasRandomImplants" ImplantChance="100" ImplantTable="Cybernetics5" LicensesAtLeast="8" />
+
+  </object>
+
+	<object Name="Pwyllion_VehicleTemplarMech1" Inherits="VehicleTemplarMech">
+		<part Name="Body" Anatomy="BipedalRobotWithArmatures" />
+		<part Name="Render" DisplayName="cracked temple mecha mk Ia" Tile="Creatures/sw_templar_mech_2.bmp" />
+		<part Name="Description" Short="A hominid-suit of chrome is junctured together from parts across the layer cake of time: balance struts hammered off the crushed star blimp, mainshaft springs torn from buoyed chapels, actuators hewed from the machine hearts of city centers, intakes blown of molten lamp glass. One arm ends in a giant blade, machined to final form at the Eater presses that stamp out artworks in the forever mode." />
+		<part Name="Vehicle" Type="TemplarSwordMech" />
+		<part Name="VehiclePilotPopulation" Blueprint="" Table=""/>
+		<inventoryobject Blueprint="MachinedEdge" Number="1" />
+		<inventoryobject Blueprint="Mech_Kick" Number="1" />
+    <part Name="Brain" Factions="Templar-800"  />
+		<part Name="DamageOnCreate" MinPercent="10" MaxPercent="90" />
+    <part Name="EnergyCellSocket" ChanceFullCell="0" />
+		<tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
+  </object>
+	
+  <object Name="Putus Outpost" Inherits="Terrain">
+		<part Name="Render" DisplayName="Putus Outpost" Tile="Terrain/Putus outlook.png" DetailColor="G" RenderString="127" ColorString="Y" />
+		<part Name="Description" Short="The chrome mantled buildings shines as if mimicking the spindle." />
+		<tag Name="NoBiomes" Value="1" />
+		<xtagGrammar Proper="true" massNoun="false" />
+		<tag Name="OverlayColor" Value="&amp;W" />
+	</object>
+
+  <object Name="Interview Recording" Inherits="Book">
+    <part Name="Render" DisplayName="{{W|Interview Report}}" ColorString="&amp;c" Tile="Items/Holo Recorder.png" TileColor="y" DetailColor="B" />
+    <part Name="Description" Short="A sleek metal dome sits alone with a small metal button" />
+    <part Name="Book" ID="Pwyll_Interview" />
+    <part Name="Commerce" Value="100" />
+  </object>
+
+</objects>
