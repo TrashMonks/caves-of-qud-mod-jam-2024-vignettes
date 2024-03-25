@@ -7,7 +7,7 @@
         <part Name="Armor" WornOn="Hand" DV="1" AV="0"/>
         <part Name="Examiner" Alternate="UnknownSmallTrinket" Unknown="UnknownSmallTrinket" Complexity="1" />
         <part Name="Physics" Category="Trinket" />
-        <part Name="RulesDescription" Text="When holding a beverage, this cup provides a bonus to reputation when performing a water ritual as well as a bonus to examining and dissassembling artifacts" />
+        <part Name="RulesDescription" Text="When holding a beverage, this cup provides a bonus to reputation when performing a water ritual as well as a bonus to examining and dissassembling artifacts." />
         <part Name="LeakWhenBroken"/>
 
         <part Name="LiquidVolume" MaxVolume="4" StartVolume="0" />
@@ -21,7 +21,7 @@
     </object>
 
     <object Name="Bigsimple_Perfect_Cup_Oven" Inherits="Oven">
-        <part Name="Description" Short="This oven has only ever known one recipe, anything else feels like an invasion" />
+        <part Name="Description" Short="This oven has only ever known one recipe, anything else feels like an invasion." />
         <tag Name="ExcludeFromDynamicEncounters" />
     </object>
 
@@ -31,7 +31,7 @@
     </object>
 
     <object Name="Bigsimple_Perfect_Cup_Multicabinet" Inherits="Multicabinet">
-        <part Name="Description" Short="Many ingredients are accessible within this cabinet, yet some feel more accessible than others"/>
+        <part Name="Description" Short="Many ingredients are accessible within this cabinet, yet some feel more accessible than others."/>
         <tag Name="InventoryPopulationTable" Value="Bigsimple_Perfect_Cup_Spicey" />
         <tag Name="ExcludeFromDynamicEncounters" />
     </object>
