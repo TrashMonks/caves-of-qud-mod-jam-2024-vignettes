@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<populations>
+
+  
+  <population Name="AUWreckedMecha-GlidaWares">
+    <group Name="Items" Style="pickeach">
+      <object Blueprint="Lead Slug" Number="800-1000" />
+      <table Name="DynamicObjectsTable:Grenades" Number="7" />
+      <table Name="DynamicObjectsTable:EnergyCells:Tier5-8" Number="7" />
+      <object Blueprint="Plump Mushroom" Number="0-3" />
+      <object Blueprint="Pickaxe" Number="1" />
+      <table Name="Tier7Wares" />
+    </group>
+  </population>
+  
+  <population Name="AUWreckedMecha-LostEnclave">
+
+    <table Chance="100" Name="AUWreckedMecha-GunnerCorpse" Number="2-3" />
+    <table Chance="100" Name="AUWreckedMecha-SquireCorpse" Number="2-5" />
+    <table Chance="100" Name="AUWreckedMecha-KnightCorpse" Number="2-4" />
+    <table Chance="100" Name="AUWreckedMecha-MechWreckage" Number="2-5" />
+    <object Chance="100" Blueprint="Garbage" Number="3d6" />
+    <object Chance="25" Blueprint="Chromeling" Number="2d3" />
+    <object Chance="25" Blueprint="AUWreckedMecha-Lost Barathrumite Tinker" Number="2d3" />
+    <group Name="fashAtacking" Style="pickeach" Chance="15"  >
+      <object Blueprint="Templar Squire" Number="1d3" />
+      <object Blueprint="Gunner-Knight Templar" Number="1" />
+    </group>
+
+  </population>
+  
+  <population Name="AUWreckedMecha-LostTinker">
+    <group Name="Items" Style="pickeach">
+      <table Name="BarathrumiteTinker" Number="1" />
+      <group Name="Gun" Style="pickone" >
+        <table Name="Rifles 6" Weight="30" />
+        <table Name="Rifles 7" Weight="15" />
+      </group>
+    </group>
+  </population>
+  
+  <population Name="AUWreckedMecha-SquireCorpse">
+    <group Name="Items" Style="pickeach">
+      <object Blueprint="Human Corpse" Number="1" />
+      <object Blueprint="Long Sword3" Number="1" />
+      <object Blueprint="Steel Shield" Number="1" />
+      <object Blueprint="Steel Plate Mail" Number="1" />
+      <object Blueprint="Steel Boots" Number="1" />
+      <table Name="Explosives 1" Chance="75"  Number="1d2" />
+    </group>
+  </population>
+  
+  <population Name="AUWreckedMecha-GunnerCorpse">
+    <group Name="Items" Style="pickeach">
+      <object Blueprint="Human Corpse" Number="1" />
+      <object Blueprint="Fullerite Flake Armor" Number="1" />
+      <object Blueprint="Long Sword4" Number="1" />
+      <table Name="Templar Grenades" Number="2" />
+      <object Chance="15" Blueprint="Ontological Anchor" Number="1" />
+      <table Name="GunnerKnightTemplarGuns" Number="1" />
+    </group>
+  </population>
+  
+  <population Name="AUWreckedMecha-KnightCorpse">
+    <group Name="Items" Style="pickeach">
+      <object Blueprint="Human Corpse" Number="1" />
+      <object Blueprint="Long Sword5" Number="1" />
+      <object Blueprint="Fullerite Plate Mail" Number="1" />
+      <object Blueprint="Fullerite Shield" Number="1" />
+      <table Name="Templar Grenades" Number="2" />
+      <table Name="Knight Templar Extra Armor" Number="1" />
+      <object Chance="15" Blueprint="Ontological Anchor" Number="1" />
+    </group>
+  </population>
+  
+  <population Name="AUWreckedMecha-MechWreckage">
+    <group Name="corpses" Style="pickone">
+      <object Blueprint="AUWreckedMecha-TemplarMechCorpseStripped1" Number="1" Weight="30" />
+      <object Blueprint="AUWreckedMecha-TemplarMechCorpseStripped2" Number="1" Weight="30" />
+      <group Name="trash" Style="pickeach" Weight="60">
+        <object Blueprint="Garbage" Number="1d6" />
+        <group Name="legs" Style="pickone">
+          <object Blueprint="AUWreckedMecha-TemplarMechCorpseHeadless1" Number="1" Weight="40" />
+          <object Blueprint="AUWreckedMecha-TemplarMechCorpseHeadless2" Number="1" Weight="30" />
+        </group>
+      </group>
+    </group>
+  </population>
+  
+</populations>

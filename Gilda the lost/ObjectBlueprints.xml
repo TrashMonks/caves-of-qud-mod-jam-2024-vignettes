@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<objects>
+
+  <object Name="AUWreckedMecha-GraffiedMecha" Inherits="VehicleTemplarMech">
+    <part Name="Render" DisplayName="scrap mecha" Tile="Creatures/AUWreckedMecha_scrapmech.png" DetailColor="W" />
+    
+    <part Name="Description" Short="A urshiib-suit of chrome is fused together from parts devoid of context: stablizers ripped from earth-movers, proton rods hewn from other suits of shoddier construction, lost eater machines armor over earlier work, ruined chromelings given new life. A swarm of waydroids hovers in lazy orbit each equiped with a small laser. Each arm ends in a giant blade, machined to final form at the Eater presses that stamp out artworks in the forever mode, and taken from Templar suits stamped into the layer cake.
+    
+    Emblazened on the side is the line: 'This contraption slays templar.'" />
+    
+    <part Name="Body" Anatomy="BipedalRobotWithArmatures" />
+    <part Name="EnergyCellSocket" ChanceFullCell="100" />
+    
+    <part Name="Interior" Cell="AUWreckedMecha-GraffiedMecha" FallDistance="1" />
+    <part Name="Vehicle" Type="ScrapMech" Autonomous="true" />
+    <part Name="ActionChargeCost" Percentage="10" />
+    <part Name="VehiclePilotPopulation" Blueprint="AUWreckedMecha-Lost Barathrumite Tinker" Table="" />
+    <inventoryobject Blueprint="MachinedEdge" Number="1" />
+    <inventoryobject Blueprint="MachinedEdge" Number="1" />
+    <inventoryobject Blueprint="ShoulderMountedLightCannon" Number="1" />
+    <inventoryobject Blueprint="ShoulderMountedLightCannon" Number="1" />
+    <inventoryobject Blueprint="AUWreckedMecha-WaydroidSwarm" Number="1" />
+    <inventoryobject Blueprint="Antimatter Cell" Number="3"/>
+    <inventoryobject Blueprint="Mech_Kick" Number="1" />
+    <part Name="BroadcastPowerReceiver" ChargeRate="2000" />
+    <part Name="AIShootAndScoot" Duration="1d1" />
+    <skill Name="Rifles" />
+    <skill Name="Rifle_SteadyHands" />
+    <skill Name="Rifle_DrawABead" />
+    <skill Name="Rifle_SuppressiveFire" />
+    <skill Name="Rifle_FlatteningFire" />
+    <skill Name="Rifle_SureFire" />
+    <skill Name="Rifle_BeaconFire" />
+    <skill Name="Rifle_OneShot" />
+    <skill Name="Pistol_Akimbo" />
+    <skill Name="LongBlades" />
+    <skill Name="LongBladesProficiency" />
+    <skill Name="LongBladesLunge" />
+    <skill Name="LongBladesSwipe" />
+    <skill Name="LongBladesDuelingStance" />
+    <skill Name="LongBladesImprovedAggressiveStance" />
+    <skill Name="LongBladesImprovedDefensiveStance" />
+    <skill Name="LongBladesImprovedDuelistStance" />
+    <skill Name="Tactics_Charge" />
+    <skill Name="HeavyWeapons" />
+    
+    <part Name="Graffitied" ChanceOneIn="1" />
+    <tag Name="AssociatedFactions" Value="Barathrumites" />
+    <part Name="DamageOnCreate" MinPercent="86" MaxPercent="100" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  
+  <object Name="AUWreckedMecha-WaydroidSwarm" Inherits="NaturalWeapon">
+    <part Name="Render" DisplayName="point-defense swarm" />
+    <part Name="IntegratedPowerSystems" RequiresEvent="HasPowerConnectors" />
+    <part Name="Armor" AV="2" DV="2" WornOn="Floating Nearby" />
+    <part Name="MeleeWeapon" BaseDamage="5d6" Skill="Cudgel" Stat="Strength" Slot="Floating Nearby" />
+    <part Name="Metal" />
+    <tag Name="Mods" Value="MissileWeaponMods,CommonMods,ElectronicsMods" />
+    <part Name="EnergyAmmoLoader" ChargeUse="100" ProjectileObject="ProjectilePointDefenseLaser" />
+    <part Name="PointDefense" ChargeUse="1" MinRange="2" MaxRange="6" TargetExplosives="80" TargetThrownWeapons="90" TargetArrows="70" TargetSlugs="40" TargetEnergy="0" />
+    <part Name="Examiner" Alternate="UnknownBizarreContraption" Complexity="6" Difficulty="2" />
+    <part Name="TinkerItem" Bits="0227" CanDisassemble="true" CanBuild="false" />
+    <part Name="EnergyCellSocket" SlotType="EnergyCell" />
+    <part Name="AIDefensiveEnergyCellReload" />
+    <part Name="AIPassiveEnergyCellReload" />
+    <part Name="PoweredFloating" ChargeUse="1" />
+    <part Name="MissileWeapon" Skill="Pistol" AmmoChar="&amp;B&#15;" RangeIncrement="5" ShotsPerAction="4" AmmoPerAction="1" ShotsPerAnimation="2" AnimationDelay="5" WeaponAccuracy="18" NoWildfire="true" EnergyCost="0" FiresManually="false" />
+  </object>
+  
+  <object Name="AUWreckedMecha-Lost Barathrumite Tinker" Inherits="Barathrumite Tinker">
+    <part Name="Render" DisplayName="lost tinker" RenderString="b" ColorString="&amp;Y" />
+    <tag Name="InventoryPopulationTable" Value="AUWreckedMecha-LostTinker" />
+    <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
+  </object>
+    
+  <object Name="AUWreckedMecha-Gilda" Inherits="Barathrumite">
+    <part Name="Render" DisplayName="Gilda" ColorString="&amp;Y" DetailColor="R" RenderString="B" Tile="Creatures/AUWreckedMecha_GildaTheLost.png" />
+    <part Name="Epithets" Primary="the Lost" />
+    <part Name="Brain" Wanders="false" />
+    <part Name="ConversationScript" ConversationID="AUWreckedMecha-Gilda" />
+    
+    <part Name="Description" Short="An urshiib in motion, =pronouns.subjective= never stops turning and shifting, =pronouns.possessive= mind traveling to a project on the other side of =pronouns.possessive= workshop. =pronouns.Possessive= organization of =pronouns.possessive= workshop is a system of none's design, litered with all types of scrap and parts, from scrap peicemeal robots laying unfinshed, to weapons one should think twice before attempting to fire. Intrigue gathers upon =pronouns.Possessive= face as you approach, as one would have upon seeing a strange new device being presented to you. " />
+    
+    <part Name="FactionRank" Ranks="Barathrumites::disciple" />
+    <stat Name="Level" Value="50" />
+    <stat Name="Strength" sValue="16" />
+    <stat Name="Intelligence" sValue="39" />
+    <stat Name="Willpower" sValue="29" />
+    <stat Name="Toughness" sValue="15" />
+    <stat Name="Agility" sValue="28" />
+    <stat Name="Ego" sValue="33" />
+    <stat Name="Hitpoints" Value="335" />
+    <inventoryobject Blueprint="Phase Cannon" Number="1" CellChance="100" CellFullChance="100" CellType="Antimatter Cell" AutoMod="ModMasterWork" />
+    <property Name="WontSell" Value="Phase Cannon" />
+    <inventoryobject Blueprint="Antimatter Cell" Number="6"/>
+    <inventoryobject Blueprint="Plastifer Sneakers" Number="1"/>
+    <inventoryobject Blueprint="Long Sword4th" Number="1" />
+    <inventoryobject Blueprint="Spectacles" Number="1" />
+    <part Name="GenericInventoryRestocker" Table="AUWreckedMecha-GlidaWares" />
+    <skill Name="Tinkering" />
+    <skill Name="Tinkering_Disassemble" />
+    <skill Name="Tinkering_Repair" />
+    <skill Name="Tinkering_ReverseEngineer" />
+    <skill Name="Tinkering_DeployTurret" />
+    <skill Name="Tinkering_Tinker1" />
+    <skill Name="Tinkering_Tinker2" />
+    <skill Name="Tinkering_Tinker3" />
+    <skill Name="Rifles" />
+    <skill Name="HeavyWeapons" />
+    <skill Name="HeavyWeapons_Tank" />
+    <part Name="GivesRep" />
+    <part Name="AISelfPreservation" Threshold="80" />
+    <tag Name="staticFaction1" Value=",friend," />
+    <tag Name="staticFaction2" Value="Templar,hate," />
+    <tag Name="staticFaction3" Value="Templar,hate,replicating their advancements" />
+    <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
+    <tag Name="Gender" Value="female" />
+    <xtagGrammar Proper="true" />
+    <inventoryobject Blueprint="Ulnar Stimulators" Number="1" CellChance="100" CellFullChance="100" CellType="Chem Cell" />
+    <xtagWaterRitual NoJoin="true" numRecipes="2" />
+  </object>
+    
+  <object Name="AUWreckedMecha-LostPhaseCannon" Inherits="ChainLaserEmplacement">
+    <part Name="Render" DisplayName="{{B|phase Cannon emplacement}}"  Tile="Creatures/sw_chainlaser_emplacement.bmp" ColorString="&amp;m" RenderString="m" DetailColor="c" />
+    <part Name="Physics" Owner="Barathrumites" />
+    <part Name="Brain" Hostile="false" Factions="Barathrumites-100" />
+    <removeinventoryobject Blueprint="Chain Laser" />
+    <inventoryobject Blueprint="Phase Cannon" />
+    <removepart Name="SupplyableIntegratedHost" />
+    <part Name="Description" Short="Astralgals demarcate the phasic slits along the frustum's length. THe Frustum sits on a servo-articulated base mount. Noise is sucked out of time in expectancy of cross-plane fusion." />
+    <tag Name="WontSellTag" Value="Ammo" />
+    <tag Name="BarathrumiteRobot" />
+    <tag Name="GritGateJourneyfriendIdentify" />
+    <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
+    <tag Name="NoIntegratedHostCapacitor" />
+  </object>
+  
+  <object Name="AUWreckedMecha-TemplarMechCorpse" Inherits="Robot Corpse">    
+    <part Name="Render" DisplayName="temple mecha mk Ib" Tile="Creatures/AUWreckedMecha_SmashedMech_1a.png" TileColor="&amp;c" DetailColor="C" RenderString="%" ColorString="&amp;w" RenderLayer="5" />
+    <removepart Name="RandomTile" />
+    <part Name="Description" Short="A corpse." />
+    <part Name="Container" />
+    <part Name="Inventory" />
+    <inventoryobject Blueprint="MechaPowerCore" Number="1" Chance="25" />
+    <tag Name="Tier" Value="0" />   
+    <tag Name="DynamicObjectsTable:Corpses" Value="*delete" />
+    <tag Name="DynamicObjectsTable:Items" Value="*delete" />
+  </object>
+    
+  <object Name="AUWreckedMecha-TemplarMechCorpseStripped1" Inherits="AUWreckedMecha-TemplarMechCorpse">    
+    <part Name="Render" DisplayName="wrecked temple mecha IA" Tile="Creatures/AUWreckedMecha_SmashedMech_1b.png" TileColor="&amp;c" DetailColor="C" RenderString="%" ColorString="&amp;w" RenderLayer="5" />
+    <part Name="Description" Short="A hominid-suit of chrome lies smashed in peices, the arms are shorn off, the cockpit is blasted open, soft trickles of coolant slide over the wreckage." />
+  </object>
+  
+  <object Name="AUWreckedMecha-TemplarMechCorpseStripped2" Inherits="AUWreckedMecha-TemplarMechCorpse">    
+    <part Name="Render" DisplayName="wrecked temple mecha IB" Tile="Creatures/AUWreckedMecha_SmashedMech_1a.png" TileColor="&amp;c" DetailColor="C" RenderString="%" ColorString="&amp;w" RenderLayer="5" />
+    <part Name="Description" Short="A hominid-suit of chrome lies smashed in peices, the shoulders are hammered off, the cockpit is blasted open, soft trickles of coolant slide over the wreckage." />
+  </object>
+  
+  <object Name="AUWreckedMecha-TemplarMechCorpseHeadless1" Inherits="AUWreckedMecha-TemplarMechCorpse">    
+    <part Name="Render" DisplayName="temple mecha peices" Tile="Creatures/AUWreckedMecha_RippedMech_1b.png" TileColor="&amp;c" DetailColor="C" RenderString="%" ColorString="&amp;w" RenderLayer="5" />
+    <part Name="Description" Short="Parts of a hominid-suit of chrome lie here, the upper torso fully disasembled, the legs are surrounded in a pile of scrap" />
+  </object>
+  
+  <object Name="AUWreckedMecha-TemplarMechCorpseHeadless2" Inherits="AUWreckedMecha-TemplarMechCorpse">    
+    <part Name="Render" DisplayName="temple mecha peices" Tile="Creatures/AUWreckedMecha_RippedMech_1a.png" TileColor="&amp;c" DetailColor="C" RenderString="%" ColorString="&amp;w" RenderLayer="5" />
+    <part Name="Description" Short="Parts of a hominid-suit of chrome lie here, the upper torso fully disasembled, the legs are surrounded in a pile of scrap" />
+  </object>
+  
+  <object Name="AUWreckedMecha-GildaLost" Inherits="Widget">
+    <part Name="MapChunkPlacement" Map="AUWreckedMecha-RuinsInhabited.rpm" Width="19" Height="19" />
+  </object>
+  
+</objects>

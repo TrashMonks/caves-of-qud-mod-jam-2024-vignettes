@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<worlds>
+	
+  <world Name="Interior" ZoneFactory="InteriorWorldZoneFactory" ZoneFactoryRegex="^Interior" DisplayName="Inside" Plane="Inherit" Protocol="Inherit">
+		<cell Name="AUWreckedMecha-GraffiedMecha">
+			<boolproperty Name="JoinPartyLeaderPossible" Value="false" />
+			<zone Level="10" x="1" y="1" Name="Control pit" IncludeStratumInZoneDisplay="false">
+				<builder Class="InteriorGround" />
+				<builder Class="MapBuilder" FileName="AUWreckedMecha-GraffitiedInterior.rpm" Width="5" Height="3" ClearBeforePlace="true" />
+				<widget Blueprint="AmbientLight" />
+				<intproperty Name="AmbushChance" Value="10" />
+			</zone>
+		</cell>
+  </world>
+</worlds>
