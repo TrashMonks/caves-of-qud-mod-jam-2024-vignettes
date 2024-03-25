@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<zonetemplates>
+  <zonetemplate Name="Kernelmethod_Vignettes2024_MechLair" RegionSize="100">
+    <global>
+      <population Table="Kernelmethod_Vignettes2024_MechLairInhabitants" />
+    </global>
+  </zonetemplate>
+</zonetemplates>

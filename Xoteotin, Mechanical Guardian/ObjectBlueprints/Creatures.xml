@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<objects>
+  <object Name="Kernelmethod_Vignettes2024_Xoteotin" Inherits="BaseRobot">
+    <part Name="Render" DisplayName="Xoteotin" RenderString="234" ColorString="&amp;M" DetailColor="g" Tile="Kernelmethod_Vignettes2024/Mech.png" />
+    <part Name="Body" Anatomy="BipedalRobotWithArmatures" />
+    <part Name="Description" Short="Rivulets of moss cross chrome panels; clockwork viscera expose themselves to the elements between the seams. Although the centuries have worn down this colossus, =pronouns.subjective= retains =pronouns.possessive= grandeur in =pronouns.possessive= old age." />
+    <part Name="Titles" Ordinary="Mechanical Guardian" />
+    <part Name="DisplayNameColor" Color="M" />
+
+    <part Name="Brain" Factions="Playerneutral-100" Hostile="false" Calm="true" />
+    <part Name="CannotBeInfluenced" Messages="Beguiling:The place where a mind should be is blank and smooth in =subject.the==subject.name=.;Persuasion_Proselytize:=subject.The==subject.name's= commitment to =pronouns.possessive= cause is unwavering.;LoveTonicApplicator:The tonic has no effect on =subject.the==subject.name=.;default:=subject.The==subject.name= =verb:are= insensible to your blandishments." />
+    <part Name="NoXPGain" />
+    <removepart Name="MaintenanceSystems" />
+
+    <part Name="Vehicle" IsEMPSensitive="true" IsTechScannable="true" Autonomous="false" ChargeMinimum="100" />
+    <part Name="VehicleSocketSeal" />
+    <part Name="VehicleMeleeInfiltration" AllowAllied="false" AllowNeutral="false" ChancePerPenetration="10" />
+    <part Name="Interior" Cell="Kernelmethod_Vignettes2024_MechInterior" FallDistance="1" />
+    <part Name="EnergyCellSocket" ChanceSlotted="100" SlotType="PowerCore" VisibleInDisplayName="false" VisibleInDescription="true" SlottedType="@DynamicInheritsTable:PowerCore:Tier{zonetier}" CellStartChargePercentage="0" ChanceFullCell="0" />
+    <part Name="EnergyCellChargeLevel" ChargeMinimum="1000" VeryLow="low power: Nearly drained of core power" />
+    <part Name="GivesRep" />
+
+    <part Name="ActionChargeCost" Percentage="50" />
+    <part Name="IntegralAnatomy" MortalOnly="true" />
+
+    <part Name="DisabledNaturalHealing" />
+    <part Name="RulesDescription" Text="This creature doesn't heal naturally and must be repaired." />
+    <part Name="DamageOnCreate" MinPercent="25" MaxPercent="40" />
+
+    <stat Name="Level" Value="40" />
+    <stat Name="Hitpoints" Value="1200" />
+    <stat Name="AV" Value="10" />
+    <stat Name="MoveSpeed" Value="120" />
+    <skill Name="Cudgel_Expertise" />
+    <skill Name="Cudgel_ChargingStrike" />
+    <skill Name="Cudgel_Conk" />
+    <skill Name="Cudgel_Backswing" />
+    <skill Name="Cudgel_Slam" />
+    <skill Name="Cudgel_SmashUp" />
+    <skill Name="Rifles" />
+    <skill Name="Rifle_SteadyHands" />
+    <skill Name="Rifle_DrawABead" />
+    <skill Name="Rifle_SuppressiveFire" />
+    <skill Name="Rifle_FlatteningFire" />
+    <skill Name="Rifle_SureFire" />
+    <skill Name="Rifle_BeaconFire" />
+    <skill Name="Rifle_OneShot" />
+    <skill Name="Tactics_Charge" />
+    <intproperty Name="ChargeRangeModifier" Value="3" />
+
+    <inventoryobject Blueprint="Kernelmethod_Vignettes2024_XoteotinPileDriver" Number="1" />
+    <inventoryobject Blueprint="Kernelmethod_Vignettes2024_XoteotinRailgun" Number="1" />
+    <inventoryobject Blueprint="Lead Slug" Number="8-12" />
+
+    <xtagGrammar Proper="true" />
+    <tag Name="AssociatedFactions" Value="Robots" />
+    <tag Name="Gender" Value="neuter" />
+    <tag Name="RepairCost" Value="Y" />
+    <tag Name="Gigantic" />
+    <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
+    <tag Name="staticFaction1" Value="Robots,friend,performing feats of heroism" />
+    <tag Name="staticFaction2" Value=",friend,slaying their oppressors" />
+    <tag Name="staticFaction3" Value="Water,hate,torching one of their villages" />
+    <tag Name="Worshippable" />
+    <tag Name="WorshipPower" Value="50" />
+    <tag Name="WorshipColorString" Value="&amp;M" />
+    <tag Name="WorshipDetailColor" Value="C" />
+    <tag Name="PronounSet" Value="It/It/Its/Itself" />
+  </object>
+
+  <object Name="Kernelmethod_Vignettes2024_XoteotinPileDriver" Inherits="NaturalWeapon">
+    <part Name="Render" DisplayName="pile driver" />
+    <part Name="MeleeWeapon" BaseDamage="3d4+1" />
+    <part Name="Metal" />
+    <part Name="ModGigantic" />
+  </object>
+
+  <object Name="Kernelmethod_Vignettes2024_XoteotinRailgun" Inherits="NaturalMissileWeapon">
+    <part Name="Render" DisplayName="fusion-powered railgun" ColorString="&amp;W" DetailColor="B" Tile="items/sw_techrifle_2.bmp" />
+    <part Name="Physics" Weight="30" />
+    <part Name="Commerce" Value="750" />
+    <part Name="MissileWeapon" Skill="Rifles" AmmoChar="&amp;y&#15;" ShotsPerAction="1" AmmoPerAction="1" WeaponAccuracy="0" />
+    <part Name="MagazineAmmoLoader" ProjectileObject="Kernelmethod_Vignettes2024_ProjectileRailgun" AmmoPart="AmmoSlug" MaxAmmo="1" NameForStatus="LoadingMechanism" />
+    <part Name="EnergyAmmoLoader" ChargeUse="750" NameForStatus="Railgun" />
+    <part Name="EnergyCellSocket" SlotType="EnergyCell" ChanceSlotted="100" />
+    <part Name="Examiner" Alternate="UnknownRifle" Complexity="7" />
+    <part Name="TinkerItem" Bits="0007" CanDisassemble="true" CanBuild="false" />
+    <part Name="IntegratedPowerSystems" RequiresEvent="HasPowerConnectors" />
+    <part Name="Metal" />
+    <part Name="ModGigantic" />
+    <tag Name="NoDefaultBehavior" />
+    <part Name="AIShootCooldown" Cooldown="5" />
+    <tag Name="Mods" Value="MissileWeaponMods,FirearmMods,CommonMods,RifleMods,ElectronicsMods,BeamWeaponMods" />
+    <tag Name="Tier" Value="7" />
+    <tag Name="MissileFireSound" Value="Sounds/Missile/Fires/Heavy Weapons/sfx_missile_linearCannon_fire" />
+  </object>
+
+  <object Name="Kernelmethod_Vignettes2024_ProjectileRailgun" Inherits="TemporaryProjectile">
+    <part Name="Render" DisplayName="{{y|hyperspeed slug}}" ColorString="&amp;y" />
+    <part Name="Projectile" BasePenetration="0" BaseDamage="3d12" Attributes="Vorpal" ColorString="&amp;B" PassByVerb="screech" />
+  </object>
+
+  <object Name="Kernelmethod_Vignettes2024_XoteotinFollower" Inherits="NPC">
+    <part Name="Kernelmethod_Vignettes2024_XoteotinFollowerSpawner" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+
+  <object Name="Kernelmethod_Vignettes2024_Uplifted XoteotinFollower" Inherits="Kernelmethod_Vignettes2024_XoteotinFollower">
+    <part Name="Kernelmethod_Vignettes2024_XoteotinFollowerSpawner" Uplift="true" />
+  </object>
+</objects>

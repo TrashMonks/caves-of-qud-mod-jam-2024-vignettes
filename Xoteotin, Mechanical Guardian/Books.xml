@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<books>
+
+  <!--
+     ┌───┐
+    { o.O }
+    ┌┘   └┐
+  ══╡     ╞══
+    │     │
+    └┬┬─┬┬┘
+     ││ ││
+  -->
+
+  <book ID="Kernelmethod_Vignettes2024_ScribbledNotes" Title="{{C|scribbled notes}}" Format="Auto" Margins="1,2,2,2">
+    <page>
+toyaci take robbit!
+
+&#255;&#255;&#255;&#218;&#196;&#196;&#196;&#191;
+&#255;&#255;{ o.O }
+&#255;&#255;&#218;&#217;   &#192;&#191;
+&#255;&#205;&#181;     &#198;&#205;
+&#255;&#255;&#179;     &#179;
+&#255;&#255;&#192;&#194;&#194;&#196;&#194;&#194;&#217;
+&#255;&#255;&#255;&#179;&#179; &#179;&#179;   &#27; robbit &#2;
+
+    </page>
+    <page>
+HOW TO USE ROBBIT
+&#196;&#196;&#196;&#196;&#196;&#196;&#196;&#196;&#196;&#196;&#196;&#196;&#196;&#196;&#196;&#196;&#196;&#196;
+
+&#255;-chair remover:  red button
+&#255;&#255;- arm thingy: ???
+- cannon:
+
+{{emote|*There is a drawing of a young svardym holding an oversized gun.*}}
+    </page>
+
+    <page>
+{{emote|*Several pages of crude drawings and illegible ramblings devolve into a series of haphazard lines, criss-crossing the paper*}}
+
+toyaci lost
+
+&#255;&#255;&#255;hungy
+
+find nearby camp to ask frendlies for reef directions
+    </page>
+    <page>
+{{emote|*Blood and oil are smeared over the page.*}}
+
+&#255;sorry!!
+    </page>
+  </book>
+</books>

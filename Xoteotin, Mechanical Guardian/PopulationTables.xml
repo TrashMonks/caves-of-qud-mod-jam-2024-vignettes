@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<populations>
+  <population Name="Kernelmethod_Vignettes2024_MechLairInhabitants">
+    <object Blueprint="Kernelmethod_Vignettes2024_XoteotinFollower" Number="8-12" />
+  </population>
+
+  <population Name="Kernelmethod_Vignettes2024_MechLairShrineChunks">
+    <group Name="Shrine Chunks" Style="pickone">
+      <object Blueprint="Kernelmethod_Vignettes2024_ShrineChunk1" />
+    </group>
+  </population>
+
+  <population Name="Kernelmethod_Vignettes2024_Metal Workbench">
+    <group Name="Items" Style="pickeach">
+      <object Blueprint="ScrapCape" />
+      <object Blueprint="BoxOfCrayons" />
+      <object Blueprint="Kernelmethod_Vignettes2024_Scribbled Notes" />
+      <table Name="Junk 5" Number="1d4" />
+    </group>
+  </population>
+
+  <population Name="Kernelmethod_Vignettes2024_StatueShrine">
+    <group Name="Objects" Style="pickeach">
+      <object Blueprint="Kernelmethod_Vignettes2024_Xoteotin Statue" />
+      <group Name="Followers" Style="pickone" Chance="40">
+        <object Weight="85" Blueprint="Kernelmethod_Vignettes2024_XoteotinFollower" Hint="AdjacentToWithTag:XoteotinShrine" />
+        <object Weight="15" Blueprint="Kernelmethod_Vignettes2024_Uplifted XoteotinFollower" Hint="AdjacentToWithTag:XoteotinShrine" />
+      </group>
+    </group>
+  </population>
+
+  <!-- Table merges -->
+  <population Name="CommonOddEncounters" Load="Merge">
+    <group Name="Types" Load="Merge">
+      <!-- A statue depicting Xoteotin. -->
+      <group Name="Kernelmethod_Vignettes2024_XoteotinStatue" Weight="50" Style="pickeach">
+        <table Name="Kernelmethod_Vignettes2024_StatueShrine" />
+      </group>
+    </group>
+  </population>
+</populations>

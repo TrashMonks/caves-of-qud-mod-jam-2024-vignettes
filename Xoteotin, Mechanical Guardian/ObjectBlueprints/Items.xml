@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<objects>
+  <object Name="Kernelmethod_Vignettes2024_Scribbled Notes" Inherits="Book">
+    <part Name="Render" DisplayName="{{C|scribbled notes}}" ColorString="&amp;y" DetailColor="k" RenderString="=" RenderLayer="5" Tile="Items/sw_paper.bmp" />
+    <part Name="Description" Short="A notepad covered in colorful scrawl and shoddy diagrams." />
+    <part Name="Book" ID="Kernelmethod_Vignettes2024_ScribbledNotes" />
+    <part Name="Commerce" Value="10" />
+    <tag Name="NoSparkingQuest" />
+    <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
+    <xtagGrammar Proper="false" />
+  </object>
+</objects>

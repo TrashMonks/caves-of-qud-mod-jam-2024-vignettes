@@ -1,0 +1,8 @@
+{
+  "WorkshopId": 3195300330,
+  "Title": "Xoteotin, Mechanical Guardian",
+  "Description": "Find and pilot Xoteotin, an ancient mech fabled for its heroic deeds!\n\nThe whereabouts of Xoteotin's lair is a secret sold by robots and factions interested in technology. It can also more rarely be learned by finding statues of Xoteotin spread throughout Qud.\n\n(There is also a kernelmethod_vignettes2024:goto wish that you can use to teleport yourself to the lair.)\n\nThis mod was written for the [url=https://itch.io/jam/caves-of-qud-modding-jam-2]Caves of Qud \"Vignettes\" modding jam[/url].",
+  "Tags": "Creature,Lore",
+  "Visibility": "2",
+  "ImagePath": "preview.png"
+}

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<objects>
+  <object Name="Kernelmethod_Vignettes2024_Xoteotin Statue" Inherits="Statue">
+    <part Name="Render" DisplayName="statue of Xoteotin" RenderString="234" ColorString="&amp;y" DetailColor="K" Tile="Kernelmethod_Vignettes2024/MechStatue.png" />
+    <part Name="Description" Short="The countenance of Xoteotin, Mechanical Guardian is preserved here in stone. Its impenetrable gaze looks through you at some distant point on the horizon: always seeking justice for the downtrodden.
+
+An inscription at the bottom of the statue recounts how Xoteotin heroically slew a cohort of greedy water barons in their moutain compounds." />
+    <part Name="Kernelmethod_Vignettes2024_XoteotinStatue" />
+
+    <stat Name="Hitpoints" Value="1200" />
+
+    <part Name="Shrine" />
+    <part Name="SmartuseTwiddles" />
+    <tag Name="Worshippable" />
+    <tag Name="WorshippedAs" Value="Xoteotin" />
+    <tag Name="WorshipPower" Value="2" />
+    <tag Name="WorshipColorString" Value="&amp;C" />
+    <tag Name="WorshipDetailColor" Value="g" />
+    <tag Name="XoteotinShrine" />
+  </object>
+
+  <!--
+    Versions of furniture with InteriorRequired=1 for use inside vehicles.
+  -->
+  <object Name="Kernelmethod_Vignettes2024_VehicleGolemSupportColumn" Inherits="VehicleGolemSupportColumn">
+    <intproperty Name="InteriorRequired" Value="1" />
+  </object>
+
+  <object Name="Kernelmethod_Vignettes2024_MechPilotSeat" Inherits="MechPilotSeat">
+    <intproperty Name="InteriorRequired" Value="1" />
+  </object>
+
+  <object Name="Kernelmethod_Vignettes2024_MechExitHatch" Inherits="MechExitHatch">
+    <intproperty Name="InteriorRequired" Value="1" />
+  </object>
+
+  <object Name="Kernelmethod_Vignettes2024_VehicleConsole N" Inherits="VehicleConsole N">
+    <intproperty Name="InteriorRequired" Value="1" />
+  </object>
+
+  <object Name="Kernelmethod_Vignettes2024_VehicleConsole S" Inherits="VehicleConsole S">
+    <intproperty Name="InteriorRequired" Value="1" />
+  </object>
+
+  <object Name="Kernelmethod_Vignettes2024_Unicomputer" Inherits="Unicomputer">
+    <intproperty Name="InteriorRequired" Value="1" />
+  </object>
+
+  <object Name="Kernelmethod_Vignettes2024_Fusion Power Station" Inherits="Fusion Power Station">
+    <intproperty Name="InteriorRequired" Value="1" />
+  </object>
+
+  <object Name="Kernelmethod_Vignettes2024_Hydraulic Bubblething" Inherits="Hydraulic Bubblething">
+    <intproperty Name="InteriorRequired" Value="1" />
+  </object>
+
+  <object Name="Kernelmethod_Vignettes2024_Metal Workbench" Inherits="Metal Workbench">
+    <tag Name="InventoryPopulationTable" Value="Kernelmethod_Vignettes2024_Metal Workbench" />
+    <intproperty Name="InteriorRequired" Value="1" />
+  </object>
+</objects>

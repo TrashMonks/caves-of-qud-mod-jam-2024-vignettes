@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<objects>
+  <!--
+    Create versions of walls with InteriorRequired=1 so that they don't weight
+    down the mech.
+  -->
+  <object Name="Kernelmethod_Vignettes2024_MechInteriorWall" Inherits="MechInteriorWall">
+    <part Name="Graffitied" ChanceOneIn="8" />
+    <intproperty Name="InteriorRequired" Value="1" />
+  </object>
+
+  <object Name="Kernelmethod_Vignettes2024_MechInteriorWall Endcap" Inherits="MechInteriorWall Endcap">
+    <part Name="Graffitied" ChanceOneIn="8" />
+    <intproperty Name="InteriorRequired" Value="1" />
+  </object>
+
+  <object Name="Kernelmethod_Vignettes2024_MechInteriorGlassWall" Inherits="MechInteriorGlassWall">
+    <intproperty Name="InteriorRequired" Value="1" />
+  </object>
+
+  <object Name="Kernelmethod_Vignettes2024_MechInteriorContainer" Inherits="MechInteriorContainer">
+    <intproperty Name="InteriorRequired" Value="1" />
+  </object>
+</objects>
