@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<objects>
+  <object Name="Neuroparent_Notepage" Inherits="Book">
+    <part Name="Render" DisplayName="{{W|The Neuroparent's Notepage}}" ColorString="&amp;w" RenderString="=" RenderLayer="5" Tile="Items/sw_unfurled_scroll2.bmp"  DetailColor="C" />
+    <part Name="Book" ID="Neuroparent_Notepage" />
+    <part Name="Description" Short="An old, tattered piece of parchment, stains across the edges. It is scrawled on with an emotionally unstable hand. Perhaps it will lead us to someone?" />
+    <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
+    <xtagGrammar Proper="false" adjunctNoun="" />
+    <part Name="Commerce" Value="150" />
+    <xtagGrammar Proper="false" />
+  </object>
+
+  <object Name="Neuroparent_NanoNeuro" Inherits="Neuro Animator">
+    <part Name="Render" DisplayName="{{nanoneuro|nano-neuro}} {{Y|animator}}" ColorString="&amp;R" DetailColor="C" Tile="Items/sw_animator.bmp" />
+    <part Name="Description" Short="A modified Nano-Neuro Animator, designed by the Neuroparent fanatics to tweak the new mind to be friendlier. This new effect doesn't seem to work if you don't have what they call the {{nanoneuro|madness...}}" />
+    <property Name="WontSell" />
+  </object>
+
+  <object Name="Neuroparent_Spray-a-Brain" Inherits="Spray-a-Brain">
+    <part Name="Description" Short="A modified Spray-a-Brain formula, designed by mad Animators to realign the neural lattices to be more suggestively predisposed. This new effect doesn't seem to work if you don't have what they call the {{nanoneuro|madness...}}" />
+    <property Name="WontSell" />
+  </object>
+
+  <object Name="Safra_Pickle_Remnant" Inherits="Pickles">
+    <part Name="Render" DisplayName="{{g|Half-eaten pickles}}" RenderString="%" ColorString="&amp;y" TileColor="&amp;y" DetailColor="y" RenderLayer="5" Tile="Items/sw_pickles.bmp" />
+    <part Name="Description" Short="Found in a basket in a far away ruin, these pickles serve as some of the only clues you can find about the whereabouts of the mysterious fugitive... who would bring this many pickles to the jungle...?" />
+    <removepart Name="PreservableItem" />
+    <removepart Name="Yuckwheat" />
+    <removepart Name="Commerce" />
+    <removepart Name="Food" />
+    <tag Name="QuestItem" />
+    <part Name="CompleteQuestOnTaken" Quest="Sarcose_Neuroparent_Life_Untethered" QuestStep="FindClue" />
+    <removepart Name="PreparedCookingIngredient" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+    <tag Name="NoSparkingQuest" />
+    <property Name="WontSell" />
+  </object>
+
+</objects>

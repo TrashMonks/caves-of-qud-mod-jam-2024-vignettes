@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<objects>
+<!-- Creature Objects -->
+	<!-- Base NeuroParent Object -->
+	<object Name="Neuroparent Base" Inherits="NPC">
+		<part Name="NeuroparentSpawner" />
+	</object>
+	<!-- Standard Neuro Parent Object -->
+	<object Name="Neuroparent" Inherits="Neuroparent Base">	
+				<tag Name="ServantTier" Value="1-2" />	
+				<tag Name="NumberOfServants" Value="2-4" />	
+	</object>
+	<object Name="Neuroparent_Desert" Inherits="Neuroparent Base">
+				<tag Name="ServantTier" Value="1-2" />	
+				<tag Name="NumberOfServants" Value="2-4" />	
+	</object>
+	<object Name="Neuroparent_Saltmarsh" Inherits="Neuroparent Base">	
+				<tag Name="ServantTier" Value="1" />	
+				<tag Name="NumberOfServants" Value="1-3" />	
+	</object>
+	<object Name="Neuroparent_Canyon" Inherits="Neuroparent Base">	
+				<tag Name="ServantTier" Value="1-2" />	
+				<tag Name="NumberOfServants" Value="2-4" />	
+	</object>
+	<object Name="Neuroparent_Mountains" Inherits="Neuroparent Base">	
+				<tag Name="ServantTier" Value="1-2" />	
+				<tag Name="NumberOfServants" Value="2-4" />	
+	</object>
+	<object Name="Neuroparent_Flowers" Inherits="Neuroparent Base">	
+				<tag Name="ServantTier" Value="2" />	
+				<tag Name="NumberOfServants" Value="3-5" />	
+	</object>
+	<object Name="Neuroparent_Jungle" Inherits="Neuroparent Base">	
+				<tag Name="ServantTier" Value="3" />	
+				<tag Name="NumberOfServants" Value="4-6" />	
+	</object>
+	<object Name="Neuroparent_BananaGrove" Inherits="Neuroparent Base">	
+				<tag Name="ServantTier" Value="4-5" />	
+				<tag Name="NumberOfServants" Value="6-10" />	
+	</object>
+	<object Name="Neuroparent_Moonstair" Inherits="Neuroparent Base">	
+				<tag Name="ServantTier" Value="6-8" />	
+				<tag Name="NumberOfServants" Value="8-12" />	
+	</object>
+	
+	<object Name="Neuroparent_Camper" Inherits="Neuroparent Base">
+				<tag Name="ServantTier" Value="2-3" />
+				<tag Name="NumberOfServants" Value="10-13"/>
+	</object>
+
+	<object Name="Sarcose_FugitiveBasket" Inherits="Creature">
+    	<part Name="Render" DisplayName="{{dreamsmoke|Safra, Legendary Animated Woven Basket Fugitive}}" ColorString="&amp;C" DetailColor="B" RenderString="229" Tile="Items/sw_basket.bmp" Occluding="false" RenderIfDark="true" />
+		<part Name="Brain" Factions="Newly Sentient Beings-100" Wanders="false" />
+		<part Name="ConversationScript" ConversationID="Sarcose_Safra_Conversation" ClearLost="true" />
+		<part Name="Description" Short="A surprisingly robust frond-basket in a brilliant blue hue. It hums with a silent energy and moves slowly, methodically. Unreadable markings on this seemingly inert item bely an ancient, lost craftsmanship. Contained in the basket bowl is an artifact, but before you can reach for it, a crackling voice in an archaic dialect commands you listen." />
+		<stat Name="Intelligence" sValue="14,1d3,(t)d1" />
+		<stat Name="Willpower" sValue="14,1d3,(t)d1" />
+		<stat Name="Ego" sValue="20,1d3,(t)d1" />
+		<stat Name="Hitpoints" Value="1000" />
+		<stat Name="Strength" Value="31" />
+	    <stat Name="Agility" sValue="14,1d3,(t)d1" />
+    	<stat Name="Toughness" sValue="14,1d3,(t)d1" />
+		<stat Name="HeatResistance" Value="75" />
+    	<stat Name="ColdResistance" Value="75" />
+    	<stat Name="AcidResistance" Value="75" />
+    	<stat Name="ElectricResistance" Value="75" />
+		<stat Name="Level" Value="40" />
+		<skill Name="Cudgel" />
+    	<skill Name="Cudgel_Slam" />
+		<mutation Name="Cryokinesis" Level="5" />
+		<mutation Name="Carapace" Level="5" />
+		<mutation Name="Regeneration" Level="5" />
+		<part Name="GenericInventoryRestocker" Table="SarcoseSafraWares" RestockFrequencyDays="14" />
+    	<part Name="GivesRep" />
+		<tag Name="NoHateFactions" Value="Chavvah,Plants,Pariahs" />
+		<tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
+		<tag Name="Merchant" />
+		<part Name="HasAnimatedServants" Safra="true" ServantTier="3-6" NumberOfServants="10-15" />
+	</object>
+
+</objects>
+

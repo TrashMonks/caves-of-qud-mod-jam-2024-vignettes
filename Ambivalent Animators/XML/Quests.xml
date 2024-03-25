@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<quests>
+	<quest Name="Life Untethered" Level="20"  ID="Sarcose_Neuroparent_Life_Untethered" Accomplishment="You found a lead!" Hagiograph="In the month of =month= of =year=, =name= delved deep into far-off ruins and uncovered the trail leading to a legendary Animate Rebel." HagiographCategory="FindsObject">
+		<step ID="FindClue" Name="Find a clue as to the Rebel Animate's whereabouts" XP="1000">
+			<text>Travel to the last rumored location of a rebellious animated being and search for a clue as to where they went.</text>
+		</step>
+	</quest>
+	<quest Name="An Animated Refuge" Level="10" ID="Sarcose_Neuroparent_An_Animated_Refuge" Accomplishment="Spoke with someone in the know." Hagiograph="In the month of =month= of =year=, =name= spoke with a rambler and discovered a remote encampment." HagiographCategory="FindsObject">
+		<step ID="SpeakNeuroparent" Name="Speak to a Neuroparent" XP="325">
+			<text>The Animated Servants speak of a camp they've visited, but they don't seem to know how to navigate there. Find someone who might know more.</text>
+		</step>
+	</quest>
+	<quest Name="Find Safra" Level="25" ID="Sarcose_Neuroparent_Find_Safra" Accomplishment="You found a legendary angry basket." Hagiograph="In the month of =month= of =year=, =name= revived a cold trail and found the legendary animate basket, {{dreamsmoke|Safra}}." HagiographCategory="FindsObject">
+		<step ID="FindSafra" Name="Find Safra, Legendary Animate" XP="5000">
+			<text>Spurred on by Yurl's instructions, travel to the ruins to find the legendary animated being, {{dreamsmoke|Safra}}.</text>
+		</step>
+	</quest>
+</quests>

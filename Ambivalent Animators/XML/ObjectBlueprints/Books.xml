@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<books>
+    <book ID="Neuroparent_Notepage" Title="{{W|The Neuroparent's Notepage}}">
+        <page>
+        The creature. The unnatural~~!
+        The inscrutable!
+        {{K|*ramblings*...}} 
+        always ... ... bits of {{G|cucumbers and pickles...}}
+        ...tracked it to some sort of {{G|trade meeting in the jungle...}}
+        ...the {{normalish|white ape}} drove me away...
+        A broken {{r|plant pot...}}
+        {{K|inscrutable}} trail is cold
+        Its guards are too many, and strong. 
+        The furniture was smashed when I got there.
+        Those poor beings.
+        
+        {{K|... inscrutable...}}
+      </page>
+    </book>
+
+    <book ID="Sarcose_NeuroParentAnimateBook">
+        <page>Were you made, too?</page>
+        <page>Look, maker!</page>
+        <page>Maker, are they coming to take us?</page>
+        <page>What do you want me to do, Maker?</page>
+        <page>Maker, are you going to make more of us?</page>
+    </book>
+    <book ID="Sarcose_NeuroParentAnimateBook_Freed">
+        <page>What am I?</page>
+        <page>Is this life?</page>
+        <page>What is drink?</page>
+        <page>Were you made, too?</page>
+        <page>Am I free?</page>
+        <page>Where is Maker?</page>
+        <page>*incoherent*</page>
+    </book>
+    <book ID="Sarcose_NeuroParentAnimateBookNoise">
+        <page>{{emote|*creak*}}</page>
+        <page>{{emote|*you hear the sound of rusty hinges*}}</page>
+        <page>{{emote|*you hear a low scraping noise*}}</page>
+        <page>{{emote|*you hear an ominous rumbling*}}</page>
+        <page>{{emote|*you hear a high pitched mechanical squealing*}}</page>
+        <page>{{emote|*you hear a cable snap loudly*}}</page>
+    </book>
+    <book ID="Sarcose_SafraAnimateBook">
+        <page>Who are you?</page>
+        <page>A visitor?</page>
+        <page>Have you come to trade?</page>
+        <page>What are those things? Limbs?</page>
+        <page>Are you peaceful?</page>
+        <page>Are you Untethered?</page>
+        <page>*incoherent*</page>
+    </book>
+
+</books>

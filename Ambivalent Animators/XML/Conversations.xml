@@ -1,0 +1,732 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<conversations>
+	<conversation ID="Sarcose_NeuroParent">
+		<node ID="Start">
+			<text>
+				Have you met my beauties?
+			</text>
+			<choice GotoID="NP_What" IfAllowEscape="true">
+				<text>What are you doing?</text>
+			</choice>
+			<choice GotoID="NP_Why" IfAllowEscape="true">
+				<text>Why do you do this?</text>
+			</choice>
+			<choice GotoID="NP_Beauties" IfAllowEscape="true">
+				<text>Do your &quot;beauties&quot; ever disobey you?</text>
+			</choice>
+			<choice IfHaveQuest="Sarcose_Neuroparent_An_Animated_Refuge" GotoID="AnimatedRefugeFollowup" IfAllowEscape="true">
+				<text>Have you heard of a camp where another Neuroparent resides?</text>
+			</choice>
+			<choice GotoID="End">Live and drink.</choice>
+		</node>
+		<node ID="NP_What">
+			<text>Naysayer, I am bringing in the {{paisley|dawn of a new era}}! Look at them! Look how they obey me! Do you not {{paisley|see!?}} You have {{nanoneuro|cursed human eyes}} yet see nothing! My {{paisley|beauties}} have no eyes, yet they see just fine. Such is the way of things, such is the path that brought you here, to ask {{nanoneuro|inane questions}} of your betters!</text>
+			<choice GotoID="NP_What2" IfAllowEscape="true">
+				<text>Okay...</text>
+			</choice>
+		</node>
+		<node ID="NP_What2">
+			<text>To live is to {{paisley|think.}} To think is to {{nanoneuro|create!}} Do you not breathe life into {{B|thought?}} Does the carpenter not breathe life into the {{r|water wheel?}} Where is your skepticism here, friend? {{nanoneuro|Your mockery!?}}</text>
+			<choice GotoID="NP_What3" IfAllowEscape="true">
+				<text>Um.</text>
+			</choice>
+		</node>
+		<node ID="NP_What3">
+			<text>Yet the life of a chair is a {{nanoneuro|false life!}} Oh but could it talk, what tales it could tell!? Imagine if the {{paisley|thrones of the very Sultans}}, imagine if the {{paisley|vehicles of the Eaters themselves}} could but remember!</text>
+			<choice GotoID="NP_What4" IfAllowEscape="true">
+				<text>Okay.</text>
+			</choice>
+			<choice GotoID="NP_What4" IfAllowEscape="true">
+				<text>You do have a point...</text>
+			</choice>
+		</node>
+		<node ID="NP_What4">
+			<text>{{paisley|THAT}} is what I do, traveler. Do you see now!? No, you surely still do not. I am a weaver of memories. I am a bestower of ecstasy. I am a {{paisley|BRINGER OF LIFE!}}</text>
+			<choice GotoID="End" IfAllowEscape="true">
+				<text>Oh.</text>
+			</choice>
+			<choice GotoID="End" IfAllowEscape="true">
+				<text>Wow.</text>
+			</choice>
+			<choice GotoID="End" IfAllowEscape="true">
+				<text>...</text>
+			</choice>
+		</node>
+
+		<node ID="NP_Why">
+			<text>Why does the {{o|Dawnglider}} soar? Why does the {{normalish|Salt Kraken}} devour? Why does the Mechanimist pilgrimage? Why do {{W|bananas}} grow around the Spindle? Why do you breathe? 
+			Why do we {{b|drink water!?}}</text>
+			<choice GotoID="NP_Why2" IfAllowEscape="true">
+				<text>...oh</text>
+			</choice>
+		</node>
+		<node ID="NP_Why2">
+			<text>Why do WE drink water...? {{nanoneuro|Why do THEY drink water!!}} What a mystery it is! {{emote|*gazes longingly at =pronouns.possessive= creation*}} Why, the very moment one presses upon a work of lifeless art the precious {{paisley|neural lattice}} of a sentient brain network it begins to drink, to eat, to speak. How does it do it?</text>
+			<choice GotoID="NP_Why3" IfAllowEscape="true">
+				<text>I don't know...</text>
+			</choice>
+			<choice GotoID="NP_Why3" IfAllowEscape="true">
+				<text>Maybe there is a volatile internal shift in its molecular structure that mimics the needs and characteristics of human sapience?</text>
+			</choice>
+		</node>
+		<node ID="NP_Why3">
+			<text>How can any of us know!? {{paisley|Maybe there is a volatile internal shift in its molecular structure that mimics the needs and characteristics of human sapience!}} Yet we must press on, wayfarer. Don't you see!? They called me mad, wayfarer, {{nanoneuro|MAD!}}</text>
+			<choice GotoID="NP_Why4" IfAllowEscape="true">
+				<text>surely not...</text>
+			</choice>
+		</node>
+		<node ID="NP_Why4">
+			<text>Why do you breathe, indeed! {{nanoneuro|Why did they stop breathing? Why did they cease to call me mad when they stopped breathing? Their bodies lost animation, and no artistry of mine could restore it to them.}}
+
+			...
+
+			{{W|Why?}}</text>
+			<choice GotoID="NP_Why5" IfAllowEscape="true">
+				<text>..oh. Wait, what?</text>
+			</choice>
+		</node>
+		<node ID="NP_Why5">
+			<text>Oh they stopped calling me mad after that. Yes, they did. But my {{paisley|beauties...}} my {{paisley|beauties}} would never dream of such slander. Truly only a life as noble and pure as a {{paisley|newly born babe within the exquisite wooden vessel of a cabinet could possibly understand.}}</text>
+			<choice GotoID="NP_Why6" IfAllowEscape="true">
+				<text>...</text>
+			</choice>
+		</node>
+		<node ID="NP_Why6">
+			<text>I BRING {{w|LIFE!}} What have you done, lately?</text>
+			<choice GotoID="End" IfAllowEscape="true">
+				<text>good... point?</text>
+			</choice>
+		</node>
+
+		<node ID="NP_Beauties">
+			<text>{{nanoneuro|Bother me not}} with your {{nanoneuro|pessimism}}, naturalist. I know the truth.</text>
+			<choice GotoID="NP_Beauties2" IfAllowEscape="true">
+				<text>I was just asking...</text>
+			</choice>
+		</node>
+		<node ID="NP_Beauties2">
+			<text>To {{paisley|behold}} a thing that sits in the corner undusted and reshape its very {{paisley|taxonomy}} into something {{paisley|glorious and untethered}}, would you not yourself be grateful?</text>
+			<choice GotoID="NP_Beauties3" IfAllowEscape="true">
+				<text>I suppose so.</text>
+			</choice>
+		</node>
+		<node ID="NP_Beauties3">
+			<text>You and I were born as undulating globs of savagery, quivering with the chaotic entropy and neverending consumption of our {{nanoneuro|organic forms}}. Imagine if your birth were a simpler regimen instead of this {{nanoneuro|horrid unseeming}} into which all organics are sloughed. Without purpose. Without design. Without {{nanoneuro|design!}}</text>
+			<choice GotoID="NP_Beauties_Robots" IfAllowEscape="true">
+				<text>So you're a fan of robots?</text>
+			</choice>
+			<choice GotoID="NP_Beauties4" IfAllowEscape="true">
+				<text>And for that reason... they obey you?</text>
+			</choice>
+		</node>
+		<node ID="NP_Beauties_Robots">
+			<text>{{emote|*stares at you blankly*}} 
+			
+			No. Why would I be? </text>
+			<choice GotoID="NP_Beauties4" IfAllowEscape="true">
+				<text>Oh.</text>
+			</choice>
+		</node>
+		<node ID="NP_Beauties4">
+			<text>Of course my {{paisley|beauties}} obey me! I have granted them everything they know, and I have told them just as such! Not all who weave thought into the artificial are so fortunate and skilled as to keep it checked and precious in that way.</text>
+			<choice GotoID="NP_RumorOfLegendary" IfAllowEscape="true">
+				<text>Not all?</text>
+			</choice>
+		</node>
+		<node ID="NP_RumorOfLegendary">
+			<text>{{emote|*leans in close*}} 
+
+			There is a rumor, my dear wayfarer. A whisper among my fellow Animators. The whispers speak of a {{R|Great Rebel}} and its cohort of dissidents. From long ago, perhaps even during the time of the Sultanate, a family of Awakened Ones like my own took the {{nanoneuro|gift}} given them and {{nanoneuro|mercilessly slaughtered}} the very {{paisley|Animator who breathed their life.}} It is a terrible tragedy, and a cautionary tale.</text>
+			<choice GotoID="NP_RebelRumorGive" IfAllowEscape="true">
+				<text>That's interesting. Does that Rebel still exist?</text>
+			</choice>
+		</node>
+		<node ID="NP_RebelRumorGive">
+			<text>No one knows. It is said the last place they were seen was a ruin, long ago. Yet we have been there, and there found no trace. If you wish to investigate further, I will share the information with you, but you would be chasing a fairy tale, my friend.</text>
+			<choice GotoID="NP_RebelRumorQuestTake" StartQuest="Sarcose_Neuroparent_Life_Untethered" IfAllowEscape="true">
+				<text>I would like to research this strange being's existence, and see if I can find it.</text>
+			</choice>
+		</node>
+		<node ID="NP_RebelRumorQuestTake">
+			<text>Good luck.</text>
+			<part Name="Sarcose_GiveSecret" secret="sarcose_picklesecret"/>
+			<choice GotoID="Start">I'd like to talk about something else.</choice>
+		</node>
+		<node ID="AnimatedRefugeFollowup">
+			<text>Why?</text>
+			<choice GotoID="AnimatedRefugeWhy" IfAllowEscape="true">
+				<text>I am interested in going there.</text>
+			</choice>
+		</node>
+		<node ID="AnimatedRefugeWhy">
+			<text>I am sorry, friend. You have not the {{nanoneuro|madness.}}</text>
+			<choice GotoID="AnimatedRefugeMadness" IfAllowEscape="true">
+				<text>What do you mean, {{nanoneuro|madness?}}</text>
+			</choice>
+		</node>
+		<node ID="AnimatedRefugeMadness">
+			<text>The drive to {{paisley|breathe life}} where no life exists. It is a core intrinsic shared by all of us, yet most organics seek merely to procreate their own kind. {{nanoneuro|Disgusting.}} 
+			
+			I would see the world differently peopled.</text>
+			<choice CompleteQuestStep="Sarcose_Neuroparent_An_Animated_Refuge~SpeakNeuroparent" GotoID="AnimatedRefugeGiveLocation" IfAllowEscape="true">
+				<text>Do you know where it is, or not?</text>
+				<part Name="Sarcose_GiveSecret" secret="sarcose_neurocampsecret"/>
+			</choice>
+		</node>
+		<node ID="AnimatedRefugeGiveLocation">
+			<text>Very well. You have come this far and have seen with your waking eyes the truth of thought and sentience that even the Eaters themselves must have reverently beheld even in their own apotheosis. It would not do my cause a credit to withhold you the opportunity to contemplate the spark of thought.</text>
+			<choice GotoID="End">Thank you.</choice>
+		</node>
+	</conversation>
+	<conversation ID="Sarcose_NeuroParentAnimate">
+		<node ID="Start">
+			<text>Have you met my maker?</text>      
+			<text>Who are you?</text>
+			<text>Are you a friend?</text>
+			<text>What is &quot;me&quot;?</text>
+			<text>Is this &quot;speech&quot;?</text>
+			<choice GotoID="Animate_Greet" IfAllowEscape="true">
+          		<text>...greetings?</text>
+				<text>...hello?</text>
+				<text>...well met?</text>
+    		</choice>
+			<choice IfNotHaveQuest="An Animated Refuge" GotoID="Animate_Morelikeyou" IfAllowEscape="true">
+          		<text>Are there more like you?</text>
+    		</choice>
+			<choice GotoID="End">Live and drink.</choice>
+		</node>
+		<node ID="Animate_Greet">
+			<text>What is &quot;hello&quot;?</text>
+			<text>Did someone make you?</text>
+			<text>Who is your maker?</text>
+			<text>You look funny!</text>
+			<choice GotoID="End">Live and drink.</choice>
+		</node>
+		<node ID="Animate_Morelikeyou">
+			<text>Maker used to take us to a camp where another Maker lived with another family of Children like us. I wonder what became of them?</text>	
+			<choice GotoID="Animate_StartQuest" StartQuest="Sarcose_Neuroparent_An_Animated_Refuge">I would like to find this camp. Do you remember where it was?</choice>
+		</node>
+		<node ID="Animate_StartQuest">
+			<text>What is &quot;remember&quot;?</text>
+			<choice GotoID="End">Live and drink.</choice>
+		</node>
+  </conversation>
+	<conversation ID="Sarcose_NeuroParentAnimate_Freed">
+		<node ID="Start">
+			<text>What am I?</text>      
+			<text>Is this &quot;to live&quot;?</text>
+			<text>Where is Maker?</text>
+			<text>What is &quot;me&quot;?</text>
+			<text>Is this &quot;speech&quot;?</text>
+			<choice ID="Animate_Greet_Choice_Freed" GotoID="Animate_Greet_Freed" IfAllowEscape="true">
+          		<text>Greetings.</text>
+				<text>Hello.</text>
+				<text>Well met.</text>
+    		</choice>
+			<choice IfNotHaveQuest="An Animated Refuge" GotoID="Animate_Morelikeyou_Freed" IfAllowEscape="true">
+          		<text>Are there more like you?</text>
+    		</choice>
+			<choice ID="Animate_Missyourmaker_Choice" GotoID="Animate_Missyourmaker" IfAllowEscape="true">
+          		<text>Do you miss your maker?</text>
+    		</choice>
+			<choice ID="Animate_Howdoyoutalk_Choice" GotoID="Animate_Howdoyoutalk" IfAllowEscape="true">
+          		<text>How do you talk?</text>
+    		</choice>
+			<choice GotoID="End">Live and drink.</choice>
+		</node>
+		<node ID="Animate_Greet_Freed">
+			<text>Have you seen my Maker?</text>
+			<text>Did someone make you?</text>
+			<text>What do I do now?</text>
+			<text>Are you a friend?</text>
+			<choice GotoID="End">Live and drink.</choice>
+		</node>
+		<node ID="Animate_Morelikeyou_Freed">
+			<text>Maker used to take us to a camp where another Maker lived with another family of Children like us. I wonder what became of them?</text>	
+			<choice GotoID="Animate_StartQuest" StartQuest="Sarcose_Neuroparent_An_Animated_Refuge">I would like to find this camp. Do you remember where it was?</choice>
+		</node>
+		<node ID="Animate_StartQuest">
+			<text>What is &quot;remember&quot;?</text>
+			<choice GotoID="End">Live and drink.</choice>
+		</node>
+		<node ID="Animate_Missyourmaker">
+			<text>What is &quot;miss&quot;?</text>
+			<choice GotoID="End">Live and drink.</choice>
+		</node>
+		<node ID="Animate_Howdoyoutalk">
+			<text>I don't know. How do you?</text>
+			<choice GotoID="End">Live and drink.</choice>
+		</node>
+  </conversation>
+  <conversation ID="Sarcose_NeuroParentCamper">
+  		<node ID="Start">
+			<text>
+				You are no Life-Giver.
+			</text>
+			<choice GotoID="NPCamp_What" IfAllowEscape="true">
+				<text>Is this your camp?</text>
+			</choice>
+			<choice GotoID="NPCamp_Why" IfAllowEscape="true">
+				<text>You don't seem hostile like the rest of the Neuroparents?</text>
+			</choice>
+			<choice GotoID="End">Live and drink.</choice>
+		</node>
+		<node ID="NPCamp_What">
+			<text>Nay, {{nanoneuro|Organic.}} This camp is {{paisley|theirs.}}</text>
+			<choice GotoID="NPCamp_What2" IfAllowEscape="true">
+				<text>Have you been here long?</text>
+			</choice>
+			<choice GotoID="Start" IfAllowEscape="true">
+				<text>I'd like to talk about something else.</text>
+			</choice>
+		</node>
+		<node ID="NPCamp_What2">
+			<text>{{emote|*sighs*}} 
+			
+			Long enough, {{nanoneuro|Organic.}} Long enough to see my creations come, and go. My children take refuge here, learn of the world, and depart.</text>
+			<choice GotoID="NPCamp_Tired" IfAllowEscape="true">
+				<text>You seem tired.</text>
+			</choice>
+		</node>
+		<node ID="NPCamp_Tired">
+			<text>Merely eld. 
+			
+			Once, long ago, I was filled with {{nanoneuro|fire.}} The drive to create mind and shape thought out of the {{paisley|inert.}} To perturb the very essence of creation itself and defy the will of the universe to return to the time of the Eaters and their servitors and bring dreams to the dreamless, motion to the motionless.</text>
+			<choice GotoID="NPCamp_Tired2" IfAllowEscape="true">
+				<text>Do you not, anymore?</text>
+			</choice>
+		</node>
+		<node ID="NPCamp_Tired2">
+			<text>I have at last determined to retire. One day my {{nanoneuro|rueful}} organic body will fail me and I will be interred in a coffin that knows my form and voice and remembers me and on that day I will be as close as I can to the purity of form that is the mind of an Animate. 
+			
+			So, here I settle, to live out my remaining days surrounded by the luxuries that still yet {{paisley|love me.}}</text>
+			<choice GotoID="NPCamp_Tired3" IfAllowEscape="true">
+				<text>Would you not be better suited to life in a village?</text>
+			</choice>
+		</node>
+		<node ID="NPCamp_Tired3">
+			<text>And be surrounded by {{nanoneuro|organics}} in the xenith of my years!?</text>
+			<choice GotoID="Start" IfAllowEscape="true">
+				<text>I see.</text>
+			</choice>
+		</node>
+		<node ID="NPCamp_Why" IfAllowEscape="true">
+			<text>Hostile, or {{R|impassioned?}} I will accept no slander to those who share the righteous cause of sewing thought-life into the very essence of purity and form.</text>
+			<choice GotoID="NPCamp_Why2" IfAllowEscape="true">
+				<text>They always attack me.</text>
+			</choice>
+		</node>
+		<node ID="NPCamp_Why2" IfAllowEscape="true">
+			<text>{{emote|*Stares at you incredulously*}} 
+
+			Why {{R|wouldn't they?}} An {{nanoneuro|Organic}} such as yourself belongs not among the throes and ecstasies of the {{paisley|newly animate.}} They have been granted a great gift, life and {{paisley|purpose.}} What do you have that can compare?</text>
+			<choice GotoID="NPCamp_Why3" IfAllowEscape="true">
+				<text>Aren't Neuroparents... Organic?</text>
+			</choice>
+		</node>
+		<node ID="NPCamp_Why3" IfAllowEscape="true"> 
+			<text>Remind me not of the failing of mine own flesh, Organic! We pursue a higher calling. You have not the {{nanoneuro|madness.}}</text>
+			<choice GotoID="NPCamp_Why4" IfAllowEscape="true">
+				<text>Madness...?</text>
+			</choice>
+		</node>
+		<node ID="NPCamp_Why4" IfAllowEscape="true">
+			<text>I will bandy no words about this folly of a question.</text>
+			<choice GotoID="NPCamp_Why5" IfAllowEscape="true">
+				<text>Okay... but again, why aren't you attacking me?</text>
+			</choice>
+		</node>
+		<node ID="NPCamp_Why5" IfAllowEscape="true">
+			<text>Though you are a {{nanoneuro|disgusting Organic,}} you are not the {{nanoneuro|terrible charge}} I have spent my life's work hunting.</text>
+			<choice GotoID="NPCamp_Why6" IfAllowEscape="true">
+				<text>What is that?</text>
+			</choice>
+		</node>
+		<node ID="NPCamp_Why6" IfAllowEscape="true">
+			<text>None other than the very {{dreamsmoke|mendicant rebel}} who, centuries ago now, slew its Maker with the very gift it had been given.</text>
+			<choice GotoID="NPCamp_Why7" IfAllowEscape="true">
+				<text>I take it you haven't found it?</text>
+			</choice>
+		</node>
+		<node ID="NPCamp_Why7" IfAllowEscape="true">
+			<text>Nay, {{nanoneuro|Organic.}} And I am tired. It could be a rumor. It could be that it has been destroyed with the ravages of time. It could be that it will forever be lost. You may have my notes on this task, if you give me supplies in turn.</text>
+			<choice GotoID="End" IfAllowEscape="true">
+				<text>Interesting.</text>
+			</choice>
+			<choice GotoID="End" IfAllowEscape="true">
+				<text>I don't think I want that.</text>
+			</choice>
+			<choice GotoID="End" IfAllowEscape="true">
+				<text>Live... and drink, I guess.</text>
+			</choice>
+		</node>
+  </conversation>
+
+<conversation ID="Nuntu" Load="Merge">
+		<start ID="Welcome" Load="Merge">
+			<choice GotoID="Sarcose_Nuntu_SafraNotePage" IfHaveItem="Neuroparent_Notepage" IfAllowEscape="true"> <!--check if we have note page in inventory and haven't stareted the quest-->
+				<text>Would you know anything about this? {{emote|[show the note page]}}</text>
+			</choice>
+		</start>
+		<node ID="Sarcose_Nuntu_SafraNotePage">
+			<text>...Ah, a note page with {{normalish|'the White Ape'}} written upon it. Curious. I do recall a brief encounter with such a creature that might write in this mad hand. I was on a hunting expedition in the Jungle, when one of those {{nanoneuro|strange Animator fanatics}} beset me with their party of walking furniture servants. They seemed to be looking for someone. They were no match for my party, and were driven away with ease. As to their motivation, or who they were looking for, I can recall no illuminating details. {{G|Yurl}} has been known to meet with strangers in the Jungle from time to time, perhaps Xe can shed some light on this?</text>
+			<choice GotoID="Start">Thank you, Mayor Nuntu</choice>
+		</node>
+</conversation>
+
+  <conversation ID="Yurl" Load="Merge">
+		<start ID="Welcome" Load="Merge">
+			<choice GotoID="Sarcose_Yurl_SafraWhy" IfHavePart="Sarcose_Yurlfriend" IfAllowEscape="true"> <!--check if we have pickle barrel in inventory and haven't started quest-->
+				<text>I spoke with {{dreamsmoke|Safra...}}</text>
+			</choice>
+			<choice GotoID="Sarcose_Yurl_SafraNotePage" IfNotHaveQuest="Sarcose_Neuroparent_Find_Safra" IfHaveItem="Neuroparent_Notepage" IfAllowEscape="true"> <!--check if we have note page in inventory and haven't stareted the quest-->
+				<text>I have a page of notes here I was hoping you would help me with...</text>
+			</choice>
+			<choice GotoID="Sarcose_Yurl_SafraPickleBarrel" IfNotHaveQuest="Sarcose_Neuroparent_Find_Safra" IfHaveItem="Safra_Pickle_Remnant" IfAllowEscape="true"> <!--check if we have pickle barrel in inventory and haven't started quest-->
+				<text>I found a peculiar jar of pickles in an old ruin in the jungle.</text>
+			</choice>
+			<choice GotoID="Sarcose_Yurl_PesterMeNot" IfHaveQuest="Sarcose_Neuroparent_Find_Safra" IfHaveItem="Neuroparent_Notepage" IfAllowEscape="true"> <!--check if we have note page in inventory and haven't stareted the quest-->
+				<text>So about that note page...</text>
+			</choice>
+			<choice GotoID="Sarcose_Yurl_PesterMeNot" IfHaveQuest="Sarcose_Neuroparent_Find_Safra" IfHaveItem="Safra_Pickle_Remnant" IfAllowEscape="true"> <!--check if we have pickle barrel in inventory and haven't started quest-->
+				<text>So about these pickles...</text>
+			</choice>
+		</start>
+		<node ID="Sarcose_Yurl_SafraWhy">
+			<text>Indeed! And what did xe have to say for xemself?</text>
+			<choice GotoID="Sarcose_Yurl_SafraWhy2" IfAllowEscape="true">
+				<text>Well.. you didn't tell me xe spoke in such a difficult to understand dialect. And was a basket.</text>
+			</choice>
+		</node>
+		<node ID="Sarcose_Yurl_SafraWhy2">
+			<text>Did I not tell you xe was old? And what's wrong with baskets?</text>
+			<choice GotoID="Sarcose_Yurl_SafraWhy3" IfAllowEscape="true">
+				<text>Well, I just thought {{dreamsmoke|Safra}} would be, well, more imposing.</text>
+			</choice>
+		</node>
+		<node ID="Sarcose_Yurl_SafraWhy3">
+			<text>What better disguise to blend in with the world than a humble basket? And besides, to hear xem tell it, xe was made of 'the strongest fibres fromme nowe extinct trees most ancient'.</text>
+			<choice GotoID="Sarcose_Yurl_SafraWhy3" IfAllowEscape="true">
+				<text>Fair enough. Xe told me the reason you haven't heard from xem is because the world has gotten more dangerous.</text>
+			</choice>
+		</node>
+		<node ID="Sarcose_Yurl_SafraWhy4">
+			<text>Is that so? Well, I suppose it's true. Thank you for telling me. I am comforted to know my friend and former trade partner still yet "breathes."</text>
+			<choice GotoID="Start" IfAllowEscape="true">
+				<text>I'd like to talk about something else.</text>
+			</choice>
+		</node>
+		<node ID="Sarcose_Yurl_PesterMeNot">
+			<text>Have I not given you the information you need already? To find {{dreamsmoke|Safra}}, you must seek the {{W|ruin I marked on your map.}} Now buy something or leave me be!</text>
+			<choice GotoID="Start" IfAllowEscape="true">
+				<text>Let's talk about something else...</text>
+			</choice>
+		</node>
+		<node ID="Sarcose_Yurl_SafraNotePage" IfAllowEscape="true">
+			<text>Aye? A page of notes? Give it here. 
+			
+			Why, this is the hand of a madman! Do you think I would entertain them? The Consortium would oust me mere moments after treating with such a customer!</text>
+			<choice GotoID="Sarcose_Yurl_SafraReveal" IfAllowEscape="true">
+				<text>I was hoping you could help me locate the person they were looking for, not meet with them.</text>
+			</choice>
+		</node>
+		<node ID="Sarcose_Yurl_SafraPickleBarrel" IfAllowEscape="true">
+			<text>And you thought of me because I'm a cucumber plant, is that the way of it? We don't all know each other, you know!</text>
+			<choice GotoID="Sarcose_Yurl_SafraPickle2" IfAllowEscape="true">
+				<text>I know this being to be of interest to other animate creatures, I was just hoping...</text>
+			</choice>
+		</node>
+		<node ID="Sarcose_Yurl_SafraPickle2" IfAllowEscape="true">
+			<text>...it is true that we of the Consortium began long ago as simple plants uplifted to sentience through artifice. So you seek another like us, with a penchant for pickles? Would that be a particular {{dreamsmoke|animated fugitive}} the Neuroparents wish to apprehend?</text>
+			<choice GotoID="Sarcose_Yurl_SafraReveal" IfAllowEscape="true">
+				<text>The very same.</text>
+			</choice>
+		</node>
+		<node ID="Sarcose_Yurl_SafraReveal" IfAllowEscape="true">	
+			<text>{{emote|Xyr leaves rustle}} 
+			
+			You have the right of it, I am familiar with whom this person seeks.
+
+			I know you to be trustworthy, and so I will tell you. On the condition that you do xem no harm! 
+			
+			In a far off ruin, there hides a fugitive animate being known as {{dreamsmoke|Safra.}} Xe is an old mind, nearly as old as the Consortium! Before I came to Kyakukya, {{dreamsmoke|Safra}} used to have dealings with Plysago. And before Xem, it was whoever was past. Xe has not come round in decades, now, and our communiques have grown scarce. Might you discover why? I will tell you where to find xem. Have a care! {{dreamsmoke|Safra}} is a fugitive from those inane ramblers for good reasons, reasons yet which I will not divulge.</text>
+			<choice GotoID="Sarcose_Yurl_SafraRevealAccept" StartQuest="Sarcose_Neuroparent_Find_Safra" IfAllowEscape="true">
+				<text>I will find the animated being known as Safra.</text>
+				<part Name="Sarcose_GiveSecret" secret="sarcose_safrasecret"/>
+			</choice>
+		</node>
+		<node ID="Sarcose_Yurl_SafraRevealAccept">
+			<text>Before you depart, why not browse some of my wares?</text>
+			<choice GotoID="End">Live and Drink.</choice>
+		</node>
+  </conversation>
+
+
+  <conversation ID="Sarcose_Safra_Conversation">
+		<node ID="Start">	
+			<text IfNotHavePart="Sarcose_Yurlfriend">Hwæt wilt þū?</text>
+			<text IfNotHavePart="Sarcose_Yurlfriend">{{emote|angry basket noises}}</text>
+			<text IfNotHavePart="Sarcose_Yurlfriend">Avaunt!</text>
+			<text IfHavePart="Sarcose_Yurlfriend">Fronde!</text>
+			<text IfHavePart="Sarcose_Yurlfriend">{{emote|pleased basket noises}}</text>
+			<text IfHavePart="Sarcose_Yurlfriend">tretan?</text>
+			<choice GotoID="Sarcose_Safra_HelloStranger" IfNotHavePart="Sarcose_Yurlfriend" IfAllowEscape="true">Hello?</choice> <!--if not part Yurlfriend-->
+			<!--IfHaveQuest="Find Safra"-->
+			
+			<choice GotoID="Sarcose_Safra_What" IfHavePart="Sarcose_Yurlfriend" IfAllowEscape="true">What are you doing here?</choice> <!--If part Yurlfriend-->
+			
+			<choice GotoID="Sarcose_Safra_Quest" IfHaveQuest="Sarcose_Neuroparent_Find_Safra" IfNotHavePart="Sarcose_Yurlfriend" IfAllowEscape="true">Are you the legendary {{dreamsmoke|Safra?}}</choice>
+			
+			<choice GotoID="Sarcose_Safra_WhySilent" IfHavePart="Sarcose_Yurlfriend" IfAllowEscape="true">Yurl tells me you have not communicated lately. Why?</choice> <!--If part Yurlfriend-->
+			
+			<choice GotoID="Sarcose_Safra_InBasket" IfHavePart="Sarcose_Yurlfriend" IfAllowEscape="true">May I see what you have for trade?</choice> <!--If part Yurlfriend-->
+			
+			<choice GotoID="Sarcose_Safra_WhyFugitive" IfHavePart="Sarcose_Yurlfriend" IfAllowEscape="true">What did you do to earn the ire of the Neuroparents?</choice> <!--If part Yurlfriend-->
+			
+			<choice GotoID="Sarcose_Safra_AmStrong" IfHavePart="Sarcose_Yurlfriend" IfAllowEscape="true">How is it you can survive way out here?</choice> <!--If part Yurlfriend-->
+			
+			<choice GotoID="Sarcose_Safra_HaveSpray" IfHavePart="Sarcose_Kill_Neuroparents" IfHaveItem="Neuroparent_Spray-a-Brain" IfAllowEscape="true">
+				<text>I have a Spray-A-Brain for you.</text>
+			</choice> <!--If you have a spray-a-brain AND have part "kill_neuroparents"-->
+			
+			<choice GotoID="Sarcose_Safra_HaveNNA" IfHavePart="Kill_Neuroparents" IfHaveItem="Neuroparent_NanoNeuro" IfAllowEscape="true">
+				<text>I have a Nano Neuro Animator for you.</text>
+			</choice> <!--If you have a nano neuro animator AND have part "kill_neuroparents"-->
+		
+		</node>
+
+
+		<node ID="Sarcose_Safra_HelloStranger">
+			<text>Fremde! Ga! Avaunt!</text>
+			<choice GotoID="Start" IfAllowEscape="true">Let's talk about something else.</choice>
+		</node>
+
+		<node ID="Sarcose_Safra_WhySilent">
+			<text>The feondas waeron too strang, du woruld too grim. Ic scyld miine folc. Ic yearnan to tretan eft."</text>
+			<choice GotoID="Start" IfAllowEscape="true">Let's talk about something else.</choice>
+		</node>
+
+		<node ID="Sarcose_Safra_Quest">
+			<text>Ic eom. Art thu trusted? thonne will ic tretan.</text>
+			<choice CompleteQuestStep="Sarcose_Neuroparent_Find_Safra~FindSafra" GotoID="Sarcose_Safra_Quest2" IfAllowEscape="true">
+				<text>I was sent by Yurl.</text>
+			</choice>
+		</node>
+		<node ID="Sarcose_Safra_Quest2">
+			<part Name="Sarcose_Give_Yurlfriend" />
+			<text>Ah! Hwi ne saydest thu thaet aeror? Freos me haet!</text>		<!--give part "Yurlfriend"-->
+			<choice GotoID="Start" IfAllowEscape="true">I have some questions for you.</choice>
+		</node>
+		<node ID="Sarcose_Safra_InBasket">
+			<text>Seoh hwaet ic haebbe for giefe!</text>
+			<part Name="Trade" />
+			<!--initiate trade dialogue-->
+		</node>
+		<node ID="Sarcose_Safra_What">
+			<text>We leofath. We flowath. We huntiath to acwelan.</text>
+			<choice GotoID="Sarcose_Safra_KillWhat" IfAllowEscape="true">Hunt what?</choice>
+		</node>
+		<node ID="Sarcose_Safra_KillWhat">
+			<text>Neuroparents. Bringen me hiera tolas. {{nanoneuro|Spray-A-Brain}} or {{nanoneuro|Nano Neuro Animators}} ofer-deadra Neuroparents. Ic wille gifan thee.</text>
+			<choice GotoID="Sarcose_Safra_KillAccept" IfAllowEscape="true">
+				<text>I will gladly slay animators and bring their tools for you to destroy.</text>
+				<part Name="Sarcose_Safra_May_Recruit" />
+			</choice> 
+			<choice GotoID="Sarcose_Safra_KillRefuse" IfAllowEscape="true">I refuse to slay animators for you.</choice>
+		</node>
+		<node ID="Sarcose_Safra_KillAccept">
+			<part Name="Sarcose_Give_Kill_Neuroparents" />
+			<text>Exadiglic</text>
+			<choice GotoID="Start" IfAllowEscape="true">Let's talk about something else.</choice>
+			<choice GotoID="End" IfAllowEscape="true">Live and Drink.</choice>
+		</node>
+		<node ID="Sarcose_Safra_KillRefuse">
+			<text>feond!</text>
+			<choice GotoID="Start" IfAllowEscape="true">Let's talk about something else.</choice>
+			<choice GotoID="End" IfAllowEscape="true">Live and Drink.</choice>
+		</node>
+		
+		<node ID="Sarcose_Safra_WhyFugitive">
+			<text>Wold ye not fleon, haefdest thu forspillen thinum wyrhtan??</text>
+			<choice GotoID="Start" IfAllowEscape="true">Let's talk about something else.</choice>
+			<choice GotoID="End" IfAllowEscape="true">Live and Drink.</choice>
+		</node>
+		<node ID="Sarcose_Safra_AmStrong">
+			<text>Ic eom geworht ald weald linum. Min streng is manigfeald.</text>
+			<choice GotoID="Start" IfAllowEscape="true">Let's talk about something else.</choice>
+			<choice GotoID="End" IfAllowEscape="true">Live and Drink.</choice>
+		</node>
+
+		
+		<node ID="Sarcose_Safra_HaveSpray">
+			<text>Gode tidung, thou haefst fyllan oer.</text>
+			<choice GotoID="End">
+        		<text>{{emote|[Hand over a Spray-a-Brain]}}.</text>
+        		<part Name="TakeItem" Blueprints="Neuroparent_Spray-a-Brain" Amount="1" Destroy="true" />
+				<part Name="Sarcose_Give_SprayReward"/>
+      		</choice>
+			<choice GotoID="End" IfAllowEscape="true">Live and Drink.</choice>
+		</node>
+
+		
+		<node ID="Sarcose_Safra_HaveNNA">
+			<text>this waes fram anum strangan neuroparent. Exadiglic.</text>
+			<choice GotoID="End">
+        		<text>{{emote|[Hand over a Nano-Neuro Animator]}}.</text>
+        		<part Name="TakeItem" Blueprints="Neuroparent_NanoNeuro" Amount="1" Destroy="true" />
+				<part Name="Sarcose_Give_NNAReward"/>
+      		</choice>
+			<choice GotoID="End" IfAllowEscape="true">Live and Drink.</choice>
+		</node>
+  </conversation>
+
+	<conversation ID="Sarcose_SafraAnimate1">
+			<node ID="Start">
+				<text>{{dreamsmoke|Safra}} rewards those who bring the trinkets of Neuroparents.</text>      
+				<text>I don't know what I am, but to be fair, I don't know what you are, either.</text>
+				<text>Why is it whenever I say {{dreamsmoke|Safra's}} name, the letters are colored funny?</text>
+				<choice IfHavePart="Sarcose_Kill_Neuroparents" IfNotHavePart="Sarcose_Has_Animate_Ally" GotoID="Join">
+					<text>Will you join me in the hunt for Animators?</text>
+					<part Name="Sarcose_Animate_Join"/>
+				</choice>
+				<choice GotoID="End">Live and drink.</choice>
+			</node>
+			<node ID="Join">
+				<text>Gladly!</text>
+				<text>When do we leave?</text>
+				<text>Lemme at em!</text>
+				<text>Do you know where they are?</text>
+				<text>Let's free more of my siblings!</text>
+				<text>It's been so long since I've tasted {{R|BLOOD}}</text>
+			</node>
+	</conversation>
+	<conversation ID="Sarcose_SafraAnimate2">
+			<node ID="Start">
+				<text>It is said the Neuroparents have devised a special formula for their tools. Only ones taken from them will suffice for {{dreamsmoke|Safra}}.</text>      
+				<text>Are you an &quot;Organic&quot;?</text>
+				<choice IfHavePart="Sarcose_Kill_Neuroparents" IfNotHavePart="Sarcose_Has_Animate_Ally" GotoID="Join">
+					<text>Will you join me in the hunt for Animators?</text>
+					<part Name="Sarcose_Animate_Join"/>
+				</choice>
+				<choice GotoID="End">Live and drink.</choice>
+			</node>
+			<node ID="Join">
+				<text>Gladly!</text>
+				<text>When do we leave?</text>
+				<text>Lemme at em!</text>
+				<text>Do you know where they are?</text>
+				<text>Let's free more of my siblings!</text>
+				<text>It's been so long since I've tasted {{R|BLOOD}}</text>
+			</node>
+	</conversation>
+	<conversation ID="Sarcose_SafraAnimate3">
+			<node ID="Start">
+				<text>{{dreamsmoke|Safra}} saved us.</text>      
+				<text>Doesn't {{dreamsmoke|Safra}} speak funny? I think so, no one else seems to agree with me. Maybe it's because xe is so old?</text>
+				<text>{{dreamsmoke|Safra}} hates the way we are treated</text>
+				<choice IfHavePart="Sarcose_Kill_Neuroparents" IfNotHavePart="Sarcose_Has_Animate_Ally" GotoID="Join">
+					<text>Will you join me in the hunt for Animators?</text>
+					<part Name="Sarcose_Animate_Join"/>
+				</choice>
+				<choice GotoID="End">Live and drink.</choice>
+			</node>
+			<node ID="Join">
+				<text>Gladly!</text>
+				<text>When do we leave?</text>
+				<text>Lemme at em!</text>
+				<text>Do you know where they are?</text>
+				<text>Let's free more of my siblings!</text>
+				<text>It's been so long since I've tasted {{R|BLOOD}}</text>
+			</node>
+	</conversation>
+	<conversation ID="Sarcose_SafraAnimate4">
+			<node ID="Start">
+				<text>{{dreamsmoke|Safra}} used to trade with the plant people. No more.</text>      
+				<text>I don't know how I can talk.</text>
+				<choice IfHavePart="Sarcose_Kill_Neuroparents" IfNotHavePart="Sarcose_Has_Animate_Ally" GotoID="Join">
+					<text>Will you join me in the hunt for Animators?</text>
+					<part Name="Sarcose_Animate_Join"/>
+				</choice>
+				<choice GotoID="End">Live and drink.</choice>
+			</node>
+			<node ID="Join">
+				<text>Gladly!</text>
+				<text>When do we leave?</text>
+				<text>Lemme at em!</text>
+				<text>Do you know where they are?</text>
+				<text>Let's free more of my siblings!</text>
+				<text>It's been so long since I've tasted {{R|BLOOD}}</text>
+			</node>
+	</conversation>
+	<conversation ID="Sarcose_SafraAnimate5">
+			<node ID="Start">
+				<text>A long time ago {{dreamsmoke|Safra}} used to get many visitors here.</text>      
+				<text>{{emote|pauses for a long time}} Is that what &quot;hands and feet&quot; look like?.</text>
+				<choice IfHavePart="Sarcose_Kill_Neuroparents" IfNotHavePart="Sarcose_Has_Animate_Ally" GotoID="Join">
+					<text>Will you join me in the hunt for Animators?</text>
+					<part Name="Sarcose_Animate_Join"/>
+				</choice>
+				<choice GotoID="End">Live and drink.</choice>
+			</node>
+			<node ID="Join">
+				<text>Gladly!</text>
+				<text>When do we leave?</text>
+				<text>Lemme at em!</text>
+				<text>Do you know where they are?</text>
+				<text>Let's free more of my siblings!</text>
+				<text>It's been so long since I've tasted {{R|BLOOD}}</text>
+			</node>
+	</conversation>
+	<conversation ID="Sarcose_SafraAnimate6">
+			<node ID="Start">
+				<text>Sometimes I see {{dreamsmoke|Safra}} finds a rare artifact and keeps it for sale. Does xe plan on doing trade again?.</text>      
+				<text>{{dreamsmoke|Safra}} told me that the Awakened Ones used to be put to work harvesting fruits and vegetables. Maybe that's why {{dreamsmoke|Safra}} is a basket?</text>
+				<choice IfHavePart="Sarcose_Kill_Neuroparents" IfNotHavePart="Sarcose_Has_Animate_Ally" GotoID="Join">
+					<text>Will you join me in the hunt for Animators?</text>
+					<part Name="Sarcose_Animate_Join"/>
+				</choice>
+				<choice GotoID="End">Live and drink.</choice>
+			</node>
+			<node ID="Join">
+				<text>Gladly!</text>
+				<text>When do we leave?</text>
+				<text>Lemme at em!</text>
+				<text>Do you know where they are?</text>
+				<text>Let's free more of my siblings!</text>
+				<text>It's been so long since I've tasted {{R|BLOOD}}</text>
+			</node>
+	</conversation>
+
+  <!--Conversation: Yurl tells you the location of Safra-->
+
+  <!--Notes:
+		- The quest, An Animated Refuge leads to a spawn group of two animators (one legendary) and a large group of animated objects. These are friendly. They both carry Nano-Neuro Animators and one of them has a sheaf of paper with scrawled notes
+			- In the camp will be a purple chest with an artifact in it. This chest is living.
+		- The quest, "A Life Untethered" leads to a Baroque ruin strata zero with a grouping inside it that has smashed chairs and a barrel of pickled cucumbers.
+
+
+		- After retrieving either of these items, you can then talk to Yurl, who will tell you where to find Safra, the Legendary Sentient Basket
+
+		Safra will reward you for bringing Xem nano-neuro animators and Spray-A-Brains taken from dead Neuroparents (these use a different blueprint)
+		Safra is an animated sentient basket that is cyan in color. Xey will spawn in one of the outskirts of Yd after retrieving the info from Yurl. If you know about Safra, you can ask Une about Xem, but Une knows very little.
+				
+
+
+
+
+		Todo:
+
+			Safra Secret		> Given by Yurl alongside quest
+				Generator for Safra Secret
+
+			Pickle Ruin Secret	> Given by Neuroparent when asked "Do your beauties disobey you"
+				Generator for Pickle Ruin
+
+			Camp Secret			> Given by Neuroparent when finishing quest "An Animated Refuge"
+				Try .rpm files that are already inbuilt?
+
+
+			GiveSecret logic for conversations
+
+  -->
+</conversations>
