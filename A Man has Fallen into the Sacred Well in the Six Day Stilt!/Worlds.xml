@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<worlds>
+	<world Name="JoppaWorld" Load="Merge">
+		<cell Name="SixDayStilt" Inherits="SixDayStilt" ApplyTo="TerrainSixDayStilt" LandingZone="1,2" Mutable="false">
+      		<zone Level="11" x="1" y="1" Name="The Sacred Well" ProperName="true" IncludeStratumInZoneDisplay="false" HasWeather="false">
+      			<builder Class="SaltDunes"></builder>
+      			<map FileName="Hazzary453_amhf_StiltWell.rpm"></map>
+      			<music Track="Track1"/>
+    		</zone>
+    	</cell>
+	</world>
+</worlds>

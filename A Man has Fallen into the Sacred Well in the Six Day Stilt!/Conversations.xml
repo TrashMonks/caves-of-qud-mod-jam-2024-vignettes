@@ -1,0 +1,279 @@
+<conversations>
+  <conversation ID="Hazzary453_amhf_Memphimin">
+    <node ID="Start">
+      <text>
+        {{emote|*wet gurgling*}}~
+        {{emote|*blank stare*}}~
+        {{emote|*Memphimin is still for a moment*}}~
+        {{emote|*servos whirring*}}~
+        {{emote|*sudden clanking*}}~
+        {{emote|*trips over a steel pipe*}}~
+        {{emote|*beeps*}}~
+        {{emote|*soft crunch*}}~
+        {{emote|*gives no indication of understanding*}}~
+        {{emote|*wanders aimlessly*}}~
+        {{emote|*does not notice you*}}~
+        {{emote|*an offering from above strikes them on the head*}}~
+        {{emote|*low buzzing*}}
+      </text>
+      <choice Target="End">...</choice>
+    </node>
+  </conversation>
+  <conversation ID="WardenEsthers">
+    <start ID="Welcome"> 
+      <text>Live and drink, traveler. Welcome to the Stilt.</text>
+      <text>Watch your footing traveler.</text>
+      <choice Target="Hazzary453_amhf_incident1" IfHaveState="Hazzary453_amhf_SpokenAboutIncident">So, about that pilgrim in the well...</choice>
+      <choice Target="Hazzary453_amhf_incident1" IfHaveState="Hazzary453_amhf_SignSeen" IfNotHaveState="Hazzary453_amhf_SpokenAboutIncident" SetBooleanState="Hazzary453_amhf_SpokenAboutIncident,true">What's with the sign by the well?</choice>
+      <choice Target="Hazzary453_amhf_incident1" IfHaveState="Hazzary453_amhf_RumorHeard" IfNotHaveState="Hazzary453_amhf_SpokenAboutIncident"  SetBooleanState="Hazzary453_amhf_SpokenAboutIncident,true">I heard talk of a man who fell into the sacred well.</choice>
+    </start>
+
+    <node ID="Hazzary453_amhf_incident1">
+      <text>
+        {{emote|*Esther scowls briefly*}} About a month ago, one of the pilgrims fell into the well. The priest was furious, quite the sight to behold. What was worse, it drew quite the crowd and not an idle one. In all the years we sisters have spent as wardens here, never has there been such sustained ruckus.
+      </text>
+      <choice Target="Hazzary453_amhf_incident2">...</choice>
+    </node>
+    <node ID="Hazzary453_amhf_incident2">
+      <text>
+        The merchants loved it though, so many customers to peddle their wares to. They loved it so much that they tried to keep it all going for as long as possible. A few even took to throwing supplies down the well for them, food, bandages, that sort of thing. Such support can't be said for some of the other pilgrims, however. The real problem with the merchants was when one of them tried to sabotage the rescue efforts.
+      </text>
+      <choice Target="Hazzary453_amhf_PilgrimResponse1">What of the other pilgrims?</choice>
+      <choice Target="Hazzary453_amhf_RescueEffort1">What happened to the pilgrim in the well?</choice>
+      <choice Target="Welcome">Thank you. I have more to ask.</choice>
+      <choice Target="End">Live and drink, wardens</choice>
+    </node>
+
+    <node ID="Hazzary453_amhf_PilgrimResponse1">
+      <text>
+        They didn't take too kindly to someone defiling their sacred well and the high priest refused to close it off while they were trapped down there. Their heckles and shouts soon devolved into "sacrificing" many heavy, blunt artifacts. 
+      </text>
+      <choice Target="Hazzary453_amhf_PilgrimResponse2">...</choice>
+    </node>
+    <node ID="Hazzary453_amhf_PilgrimResponse2">
+      <text>
+        Who knew the pilgrims carried so many metal chairs. Whenever they would run out of things to throw at the pour soul, they went off to buy more from the merchants.
+      </text>
+      <choice Target="Hazzary453_amhf_RescueEffort1">What happened to the pilgrim in the well?</choice>
+      <choice Target="Welcome">Thank you. I have more to ask.</choice>
+      <choice Target="End">Live and drink, wardens</choice>
+    </node>
+
+    <node ID="Hazzary453_amhf_RescueEffort1">
+      <text>
+        {{emote|*Esther sighs*}} We couldn't get them out. Initially, we weren't even sure how to get down to them safely. The priest was adamant we don't do anything that might tarnish the Kasaphesense of the well. To make matters worse, some of the merchants didn't want them freed at all, they said it would reduce the patronage to their businesses. Did their best to hamper the efforts to rescue them.
+      </text>
+      <choice Target="Hazzary453_amhf_RescueEffort2">...</choice>
+    </node>
+    <node ID="Hazzary453_amhf_RescueEffort2">
+      <text>
+        In the end, we rigged up a crane to lower someone down, but no one would volunteer. I can't say I blame them, if their entry disturbs the plasmatic core and its power is restored it is sure to obliterate everything at the bottom of the well, as is its purpose. Few are willing to take that risk.
+      </text>
+      <choice Target="Hazzary453_amhf_PilgrimResponse1">What of the other pilgrims?</choice>
+      <choice Target="Hazzary453_amhf_Crane" SetBooleanState="Hazzary453_amhf_KnowsAboutCrane,true" IfNotHaveState="Hazzary453_amhf_CraneTaken">Do you still have the crane?</choice>
+      <choice Target="Hazzary453_amhf_Recoiler">Could you not have dropped a recoiler down for them?</choice>
+      <choice Target="Welcome">Thank you. I have more to ask.</choice>
+      <choice Target="End">Live and drink, wardens</choice>
+    </node>
+
+    <node ID="Hazzary453_amhf_Recoiler">
+      <text>
+        We thought of that, but no. Whenever a recoiler is available here, the pilgrims purchase it and throw it into the well. Something about people being able to teleport to the destination of the pilgrimage being abhorrent to them.
+      </text>
+      <choice Target="Hazzary453_amhf_PilgrimResponse1">What of the other pilgrims?</choice>
+      <choice Target="Hazzary453_amhf_Crane" SetBooleanState="Hazzary453_amhf_KnowsAboutCrane,true" IfNotHaveState="Hazzary453_amhf_CraneTaken">Do you still have the crane?</choice>
+      <choice Target="Welcome">Thank you. I have more to ask.</choice>
+      <choice Target="End">Live and drink, wardens</choice>
+    </node>
+
+    <node ID="Hazzary453_amhf_Crane">
+      <text>
+        Oh, fancy yourself a spelunker huh? No, I don't have it, we gave it over to Sheba, the librarian. If you reckon you can help, I'd try talking to them.
+      </text>
+      <choice Target="Welcome">Thank you. I have more to ask.</choice>
+      <choice Target="End">Live and drink, wardens</choice>
+    </node>
+
+  </conversation>
+  <conversation ID="MechanimistLibrarian" Load="Merge">
+    <node ID="Start">
+      <choice Target="Hazzary453_amhf_incident1" IfHaveState="Hazzary453_amhf_SpokenAboutIncident">What do you know about the incident at the well?</choice>
+      <choice Target="Hazzary453_amhf_incident1" IfHaveState="Hazzary453_amhf_SignSeen" IfNotHaveState="Hazzary453_amhf_SpokenAboutIncident" SetBooleanState="Hazzary453_amhf_SpokenAboutIncident,true">What's with that sign over by the well?</choice>
+      <choice Target="Hazzary453_amhf_incident1" IfHaveState="Hazzary453_amhf_RumorHeard" IfNotHaveState="Hazzary453_amhf_SpokenAboutIncident"  SetBooleanState="Hazzary453_amhf_SpokenAboutIncident,true">I heared talk of a man who fell into the sacred well.</choice>
+      <choice Target="Hazzary453_amhf_crane1" IfNotHaveState="Hazzary453_amhf_CraneTaken" IfHaveState="Hazzary453_amhf_KnowsAboutCrane">Wardens Esther said you should have the crane to get into the well.</choice>
+      <choice Target="Hazzary453_amhf_RemoteControl2" IfHaveActiveQuest="Fix the Plasmatic Core" IfNotFinishedQuestStep="Fix the Plasmatic Core~Repair the Plasmatic Core" SetBooleanState="Hazzary453_amhf_AskTinker,true">Do you know how I might fix the core without being destroyed?</choice>
+      <choice Target="Hazzary453_amhf_success" IfNotFinishedQuest="Fix the Plasmatic Core" IfFinishedQuestStep="Fix the Plasmatic Core~Repair the Plasmatic Core">It is done. The core is fixed and the well is restored.</choice>
+    </node>
+
+    <node ID="Hazzary453_amhf_incident1">
+      <text>
+        {{emote|*Sheba Hagadias thinks for a moment*}} Ah yes, a terrible accident that.
+
+        I hear one of the pilgrims accidentally fell into the well. My duty to the library keeps me busy so I'm a little fuzzy on the details. I think Wardens Esther led the rescue effort, if you want to know more, you can try speaking to them. Alternatively, there should be a book around here somewhere that details the events.
+      </text>
+      <choice Target="Start"> Thank you. I have more to ask.</choice>
+      <choice Target="End">Live and drink, chronicler.</choice>
+      <choice Target="Hazzary453_amhf_crane1" IfHaveState="Hazzary453_amhf_KnowsAboutCrane" IfNotHaveState="Hazzary453_amhf_CraneTaken">The Warden mentioned they gave you the crane to get into the well.</choice>
+    </node>
+
+    <node ID="Hazzary453_amhf_crane1">
+      <text>
+        Yes. I loath to admit it, but since the well has been broken the traffic to the stilt has declined, and the library along with it.
+
+        Word travels fast in this land, if you can fix the plasmatic core I'm sure the pilgrims will come back.
+      </text>
+      <choice Target="Hazzary453_amhf_crane2" >...</choice>
+    </node>
+
+    <node ID="Hazzary453_amhf_crane2">
+      <text>
+        The problem is, that once the plasmatic core starts working again, everything in the well will be destroyed in an instant.
+
+        Further complicating the matter, groaning can still be heard coming from the well occasionally. With how long it has been since he fell in, the pilgrim is no doubt long dead. I haven't a clue what might be making such a noise still but I doubt it is anything that would take kindly to your presence. You might have to deal with that before you can fix the core.
+
+        Are you willing to fix the well?
+      </text>
+      <choice Target="Hazzary453_amhf_RemoteControl" SetBooleanState="Hazzary453_amhf_AskTinker,true">Maybe, is there any way I could fix it without being destroyed by the core?</choice>
+      <choice Target="Hazzary453_amhf_AcceptQuest">I am.</choice>
+      <choice Target="Hazzary453_amhf_RejectQuest">I will consider it.</choice>
+    </node>
+
+    <node ID="Hazzary453_amhf_RemoteControl">
+      <text>
+        Not that I know of I'm afraid, but someone might. I'm sure some skilled tinkerer could think of a way to do so, maybe go find one and ask their opinion.
+      </text>
+      <choice Target="Hazzary453_amhf_AcceptQuest">I'll do what I can.</choice>
+      <choice Target="Hazzary453_amhf_RejectQuest">Perhaps I shall try it another time.</choice>
+    </node>
+
+    <node ID="Hazzary453_amhf_RemoteControl2">
+      <text>
+        I do not I'm afraid, but someone might. I'm sure some skilled tinkerer could think of a way to do so, maybe go find one and ask their opinion.
+      </text>
+      <choice Target ="Start">Thank you, I have more to ask.</choice>
+      <choice Target="End">Thank you for the advice. Live and drink, chronicler.</choice>
+    </node>
+
+    <node ID="Hazzary453_amhf_AcceptQuest">
+      <text>
+        Thank you, here is the crane, good luck.
+      </text>
+      <choice Target="End" StartQuest="Fix the Plasmatic Core" SetBooleanState="Hazzary453_amhf_CraneTaken,true"> <!---->
+       <text>Live and drink, chronicler.</text>
+       <part Name="ReceiveItem" Blueprints="Hazzary453_amhf_WellCrane"/>
+      </choice>
+    </node>
+
+    <node ID="Hazzary453_amhf_RejectQuest">
+      <text>
+        That's more than most have been willing to do, I can't expect you to take that risk.
+
+        Is there anything else I can do for you?
+      </text>
+      <choice Target="Start">Actually, there is.</choice>
+      <choice Target="End">Not today. Live and drink, chronicler.</choice>
+    </node>
+
+    <node ID="Hazzary453_amhf_success">
+      <text>
+        What fantastic news you bring, you have my thanks =name=.
+
+        Here, I've recently gotten this recoiler, take it. Use it if you ever wish to return to the stilt.
+      </text>
+      <choice Target="End">
+        <text>Thank you. Live and drink, chronicler.</text>
+        <part Name="QuestHandler" QuestID="Fix the Plasmatic Core" Action="Complete"/>
+        <part Name="RecieveItem" Blueprints="Six Day Stilt Recoiler" Identify="Six Day Stilt Recoiler"/>
+      </choice>
+    </node>
+
+  </conversation>
+
+  <conversation ID="JoppaArgyve" Load="Merge">
+    <node ID="Start" IfNotHaveQuest="Fetch Argyve a Knickknack">
+      <choice Target="Hazzary453_amhf_AskHowNotApprentice" IfNotFinishedQuest="Weirdwire Conduit... Eureka!" IfHaveState="Hazzary453_amhf_AskTinker" IfNotFinishedQuestStep="Fix the Plasmatic Core~Repair the Plasmatic Core">I need to fix the well at the Stilt, but it might kill me. Can you help?</choice>
+    </node>
+    <node ID="Start" IfHaveActiveQuest="Fetch Argyve a Knickknack">
+      <choice Target="Hazzary453_amhf_AskHowNotApprentice" IfNotFinishedQuest="Weirdwire Conduit... Eureka!" IfHaveState="Hazzary453_amhf_AskTinker" IfNotFinishedQuestStep="Fix the Plasmatic Core~Repair the Plasmatic Core">I need to fix the well at the Stilt, but it might kill me. Can you help?</choice>
+    </node>
+    <node ID="Start" IfFinishedQuest="Fetch Argyve a Knickknack" IfNotHaveQuest="Fetch Argyve Another Knickknack">
+      <choice Target="Hazzary453_amhf_AskHowNotApprentice" IfNotFinishedQuest="Weirdwire Conduit... Eureka!" IfHaveState="Hazzary453_amhf_AskTinker" IfNotFinishedQuestStep="Fix the Plasmatic Core~Repair the Plasmatic Core">I need to fix the well at the Stilt, but it might kill me. Can you help?</choice>
+    </node>
+    <node ID="Start" IfHaveActiveQuest="Fetch Argyve Another Knickknack">
+      <choice Target="Hazzary453_amhf_AskHowNotApprentice" IfNotFinishedQuest="Weirdwire Conduit... Eureka!" IfHaveState="Hazzary453_amhf_AskTinker" IfNotFinishedQuestStep="Fix the Plasmatic Core~Repair the Plasmatic Core">I need to fix the well at the Stilt, but it might kill me. Can you help?</choice>
+    </node>
+    <node ID="Start" IfNotHaveQuest="Weirdwire Conduit... Eureka!">
+      <choice Target="Hazzary453_amhf_AskHowNotApprentice" IfNotFinishedQuest="Weirdwire Conduit... Eureka!" IfHaveState="Hazzary453_amhf_AskTinker" IfNotFinishedQuestStep="Fix the Plasmatic Core~Repair the Plasmatic Core">I need to fix the well at the Stilt, but it might kill me. Can you help?</choice>
+    </node>
+    <node ID="Start" IfHaveActiveQuest="Weirdwire Conduit... Eureka!">
+      <choice Target="Hazzary453_amhf_AskHowNotApprentice" IfNotFinishedQuest="Weirdwire Conduit... Eureka!" IfHaveState="Hazzary453_amhf_AskTinker" IfNotFinishedQuestStep="Fix the Plasmatic Core~Repair the Plasmatic Core">I need to fix the well at the Stilt, but it might kill me. Can you help?</choice>
+    </node>
+    <node ID="Start" IfNotHaveQuest="A Canticle for Barathrum">
+      <choice Target="Hazzary453_amhf_AskHowApprentice" IfFinishedQuest="Weirdwire Conduit... Eureka!" IfHaveState="Hazzary453_amhf_AskTinker" IfNotFinishedQuestStep="Fix the Plasmatic Core~Repair the Plasmatic Core">I need to fix the well at the Stilt, but it might kill me. Can you help?</choice>
+    </node>
+    <node ID="Start" IfHaveQuest="A Canticle for Barathrum">
+      <choice Target="Hazzary453_amhf_AskHowApprentice" IfFinishedQuest="Weirdwire Conduit... Eureka!" IfHaveState="Hazzary453_amhf_AskTinker" IfNotFinishedQuestStep="Fix the Plasmatic Core~Repair the Plasmatic Core">I need to fix the well at the Stilt, but it might kill me. Can you help?</choice>
+    </node>
+    <node ID="Hazzary453_amhf_AskHowNotApprentice">
+      <text>
+        {{emote|*Argyve grumbles*}} Have you not better tasks to be doing? I could have you doing something much more important.
+
+        Well if you must. It needn't be you that does the fixing. Plenty a skilled tinkerer has remotely piloted a robot to do dangerous work. I'm sure you can find a way to figure that out.
+      </text>
+      <choice Target="End">Thank you for the advice. Live and drink.</choice>
+    </node>
+    <node ID="Hazzary453_amhf_AskHowApprentice">
+      <text>
+        My apprentice! An interesting conundrum! Though one with a rather simple solution. 
+
+        Drones! Many a skilled tinkerer has remotely controlled a robot to do dangerous work. See if you can find a ganglionic teleprojector, that should let you do what you need.
+      </text>
+      <choice Target="End">Thank you for the advice Argyve. Live and drink.</choice>
+    </node>
+  </conversation>
+
+  <conversation ID="Q Girl" Load="Merge">
+
+    <node ID="Start" IfNotFinishedQuest="More Than a Willing Spirit">
+      <choice ID="Hazzary453_amhf_AskHowID" Target="Hazzary453_amhf_AskHow"  IfHaveState="Hazzary453_amhf_AskTinker" IfNotFinishedQuestStep="Fix the Plasmatic Core~Repair the Plasmatic Core">I'm trying to fix the plasmatic core in the well at the Stilt, but it might kill me. Can you help?</choice>
+    </node>
+
+    <node ID="Start" IfHaveActiveQuest="A Call to Arms">
+      <choice Target="Hazzary453_amhf_NotNow"  IfHaveState="Hazzary453_amhf_AskTinker" IfNotFinishedQuestStep="Fix the Plasmatic Core~Repair the Plasmatic Core">I'm trying to fix the plasmatic core in the well at the Stilt, but it might kill me. Can you help?</choice>
+    </node>
+    <node ID="Start">
+      <choice UseID="Hazzary453_amhf_AskHowID"/>
+    </node>
+
+    <node ID="Hazzary453_amhf_AskHow">
+      <text>
+        Quetzal! Yes, Yes! I know just the thing =factionaddress:Barathrumites=! If the work is dangerous, you should be far from it! If you can get a hold of a ganglionic teleprojector you can use it to take control of a robot, like the waydroids we have here.
+
+        Once you're in control of it, you can have it do all the dangerous work. Just maybe don't expect it back when you're done.
+      </text>
+      <choice Target="End">Thank you for the advice. Live and drink.</choice>
+    </node>
+
+    <node ID="Hazzary453_amhf_NotNow">
+      <text>
+        Now isn't the time for that friend, let us solve the issue at hand first!
+      </text>
+      <choice Target="End">Of course.</choice>
+    </node>
+
+  </conversation>
+
+  <conversation ID="YlaHaj" Load="Merge">
+    <node ID="Start">
+      <choice Target="Hazzary453_amhf_AskHow" IfHaveState="Hazzary453_amhf_AskTinker" IfNotFinishedQuestStep="Fix the Plasmatic Core~Repair the Plasmatic Core">I'm trying to fix the well at the Stilt, but it might kill me. Can you help?</choice>
+    </node>
+    <node ID="Hazzary453_amhf_AskHow">
+      <text>
+        If it might kill you, it should not be you that does the job no? A good droid should suffice for the task. See if you can get a hold of a ganglionic teleprojector. That will let you take direct control of a robot and you can have it fix this core for you.
+
+        I have a ganglionic teleprojector or two pass through my stock from time to time. If you would like, I could hold the next one I get for you.
+      </text>
+      <choice Target="End">That would be helpful. Live and drink.</choice>
+    </node>
+  </conversation>
+</conversations>

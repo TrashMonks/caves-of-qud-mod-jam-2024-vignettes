@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Map Width="80" Height="25">
+  <cell X="37" Y="14">
+    <object Name="Hazzary453_amhf_WarningSign"></object>
+  </cell>
+  <cell X="23" Y="17">
+    <object Name="Hazzary453_amhf_WellDiary"></object>
+  </cell>
+</Map>

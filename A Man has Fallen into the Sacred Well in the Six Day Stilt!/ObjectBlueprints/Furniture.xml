@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<objects>
+
+  <object Name="Hazzary453_amhf_WarningSign" Inherits="Sign">
+    <part Name="Render" DisplayName="sign" Tile="Items/sw_sign_boot.bmp" Occluding="false" />
+    <part Name="Chat" Says="Watch your step." ShowInShortDescription="true" />
+    <part Name="SetStateOnSeen" State="Hazzary453_amhf_SignSeen"/>
+  </object>
+
+  <!--<object Name="StiltWell" Load="Merge">
+    <tag Name="ExcavatoryTerrainFeature"/>
+    <tag Name="Gender" Value="plural"/>
+  </object>-->
+
+  <object Name="Hazzary453_amhf_BrokenCore" Inherits="MountedFurniture">
+    <part Name="Render" RenderLayer="7" Tile="Hazzary453_amhf/CoreBroken.png" DisplayName="Plasmatic Core [{{r|broken}}]" Occluding="true" ColorString="&amp;K" DetailColor="C"/>
+    <part Name="Physics" Solid="true"/>
+    <part Name="Repair" FixedBlueprint="Hazzary453_amhf_FixedCore" Difficulty="0"/>
+    <stat Name="Hitpoints" Value="5000" />
+    <tag Name="Gender" Value="neuter" />
+    <part Name="Description" Short="A dormant font of annihilation. Sparks flit in and out of existence in the mirror-steel basin at its crest. It waits patiently for a tinkerer to grant it its purpose once again."/>
+    <part Name="QuestStepFinisher" Trigger="Seen" Quest="Fix the Plasmatic Core" Step="Decend into the Well"/>
+    <part Name="NoMove"/>
+  </object>
+
+  <object Name="Hazzary453_amhf_FixedCore" Inherits="MountedFurniture">
+    <part Name="Render" RenderLayer="7" Tile="Hazzary453_amhf/CoreFixed.png" DisplayName="Plasmatic Core" Occluding="true" ColorString="&amp;b" DetailColor="y"/>
+    <part Name="Physics" Solid="true"/>
+    <part Name="LiquidProducer" Liquid="neutronflux" VariableRate="0-1" ChanceSkipSameCell="0" PureOnFloor="true"/>
+    <stat Name="Hitpoints" Value="500000000" />
+    <part Name="Description" Short="An awakened font of annihilation. Plasma roars held aloft above the mirror-steel basin at its crest. All that make the mistake of coming too close are hungrily rendered down into atoms and returned to the Kasaphesense."/>
+    <part Name="QuestStepFinisher" Trigger="Created" Quest="Fix the Plasmatic Core" Step="Decend into the Well"/>
+    <part Name="QuestStepFinisher" Trigger="Created" Quest="Fix the Plasmatic Core" Step="Repair the Plasmatic Core"/>
+    <part Name="NoMove"/>
+  </object>
+
+  <object Name="StiltWell" Load="Merge">
+    <part Name="StairsDown" Connected="false"/>
+    <tag Name="KeyObject" Value="Hazzary453_amhf_WellCrane"/>
+    <part Name="Interesting" Explanation="A long dark decent. You'd need a rappelling device in order to get down." Order="3000"/>
+  </object>
+
+
+</objects>

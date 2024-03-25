@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<objects>
+
+  <object Name="Hazzary453_amhf_Memphimin" Inherits="BaseHumanoid">
+    <part Name="Description" Short="A horrible conjoining of flesh and steel and circuitry shambles before you, animated by unknown forces. What remains on this pilgrim is adorned with an asortment of dented offerings to the well. A fetid mixture of blood and oil seeps out of the seams between man and technology. The shrieking and whirring and grinding of metal on metal assaults your ears as the putrid stench of death fills your nose."/>
+    <part Name="Render" DisplayName="Memphimin" Tile="Hazzary453_amhf/Memphimin.png" RenderString="y" TileColor="&amp;y" ColorString="&amp;y" DetailColor="C" />
+   
+    <part Name="Brain" Hostile="true" Factions="Pariahs-100"/>
+    <tag Name="Gender" Value="male" />
+    <part Name="ConversationScript" ConversationID="Hazzary453_amhf_Memphimin" ClearLost="false" />
+    <tag Name="Culture" Value="Pariahs" />
+    
+    <stat Name="Level" Value="28" />
+    <stat Name="Hitpoints" Value="250"/>
+    <stat Name="AV" Value="15"/>
+    <stat Name="DV" Value="2"/>
+    <stat Name="Strength" sValue ="16"/>
+    <stat Name="Agility" sValue="30"/>
+    <stat Name="Toughness" sValue="22"/>
+    <stat Name="Ego" sValue="8"/>
+    <tag Name="InventoryPopulationTable" Value="Hazzary453_amhf_Memphimin_Inventory"/>
+    <tag Name="NoTrade" />
+
+    <part Name="GivesRep" />
+    <tag Name="WaterRitualLiquid" Value="oil"/>
+    <xtagWaterRitual NoJoin="true"/>
+    <tag Name="staticFaction1" Value="Mechanimists,hate,defiling the sacred well" />
+    <tag Name="staticFaction2" Value="Merchants,friend,creating a spectacle that attracted customers"/>
+    <tag Name="staticFaction3" Value="Wardens,dislike,causing trouble at the Stilt"/>
+    <tag Name="NoHateFactions" Value="Pariahs" />
+    <part Name="FinishQuestStepWhenSlain" Quest="Fix the Plasmatic Core" Step="Kill the Intruder"/>
+
+    <tag Name="NoEquip" Value="Torch"/>
+    <tag Name="Role" Value="NPC"/>
+    <xtagGrammar Proper="true"/>
+    <part Name="MentalShield"/>
+    <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
+    <tag Name="NoLibrarian"/>
+  </object>  
+</objects>
