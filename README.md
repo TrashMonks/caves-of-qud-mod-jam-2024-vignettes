@@ -3,7 +3,7 @@ Mod jam pack for the [March 2024 Caves of Qud Mod Jam: Vignettes](https://itch.i
 
 A gigantic reinforced flexiweaved thanks to everyone who participated! — The mod jam organizers
 
-Press `ctrl-shift-W` (can be re-bound under `Key Mapping > Debug > Mod Jam Wish Menu`) to open a menu for easy wishing for the pack's contents (thanks gnarf!).
+Press `ctrl-shift-W` (can be re-bound under `Key Mapping > Debug > Mod Jam Wish Menu`) or wish for `modjampack` to open a menu for easy wishing for the pack's contents (thanks gnarf!).
 
 **A note on balance**: this pack is intended to let one sample from the various things added by all of the mods and will likely result a mildly chaotic Caves of Qud run. Each of these mods is available individually at the submissions page linked above, should you wish for a more curated experience.
 

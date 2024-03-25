@@ -157,7 +157,7 @@ namespace XRL.World.Parts
         }
 
 
-        [WishCommand("menu")]
+        [WishCommand("modjampack")]
         public static void WishMenu()
         {
             CacheInit();
