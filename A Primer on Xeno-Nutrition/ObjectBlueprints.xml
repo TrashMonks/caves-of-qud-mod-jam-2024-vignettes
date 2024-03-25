@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<objects>
+<!-- Mod book by Hopspring Cinder Shores, a thousand apologies if this breaks anything. -->
+  <object Name="Xenonutrition" Inherits="Book">
+    <part Name="Render" DisplayName="{{W|A Primer on Xeno-Nutrition}}" ColorString="&amp;W" RenderString="=" RenderLayer="5" Tile="Items/sw_book_4.bmp" TileColor="&amp;W" DetailColor="Y"/>
+    <part Name="Description" Short="This large-print volume is made of hand-pulped and pressed banana paper. Its cover is preserved with resin."/>
+    <part Name="Book" ID="Xenonutrition"/>
+    <part Name="Commerce" Value="1"/>
+  </object>
+</objects>
