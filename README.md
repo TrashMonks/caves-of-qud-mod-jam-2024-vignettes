@@ -1,10 +1,35 @@
 # caves-of-qud-mod-jam-2024-vignettes
-Mod jam pack for the March 2024 Caves of Qud Mod Jam: Vignettes
+Mod jam pack for the [March 2024 Caves of Qud Mod Jam: Vignettes](https://itch.io/jam/caves-of-qud-modding-jam-2). See all the entries [here](https://itch.io/jam/caves-of-qud-modding-jam-2/entries)!
 
+A gigantic reinforced flexiweaved thanks to everyone who participated! — The mod jam organizers
+
+Press `ctrl-shift-W` (can be re-bound under `Key Mapping > Debug > Mod Jam Wish Menu`) to open a menu for easy wishing for the pack's contents (thanks gnarf!).
+
+**A note on balance**: this pack is intended to let one sample from the various things added by all of the mods and will likely result a mildly chaotic Caves of Qud run. Each of these mods is available individually at the submissions page linked above, should you wish for a more curated experience.
+
+This version of the pack is for the (now) current 206.X version of Caves of Qud.
+
+**Warning**: Do not run this pack simultaneous with any of the mods contained within.
+
+## Installation
+
+TODO: Github download link
+TODO: Steam workshop link
+TODO: Steam workshop collection link
+
+Please refer to the Caves of Qud Wiki for [mod installation instructions](https://wiki.cavesofqud.com/wiki/Modding:Installing_a_mod).
+
+## Updates & Fixes
+
+We will provide hands-on assistance with updating and fixing mods in the pack until the end of March 2024. Pull requests with updates will be welcome at any time!
+
+## License
+
+This mod pack has been licensed under Creative Commons Zero v1.0 Universal.
 
 ## Included in this pack
 
-All the entries from: https://itch.io/jam/caves-of-qud-modding-jam-2/entries
+All the entries from [here](https://itch.io/jam/caves-of-qud-modding-jam-2/entries)!
 
 ### Lost Media by Dr. Bread
 * [itch.io](https://dr-bread.itch.io/caves-of-qud-vignettes-entry-lost-media)
