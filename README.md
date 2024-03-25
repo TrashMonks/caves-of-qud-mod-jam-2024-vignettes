@@ -105,5 +105,5 @@ All the entries from [here](https://itch.io/jam/caves-of-qud-modding-jam-2/entri
 
 ### Chair Enthusiast by gnarf
 * [itch.io](https://gnarf37.itch.io/chair-enthusiast)
-* [github](https://bitbucket.org/gnarf37/qud-chair-enthusiast/src/main/)
+* [bitbucket](https://bitbucket.org/gnarf37/qud-chair-enthusiast/src/main/)
 * [steam](https://steamcommunity.com/sharedfiles/filedetails/?id=3185807934&searchtext=)

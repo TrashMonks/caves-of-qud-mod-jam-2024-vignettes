@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<zonetemplates>
+  
+  <zonetemplate Name="AUWreckedMecha-LostEnclave" RegionSize="500">
+    <global>
+      <population Table="AUWreckedMecha-LostEnclave"></population>
+    </global>
+  </zonetemplate>
+
+</zonetemplates>

@@ -9,7 +9,7 @@ namespace Sophie.Vignettes2024 {
     public class WorldBuilder : IJoppaWorldBuilderExtension {
         public override void OnAfterBuild(JoppaWorldBuilder builder) {
             var zoneManager = The.ZoneManager;
-
+			//UnityEngine.Debug.Log("the script ran");
             // Find a random mountains tile to place the location.
             var location = builder.popMutableLocationOfTerrain("Jungle", centerOnly: false);
             var zoneID = builder.ZoneIDFromXY("JoppaWorld", location.X, location.Y);
@@ -23,13 +23,13 @@ namespace Sophie.Vignettes2024 {
 
             // Customize the following as you see fit
             zoneManager.AddZonePostBuilder(zoneID, nameof(XRL.World.ZoneBuilders.Music), "Track", "Overworld1");
-            zoneManager.SetZoneName(zoneID, "my zone name", Article: "the", Proper: true);
+            zoneManager.SetZoneName(zoneID, "loud ruin", Article: "a", Proper: true);
 
             var secret = builder.AddSecret(
                 zoneID,
-                "the lair of My Creature",
+                "a loud ruin",
                 new string[3] { "lair", "robot", "tech" },
-                "Lairs",
+                "Ruins",
                 "$sophie_vignettes2024"
             );
         }

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<worlds>
+	<world Name="JoppaWorld" Load="Merge">
+		<cell Name="Putus Outpost" Inherits="RuinsCell"  ApplyTo="Putus Outpost" LandingZone="1,1" Mutable="false">
+			<zone Level="5-9" x="0-2" y="0-2" Name="open sky" IndefiniteArticle="the" HasWeather="true" WindSpeed="0-60" WindDirections="N,NW,NW,W,W,SW,S,SE" WindDuration="50-3000" AmbientBed="Sounds/Ambiences/amb_bed_ruins">
+				<builder Class="Sky" />
+			</zone>
+            <zone Level="10" x="1" y="1" Name="Putus Outpost"  IncludeStratumInZoneDisplay="false" WindSpeed="0-60" WindDirections="N,NW,NW,W,W,SW,S,SE" WindDuration="50-3000" AmbientBed="Sounds/Ambiences/amb_bed_ruins" HasWeather="true" DisableForcedConnections="Yes">
+				<map FileName="Putus Outpost.rpm" />	
+				<builder Class="Music" Track="Onward" Chance="100" />
+				
+			</zone>
+			<!--
+			<zone Level="10" x="0-2" y="0-2" Name="outskirts" NameContext="Putus Outpost" IndefiniteArticle="some" HasWeather="true" WindSpeed="0-60" WindDirections="N,NW,NW,W,W,SW,S,SE" WindDuration="50-3000">
+        		<builder Class="Ruins"></builder>
+        		<music Track="Overworld1" />
+        		
+     	 	</zone>
+			-->
+        </cell>
+    </world>
+</worlds>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<conversations>
+	
+    <conversation ID="AUWreckedMecha-Gilda">
+
+    <start ID="Greetings">
+      <text>
+        Oh a visitor! Hello, =player.formalAddressTerm= how did you find your way here?
+        
+        Excuse, me if you will. It has been sometime since any new friendly faces where here.
+      </text>
+      <choice GotoID="HowLong">...How long have you lived out here?</choice>
+      <choice GotoID="OtherBarathrumites">Could you tell me about other Barathrumites?</choice>
+      <choice GotoID="TemplarSlayer" IfFinishedQuest="A Call to Arms">Grit Gate was attacked by Putus Templar. Do you fair well here?</choice>
+      <choice GotoID="End">Live and drink.</choice>
+    </start>
+
+    <node ID="HowLong">
+      <text>
+        {{emote|*Gilda chuckles.*}}
+
+        Years. Decades Maybe.
+        
+        I don't rightly remember how long it's been since I had a friendly visitor. Much less how long ago we arrived here.
+        
+        ...You are friendly right?
+      </text>
+      <choice GotoID="HowDidYouGetHere">How did you get here in the first place?</choice>
+      <choice GotoID="OtherBarathrumites">Could you tell me about other Barathrumites?</choice>
+      <choice GotoID="TemplarSlayer" IfFinishedQuest="A Call to Arms">Grit Gate was attacked by Putus Templar. Do you fair well here?</choice>
+      <choice GotoID="End">Live and drink.</choice>
+    </node>
+
+    <node ID="HowDidYouGetHere">
+      <text>
+        {{emote|*Gilda laughs nervously.*}}
+        
+        It's quite embarrassing really. I wont't let my embarrassment stifle your curiousity, though.
+        
+        ...My group and I got lost after finding a set of ruins. My poor navigation skills are to blame, I'm afraid.
+      </text>
+      <choice GotoID="Start">I'd like to ask about something else.</choice>
+      <choice GotoID="TemplarSlayer" IfFinishedQuest="A Call to Arms">Grit Gate was attacked by Putus Templar. Do you fair well here?</choice>
+      <choice GotoID="End">Live and drink.</choice>
+    </node>
+    
+    <node ID="TemplarSlayer">
+      <text>
+        My condolences friend, or perhaps my congratulations? Since you are here, I assume Grit Gate still stands?
+        
+        I have weathered my fair share of attacks from the templar myself, with my fellows here we fair well for now.
+        
+        ...Do you know the way there?
+      </text>
+      <choice GotoID="OtherBarathrumites">Could you tell me about the other Barathrumites?</choice>
+      <choice GotoID="HowLong">How long have you lived out here?</choice>
+      <choice GotoID="End">Live and drink.</choice>
+    </node>
+    
+    <node ID="OtherBarathrumites">
+      <text>
+        I know not of them, =name=, only of Barathrum, and the tinkers around me.
+        
+        Barathrum, kin I have never met, I have heard a great deal about him, it is hard not too he is ancient after all.
+        
+        The tinkers, my friends, their secrets are not mine to share.
+      </text>
+      <choice GotoID="Start">I'd like to ask about something else.</choice>
+      <choice GotoID="TemplarSlayer" IfFinishedQuest="A Call to Arms">Grit Gate was attacked by Putus Templar. Do you fair well here?</choice>
+      <choice GotoID="End">Live and drink.</choice>
+    </node>
+  </conversation>
+
+</conversations>

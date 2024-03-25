@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<objects>
+  <object Name="Gearlink_CASKOFROSEWINE_FortunadoCorpse" Inherits="Corpse">
+    <part Name="Render" DisplayName="composted remains" ColorString="&amp;w" TileColor="&amp;w" />
+    <part Name="Description" Short="What once was a plant is now a smear of foul smelling humus." />
+    <part Name="Food" Message="It tastes like a mouthful of soil." />
+    <part Name="Interesting" />
+		<tag Name="NoSparkingQuest" />
+    <tag Name="Gender" Value="plural" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+
+  <object Name="Gearlink_CASKOFROSEWINE_EtchedPottery" Inherits="Book">
+    <part Name="Physics" Weight="6" Conductivity="5" />
+    <part Name="Render" DisplayName="{{W|etched pottery}}" ColorString="&amp;w" Tile="Items/sw_clay_pot.bmp" DetailColor="y" />
+    <part Name="Description" Short="A broken clay vessel smelling of rot. Someone's last words have been scratched into it." />
+    <!-- Not using the Book part here because the text of the EtchedPottery will
+    include the text of a generated secret, like the MerchantAdvertisement object. -->
+    <part Name="Gearlink_CASKOFROSEWINE_EtchedPottery" />
+    <part Name="Commerce" Value="1" />
+		<xtagGrammar Proper="false" adjunctNoun="" />
+    <tag Name="NoSparkingQuest" />
+    <xtagGrammar Proper="false" />
+  </object>
+</objects>
