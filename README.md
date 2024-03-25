@@ -61,7 +61,7 @@ All the entries from [here](https://itch.io/jam/caves-of-qud-modding-jam-2/entri
 ### Chair Enthusiast by gnarf
 * [itch.io](https://gnarf37.itch.io/chair-enthusiast)
 * [bitbucket](https://bitbucket.org/gnarf37/qud-chair-enthusiast/src/main/)
-* [steam](https://steamcommunity.com/sharedfiles/filedetails/?id=3185807934&searchtext=)
+* [steam](https://steamcommunity.com/sharedfiles/filedetails/?id=3185807934)
 
 ### Gilda the lost by AurySystem
 * [itch.io](https://aurysystem.itch.io/wreckedmecha)
@@ -88,7 +88,7 @@ All the entries from [here](https://itch.io/jam/caves-of-qud-modding-jam-2/entri
 
 ### Putus Outpost by Pwyllion
 * [itch.io](https://pwyllion.itch.io/putus-outpost)
-* [steam](https://steamcommunity.com/sharedfiles/filedetails/?id=3196416503&searchtext=outpost)
+* [steam](https://steamcommunity.com/sharedfiles/filedetails/?id=3196416503)
 
 ### Slowly, Slowly - Caves of Qud Mod Jam 2024 by SwanLord
 * [itch.io](https://swanlord.itch.io/slowly-slowly)
