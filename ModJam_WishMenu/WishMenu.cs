@@ -13,10 +13,10 @@ using XRL.World;
 namespace XRL.World.Parts
 {
     [HasWishCommand]
-    [HasGameBasedStaticCache]
+    [HasModSensitiveStaticCache]
     public class ModJam_Wish_Handler : IPlayerPart
     {
-        public string COMMAND_NAME = "ModJam_Wish_Menu";
+        public static string COMMAND_NAME = "ModJam_Wish_Menu";
 
         public class WishCommandXML
         {
@@ -45,6 +45,15 @@ namespace XRL.World.Parts
 
         [ModSensitiveStaticCache]
         public static List<WishCommandXML> MenuItems = new List<WishCommandXML>();
+
+        [ModSensitiveCacheInit]
+        public static void Init()
+        {
+            if (!AbilityManager.WorldMapAllowed.Contains(COMMAND_NAME))
+            {
+                AbilityManager.WorldMapAllowed.Add(COMMAND_NAME);
+            }
+        }
 
         public static void CacheInit()
         {
