@@ -1,4 +1,4 @@
-# Vignettes Mod Pack
+# Vignettes Mash-Up Mod Pack
 Mod jam pack for the [March 2024 Caves of Qud Mod Jam: Vignettes](https://itch.io/jam/caves-of-qud-modding-jam-2). See all the entries [here](https://itch.io/jam/caves-of-qud-modding-jam-2/entries)!
 
 A gigantic reinforced flexiweaved thanks to everyone who participated! — The mod jam organizers
@@ -13,7 +13,7 @@ This version of the pack is for the 206.X version of Caves of Qud.
 
 ## Installation
 
-TODO: Github download link
+* [GitHub](https://github.com/TrashMonks/caves-of-qud-mod-jam-2024-vignettes/archive/refs/heads/main.zip)
 TODO: Steam workshop link
 TODO: Steam workshop collection link
 
