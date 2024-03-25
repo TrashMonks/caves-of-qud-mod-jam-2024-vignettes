@@ -32,35 +32,35 @@ This mod pack has been licensed under Creative Commons Zero v1.0 Universal.
 All the entries from [here](https://itch.io/jam/caves-of-qud-modding-jam-2/entries)!
 
 ### A Man has Fallen into the Sacred Well in The Six Day Stilt by Hazzary453
-* [itch.io](https://hazzary453.itch.io/a*man*has*fallen*into*the*sacred*well*in*the*six*day*stilt)
+* [itch.io](https://hazzary453.itch.io/a-man-has-fallen-into-the-sacred-well-in-the-six-day-stilt)
 * [steam](https://steamcommunity.com/sharedfiles/filedetails/?id=3196529738)
 
 ### Ambivalent Animators by Sarcose
-* [itch.io](https://sarcose.itch.io/ambivalent*animators)
+* [itch.io](https://sarcose.itch.io/ambivalent-animators)
 * [steam](https://steamcommunity.com/sharedfiles/filedetails/?id=3197696691)
 
 ### An Ancient Exoskeleton by c67f
-* [itch.io](https://c67f.itch.io/an*ancient*exoskeleton)
+* [itch.io](https://c67f.itch.io/an-ancient-exoskeleton)
 * [steam](https://steamcommunity.com/sharedfiles/filedetails/?id=3197970638)
 
-### A Primer on Xeno*Nutrition by hops99
-* [itch.io](https://hops99.itch.io/xenonutrition*qud*mod)
+### A Primer on Xeno-Nutrition by hops99
+* [itch.io](https://hops99.itch.io/xenonutrition-qud-mod)
 
 ### Astral Medusae by snakefangox
-* [itch.io](https://snakefangox.itch.io/astral*medusae)
-* [github](https://github.com/snakefangox/astral*medusae)
+* [itch.io](https://snakefangox.itch.io/astral-medusae)
+* [github](https://github.com/snakefangox/astral-medusae)
 * [steam](https://steamcommunity.com/sharedfiles/filedetails/?id=3198069446)
 
 ### Cacophany by MONOPOLATOR
 * [itch.io](https://monopolator.itch.io/cacophany)
 
 ### The Cask of Rose Wine by Gearlink
-* [itch.io](https://gearlink.itch.io/the*cask*of*rose*wine)
+* [itch.io](https://gearlink.itch.io/the-cask-of-rose-wine)
 * [github](https://github.com/Gearlink0/CaskOfRoseWine)
 
 ### Chair Enthusiast by gnarf
-* [itch.io](https://gnarf37.itch.io/chair*enthusiast)
-* [bitbucket](https://bitbucket.org/gnarf37/qud*chair*enthusiast/src/main/)
+* [itch.io](https://gnarf37.itch.io/chair-enthusiast)
+* [bitbucket](https://bitbucket.org/gnarf37/qud-chair-enthusiast/src/main/)
 * [steam](https://steamcommunity.com/sharedfiles/filedetails/?id=3185807934&searchtext=)
 
 ### Gilda the lost by AurySystem
@@ -69,41 +69,41 @@ All the entries from [here](https://itch.io/jam/caves-of-qud-modding-jam-2/entri
 * [steam](https://steamcommunity.com/sharedfiles/filedetails/?id=3196054903)
 
 ### Give Me A Sign by Gearlink
-* [itch.io](https://gearlink.itch.io/give*me*a*sign)
+* [itch.io](https://gearlink.itch.io/give-me-a-sign)
 * [github](https://github.com/Gearlink0/GiveMeASign)
 
 ### Lost Media by Dr. Bread
-* [itch.io](https://dr*bread.itch.io/caves*of*qud*vignettes*entry*lost*media)
-* [github](https://github.com/Dr*Bread/Lost*Media)
+* [itch.io](https://dr-bread.itch.io/caves-of-qud-vignettes-entry-lost-media)
+* [github](https://github.com/Dr-Bread/Lost-Media)
 
 ### Mummified Ape by Trollemperor
-* [itch.io](https://trollemperor.itch.io/mummified*ape)
+* [itch.io](https://trollemperor.itch.io/mummified-ape)
 * [github](https://github.com/CrabEmperor/Vignettes2024)
 * [steam](https://steamcommunity.com/workshop/filedetails/?id=3197002884)
 
 ### The Perfect Cup by Big Simple
-* [itch.io](https://b0xman.itch.io/the*perfect*cup)
-* [github](https://github.com/b0xman/qud*the*perfect*cup)
+* [itch.io](https://b0xman.itch.io/the-perfect-cup)
+* [github](https://github.com/b0xman/qud-the-perfect-cup)
 * [steam](https://steamcommunity.com/sharedfiles/filedetails/?id=3197836622)
 
 ### Putus Outpost by Pwyllion
-* [itch.io](https://pwyllion.itch.io/putus*outpost)
+* [itch.io](https://pwyllion.itch.io/putus-outpost)
 * [steam](https://steamcommunity.com/sharedfiles/filedetails/?id=3196416503&searchtext=outpost)
 
-### Slowly, Slowly * Caves of Qud Mod Jam 2024 by SwanLord
-* [itch.io](https://swanlord.itch.io/slowly*slowly)
+### Slowly, Slowly - Caves of Qud Mod Jam 2024 by SwanLord
+* [itch.io](https://swanlord.itch.io/slowly-slowly)
 * [steam](https://steamcommunity.com/sharedfiles/filedetails/?id=3197975573)
 
 ### Water Bandits by RainbowDragoon
-* [itch.io](https://rainbowdragoon.itch.io/water*bandits)
-* [github](https://github.com/RainbowDragoon/CavesofQud*Rainbow*Mods/tree/main/Water*Bandits)
+* [itch.io](https://rainbowdragoon.itch.io/water-bandits)
+* [github](https://github.com/RainbowDragoon/CavesofQud-Rainbow-Mods/tree/main/Water-Bandits)
 * [steam](https://steamcommunity.com/sharedfiles/filedetails/?id=3197952080)
 
 ### Wavering Laser Pistol by JuneTooJuly
-* [itch.io](https://junetoojuly.itch.io/wavering*laser*pistol)
+* [itch.io](https://junetoojuly.itch.io/wavering-laser-pistol)
 * [steam](https://steamcommunity.com/sharedfiles/filedetails/?id=3196581135)
 
 ### Xoteotin, Mechanical Guardian by kernelmethod
-* [itch.io](https://kernelmethod.itch.io/xoteotin*mechanical*guardian)
+* [itch.io](https://kernelmethod.itch.io/xoteotin-mechanical-guardian)
 * [github](https://github.com/kernelmethod/Vignettes2024)
 * [steam](https://steamcommunity.com/sharedfiles/filedetails/?id=3195300330)
