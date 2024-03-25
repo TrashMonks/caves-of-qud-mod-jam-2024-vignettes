@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<objects>
+	
+ <object Name="BookbyBread" Inherits="Book">
+    <part Name="Render" DisplayName="{{W|Tyrannosaurus Revs: Official Strategy Guide}}" ColorString="&amp;r" RenderString="=" RenderLayer="5" Tile="Items/sw_book_1.bmp" TileColor="&amp;w" DetailColor="G" />
+    <part Name="Book" ID="BookbyBread" />
+    <part Name="Commerce" Value="50" />
+  </object>
+</objects>

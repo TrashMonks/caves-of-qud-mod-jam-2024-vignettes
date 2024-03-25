@@ -164,6 +164,21 @@ namespace XRL.World.Parts
             }
         }
 
+        [WishCommand("revealandgoto")]
+        public static void RevealAndGoto(string rest)
+        {
+            var note = Qud.API.JournalAPI.GetMapNote(rest);
+            if (note != null && !note.Revealed)
+            {
+                Qud.API.JournalAPI.RevealMapNote(note);
+            }
+            if (note != null)
+            {
+                XRL.World.Capabilities.Wishing.HandleWish(The.Player, $"goto:{note.ZoneID}");
+            }
+
+        }
+
         public override bool WantEvent(int ID, int cascade)
         {
             return base.WantEvent(ID, cascade) || ID == CommandEvent.ID;
@@ -186,6 +201,6 @@ public class ModJam_PlayerMutator : IPlayerMutator
     {
         // modify the player object when a New Game begins
         // for example, add a custom part to the player:
-        player.AddPart<XRL.World.Parts.ModJam_Wish_Handler>();
+        player.RequirePart<XRL.World.Parts.ModJam_Wish_Handler>();
     }
 }

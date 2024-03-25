@@ -1,0 +1,9 @@
+{
+	"id": "BookbyBread",
+	"title": "Ancient Game Guide",
+	"description": "Adds a book that instructs the player on strategy for an otherwise unknown computer game.",
+	"Version": "negative a million",
+	"author": "Dr Bread",
+	"tags": "Item",
+	"PreviewImage": "preview.png"
+}

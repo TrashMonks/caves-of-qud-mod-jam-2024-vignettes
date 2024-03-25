@@ -1,0 +1,9 @@
+{
+    "id": "Bigsimple_Modjam2",
+    "title": "The Perfect Cup",
+    "description": "My submission for the Caves of Qud Modding Jam: Vignettes which adds a special cup as well as a point of origin and story.",
+    "version": "0.1.0",
+    "author": "{{M|BigSimple}}",
+    "tags": "Item",
+    "PreviewImage": "preview.png"
+}
