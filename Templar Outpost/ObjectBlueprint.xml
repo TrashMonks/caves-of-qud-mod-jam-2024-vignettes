@@ -4,7 +4,7 @@
   <object Name="Corrupt_Templar" Inherits="Templar">
        <part Name="Render"  TileColor="G"  Tile="Creatures/Corrupt Templar" DetailColor="Y" DisplayName="Corrupt Templar" />
     <part Name="Description" Short="Bloodied and Defiled mail hang across =pronouns.possessive= crooked spine and Misshapen jaw. The color too was sucked out of =pronouns.possessive= irises by =pronouns.possessive= tangled lineage, and =pronouns.possessive= abnormal mutations coursed across =pronouns.possessive= body intertwining with chrome polished augmentations." />
-    <part Name="Brain" Hostile="True" Factions="Putus Templar -600" />
+    <part Name="Brain" Hostile="True" Factions="Putus Templar-600" />
     <stat Name="Level" Value="24" />
     <stat Name="Hitpoints" Value="120" />
     <stat Name="Strength" Boost="4" />
