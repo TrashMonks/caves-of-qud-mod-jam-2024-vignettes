@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<objects>
+
+  <object Name="Lark_SenpatHelmet" Inherits="BaseHelmet">
+    <part Name="Armor" AV="2" DV="-3" WornOn="Head" />
+    <part Name="Render" DisplayName="ancient great helm" ColorString="&amp;y" RenderString="]" Tile="lark/lark_senpat_helmet.png" DetailColor="W" />
+    <part Name="Commerce" Value="35" />
+    <part Name="Description" Short="an imposing great helm bearing the visage of a snail." />
+    <part Name="Physics" Weight="14" />
+    <part Name="Metal" />
+    <tag Name="Tier" Value="3" />
+	<tag Name="NoSparkingQuest" />
+	<tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+
+  <object Name="Lark_SenpatCudgel" Inherits="BaseCudgel">
+    <part Name="Render" DisplayName="pearl staff" Tile="lark/lark_senpat_cudgel.png" ColorString="&amp;M" DetailColor="Y" />
+    <part Name="Physics" Weight="4" />
+    <part Name="MeleeWeapon" MaxStrengthBonus="1" BaseDamage="1d2" Skill="Cudgel" Stat="Strength" />
+    <part Name="Commerce" Value="22" />
+    <part Name="Description" Short="A comely staff that, inlaid with shining pearls, is no less indicative of simplicty; for is the rainbow not a blessing shared by all?" />
+    <tag Name="Tier" Value="0" />
+    <tag Name="NoSparkingQuest" />
+	<tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+
+</objects>

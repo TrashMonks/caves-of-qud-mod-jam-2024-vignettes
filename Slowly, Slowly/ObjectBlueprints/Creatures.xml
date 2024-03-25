@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<objects>
+
+<!-- SENPAT -->
+
+  <object Name="Lark_Senpat" Inherits="NPC">
+    <part Name="Brain" Hostile="false" Factions="Hermits-100" Calm="true" Wanders="false" />
+    <part Name="Description" Short="Markings lace the great shell that covers old Senpat, scars so ancient that he is stronger with them than without. With some exertion, he cranes his long neck towards the horizon; no distance can surpass the mountains he has climbed, standing tall in a place only he can know." />
+    <part Name="Render" DisplayName="Senpat" Tile="lark/lark_senpat.png" RenderString="S" ColorString="&amp;y" DetailColor="W" />
+
+		<!-- STATS -->
+
+    <stat Name="Strength" Value="11" />
+    <stat Name="Agility" Value="8" />
+    <stat Name="Toughness" Value="26" />
+    <stat Name="Intelligence" Value="14" />
+    <stat Name="Willpower" Value="22" />
+    <stat Name="Ego" Value="20" />
+    <stat Name="Hitpoints" Value="50" />
+    <stat Name="Level" Value="12" />
+    <stat Name="Speed" Value="40" />
+    <tag Name="Role" Value="Tank" />
+	
+		<!-- SKILLS & MUTATIONS -->
+	
+    <skill Name="Endurance" />
+    <skill Name="Discipline_Meditate" />
+    <skill Name="Discipline_FastingWay" />
+    <skill Name="Discipline_IronMind" />
+    <skill Name="Cudgel" />
+    <skill Name="Cudgel_Bludgeon" />
+    <skill Name="Cudgel_Conk" />
+    <mutation Name="Carapace" Level="6" />
+
+		<!-- ITEMS -->
+
+    <inventoryobject Blueprint="Lark_SenpatCudgel" Number="1" />
+    <inventoryobject Blueprint="Lark_SenpatHelmet" Number="1" />
+
+		<!-- PERSONHOOD -->
+
+    <part Name="AIPilgrim" TargetObject="StiltWell" />
+    <part Name="AIShopper" />
+    <part Name="ConversationScript" ConversationID="Lark_Senpat" />
+    <tag Name="Genotype" Value="Mutated Human" />
+    <tag Name="NoSleep" />
+    <tag Name="Gender" Value="male" />
+	<xtagGrammar Proper="true" />
+    <tag Name="staticFaction1" Value="Mechanimists,friend,his ascetic nature" />
+    <tag Name="NoHateFactions" Value="Mechanimists,Issachari,Dromad" />
+    <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
+  </object>
+
+</objects>

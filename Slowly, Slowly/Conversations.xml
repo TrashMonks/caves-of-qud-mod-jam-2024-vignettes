@@ -1,0 +1,90 @@
+
+<conversations>
+
+<!-- SENPAT CONVERSATION -->
+
+  <conversation ID="Lark_Senpat">
+
+    <node ID="Start" IfNotHaveQuest="O Glorious Shekhinah!">
+		<text>
+			Live and drink, =player.formalAddressTerm=. May the salt be merciful underfoot.
+		</text>
+		<choice GotoID="Who">I am =name=. What may I call you?</choice>
+		<choice GotoID="What">Why do you walk the salt?</choice>
+		<choice GotoID="Where">Where do your travels bring you?</choice>
+		<choice GotoID="End">Live and drink.</choice>
+	</node>
+
+    <node ID="Start" IfHaveActiveQuest="O Glorious Shekhinah!">
+      <text>
+			Live and drink, =player.formalAddressTerm=. May the salt be merciful underfoot.
+      </text>
+      <!-- <choice GotoID="FinishExploringRedrock1" IfFinishedQuestStep="What's Eating the Watervine?~Travel to Redrock"> </choice> -->
+		<choice GotoID="Who">I am =name=. What may I call you?</choice>
+		<choice GotoID="What">Why do you walk the salt?</choice>
+		<choice GotoID="Where">Where do your travels bring you?</choice>
+		<choice GotoID="Where_Stilt">Do your wanderings bring you to the Six Day Stilt?</choice>
+		<choice GotoID="End">Live and drink.</choice>
+    </node>
+
+	<node ID="Who">
+		<text>
+			Many greetings, =name=. I am called by many names, but the one I choose is Senpat.
+		</text>
+		<choice GotoID="Who_Many">Many names?</choice>
+		<choice GotoID="Start">It is good to meet you, Senpat.</choice>
+	</node>
+
+	<node ID="Who_Many">
+		<text>
+			Many sunrises have seen me called 'Foolish.' I do not mind being a fool.~
+			The salt is not good for my shell, and so I have been called 'Oblivious.' I do not mind knowing less than others.~
+			My eye is not as good as it once was, and some have called me 'Blind.' It's true; I follow the rhythm of my heart and the sound of the wind, and must trust them in the absence of sight.~
+			I must look quite powerful to you, but some have called me 'Weak.' Out of cowardice, I have allowed weakness to hold back my arm and my tongue. I think it suits me.
+		</text>
+		<choice GotoID="Start">That is quite the name.</choice>
+	</node>
+
+	<node ID="What">
+		<text>
+			Because it pleases me.~
+			Because the sun enriches me.~
+			Because my heart gives me no choice.~
+			Because motion compels me, always.
+		</text>
+		<choice GotoID="Start">There is sense in that.</choice>
+	</node>
+
+	<node ID="Where">
+		<text>
+			To the Six Day Stilt and beyond. I may rest, even for years at a time, but I will never stop.
+		</text>
+		<choice GotoID="Where2">Why is that?</choice>
+		<choice GotoID="End">Then good luck to you.</choice>
+	</node>
+
+	<node ID="Where">
+		<text>
+			Oh, I never cease in my wandering. It is only the destination that fails to keep up.
+		</text>
+		<choice GotoID="End">May it match your pace some day.</choice>
+	</node>
+
+	<node ID="Where_Stilt">
+		<text>
+			In this moment, yes. In the next, I can not be so sure.
+		</text>
+		<choice GotoID="Where_Stilt2">Do you need help in going?</choice>
+		<choice GotoID="End">May you find what you seek there.</choice>
+	</node>
+
+	<node ID="Where_Stilt2">
+		<text>
+			Not so. You need not trouble yourself with me, for I aim to go where you can not.
+		</text>
+		<choice GotoID="End">Understandable, good snail.</choice>
+	</node>
+
+  </conversation>
+
+</conversations>
