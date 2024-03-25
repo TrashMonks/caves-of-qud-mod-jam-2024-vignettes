@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<objects>
+	<object Name="Tabbygun" Inherits="Laser Pistol">
+		<part Name="Render" DisplayName="{{phase-harmonic|wavering laser pistol}}" RenderLayer="6" ColorString="&amp;M" />
+		<part Name="Commerce" Value="500" />
+		<part Name="MissileWeapon" Skill="Pistol" AmmoChar="&amp;C&#15;" ShotsPerAction="1" AmmoPerAction="1" ShotsPerAnimation="1" WeaponAccuracy="2" />
+		<part Name="Description" Short="The metallic pistol is painted pink, and a faint scent of fish lingers around the grip. Oddly, the pistol shows no signs of battle. As you start to look away, its form scatters into static in the corner of your eye." />
+		<part Name="RulesDescription" Text="This weapon uses more power to fire, but hits attract a friend from the astral plane." />
+		<part Name="TinkerItem" Bits="0006" CanDisassemble="true" CanBuild="false" />
+		<tag Name="Mods" Value="None" />
+		<part Name="AddMod" Mods="ModTabbyspawn,ModPhaseHarmonic"/>
+		<tag Name="Storied" Value="true" />
+		<property Name="Story" Value="Tabbygunstory" />
+		<part Name="TakenWXU" WXU="1" />
+		<part Name="AddsRep" Faction="Cats" Value="400" />
+		<tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
+	</object>
+	<object Name="Ctesiphus" Load="Merge">
+    <inventoryobject Blueprint="Tabbygun" Number="1" />
+  </object>
+</objects>
