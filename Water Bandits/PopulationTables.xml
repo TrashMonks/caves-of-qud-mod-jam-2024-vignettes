@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<populations>
+  <population Name="WaterBanditsParty">
+    <group Weight="50" Name="WaterBanditsParty" Style="pickeach">
+      <object Chance="90" Number="1+1d2" Blueprint="RainbowDragoon_WaterBandits_Water Bandit" />
+      <object Chance="70" Number="2d3" Blueprint="RainbowDragoon_WaterBandits_Salt Wyrmling" />
+      <object Chance="20" Number="1d2" Blueprint="Salthopper" />      
+    </group>
+  </population>
+
+  <population Name="SaltDesertZoneGlobals" Load="Merge">
+    <table Chance="7" Name="WaterBanditsParty" />
+  </population>
+</populations>

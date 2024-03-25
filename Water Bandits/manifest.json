@@ -1,0 +1,9 @@
+{
+    "id": "RainbowDragoon_WaterBandits",
+    "title": "Water Bandits",
+    "description": "Adds squads of Water Bandits scouring the Salt Desert.",
+    "version": "0.1.0",
+    "author": "RainbowDragoon",
+    "tags": "Creature",
+    "PreviewImage": "preview.png"
+}

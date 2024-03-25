@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<objects>
+  <object Name="RainbowDragoon_WaterBandits_Water Bandit" Inherits="BaseIssachari">
+    <part Name="Description" Short="Omens of wear and tear pattern the vagabond's cloak, wrought by the journey from =pronouns.possessive= far-flung nest. Behind =pronouns.possessive= veil, an eye scours the salts for the one thing to slake both thirst and greed at once: the coveted freshwater foreign to Moghra'yi's climes." />
+    <part Name="Render" DisplayName="water bandit" Tile="RainbowDragoon_WaterBandits/water_bandit.png" ColorStrings="&amp;Y" DetailColor="w" />
+
+    <inventoryobject Blueprint="Two-Handed Sword" />
+    <inventoryobject Blueprint="Leather Cloak" />
+    <inventoryobject Blueprint="Slate Mantle" />
+    <inventoryobject Blueprint="Waterskin" Number="1-3" />
+    <inventoryobject Blueprint="Beetle Jerky " Number="0-2" />
+    <inventoryobject Blueprint="Copper Nugget" Number="1-2" Chance="40" />
+    <inventoryobject Blueprint="Silver Nugget" Number="1" Chance="15"/>
+    <inventoryobject Blueprint="Bronze Ingot" Number="1" Chance="2" />
+
+    <skill Name="LongBlades" />
+    <skill Name="LongBladesProficiency" />
+
+    <stat Name="Hitpoints" Value="20" />
+    <stat Name="Strength" sValue="12" />
+
+    <tag Name="StaticHateReason" Value="stealing their freshwater." />
+  </object>
+
+  <object Name="RainbowDragoon_WaterBandits_Salt Wyrmling" Inherits="BaseWorm">
+    <part Name="Description" Short="Brooding beneath Moghra'yi's western folds are the salt kraken's distant kin, wyrmlings dreaming of crushing the desert dunes like their forefathers. Yet this one sustained =pronouns.reflexive= off of meager scraps of beetle jerky thrown by some acquisitive bandit needing an extra tooth and tail - and thus found =pronouns.reflexive= here." />
+    <part Name="Render" DisplayName="salt wyrmling" Tile="RainbowDragoon_WaterBandits/salt_wyrmling.png" ColorStrings="&amp;Y" DetailColor="y" />
+
+    <inventoryobject Blueprint="SegmentedMirthworm_Bite" Number="1" />
+
+    <stat Name="DV" Value="7" />
+    <stat Name="Level" Value="3" />
+    <stat Name="Hitpoints" Value="10" />
+
+    <skill Name="Acrobatics_SwiftReflexes" />
+    <skill Name="Axe" />
+    <skill Name="HeightenedHearing" />
+    <skill Name="DarkVision" />
+
+    <tag Name="ExcludeFromDynamicEncounters" />
+    <tag Name="Role" Value="Minion" />
+  </object>
+</objects>

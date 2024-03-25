@@ -1,0 +1,8 @@
+{
+  "WorkshopId": 3197952080,
+  "Title": "Water Bandits",
+  "Description": "Adds two new encounters to the salt desert: Water bandits and salt wyrmlings.\r\n\r\nThese vagrants come from lands beyond the salts and arrived at Qud as hopefuls to make a freshwater fortune, and perhaps carry the spoils back to the next - it's up to you to defend your hard-earned valuables!",
+  "Tags": "stable, creature, sprite",
+  "Visibility": "2",
+  "ImagePath": "preview.png"
+}
