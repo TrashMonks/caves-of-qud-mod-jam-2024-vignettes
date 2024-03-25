@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<objects>
+
+    <object Name="Bigsimple_Perfect_Cup" Inherits="Item">
+        <part Name="Render" DisplayName="cup" RenderString="u" ColorString="&amp;w" DetailColor="y" RenderLayer="5" Tile="Bigsimple_Cup/Cup.png" />
+        <part Name="Description" Short="Holds a warmth like a gentle hug. A thousand bonds have been forged over this vessel, thousands of favored drinks brewed and savored. This cup knows friend, and is one." />
+        <part Name="Armor" WornOn="Hand" DV="1" AV="0"/>
+        <part Name="Examiner" Alternate="UnknownSmallTrinket" Unknown="UnknownSmallTrinket" Complexity="1" />
+        <part Name="Physics" Category="Trinket" />
+        <part Name="RulesDescription" Text="When holding a beverage, this cup provides a bonus to reputation when performing a water ritual as well as a bonus to examining and dissassembling artifacts" />
+        <part Name="LeakWhenBroken"/>
+
+        <part Name="LiquidVolume" MaxVolume="4" StartVolume="0" />
+        <part Name="LiquidFueledPowerPlant" Liquids="water::50" />
+        <part Name="NoRust" />
+        <part Name="PoweredCupReputation" />
+        <part Name="Commerce" Value="80" />
+        <property Name="Story" Value="Bigsimple_Cup_Story" />
+        <removetag Name="DynamicObjectsTable:Items" />
+<!-- this is a comment -->
+    </object>
+
+    <object Name="Bigsimple_Perfect_Cup_Oven" Inherits="Oven">
+        <part Name="Description" Short="This oven has only ever known one recipe, anything else feels like an invasion" />
+    </object>
+    
+    <object Name="Bigsimple_Perfect_Cup_Hookah" Inherits="Hookah">
+        <part Name="Description" Short="This hookah feels trying. As if to impress. Out of jealousy, or reverence?" />
+    </object>
+
+    <object Name="Bigsimple_Perfect_Cup_Multicabinet" Inherits="Multicabinet">
+        <part Name="Description" Short="Many ingredients are accessible within this cabinet, yet some feel more accessible than others"/>
+        <tag Name="InventoryPopulationTable" Value="Bigsimple_Perfect_Cup_Spicey" />
+    </object>
+
+    <object Name="Bigsimple_Perfect_Low Mensa" Inherits="Low Table">
+        <part Name="Description" Short="There is a small ring shaped indent eroded onto this table from thousands of gentle beverages brewed and savored. No coaster felt worthy. The Table is grateful." />
+        <removetag Name="DynamicObjectsTable:AnimatedFurniture" />
+    </object>
+
+</objects>
+
