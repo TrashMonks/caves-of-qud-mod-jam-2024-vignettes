@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<colors>
+    <shaders>
+        <shader Name="snakefangox_astralmedusae_enzymic" Type="sequence" Colors="G-g-m-M-m-g-G" ShowInPicker="false" />
+        <shader Name="snakefangox_astralmedusae_egotistic" Type="sequence" Colors="M-m-c-C-c-m-M" ShowInPicker="false" />
+        <shader Name="snakefangox_astralmedusae_medusic" Type="sequence" Colors="M-m-g-G-c-C" ShowInPicker="false" />
+    </shaders>
+</colors>

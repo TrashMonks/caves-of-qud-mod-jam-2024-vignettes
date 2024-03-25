@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<worlds>
+    <world Name="Interior" Load="merge">
+        <cell Name="Snakefangox_AstralMedusae_AstralPlanula">
+            <boolproperty Name="JoinPartyLeaderPossible" Value="false" />
+            <zone Level="10" x="1" y="1" Name="Control locus" IncludeStratumInZoneDisplay="false" DisableForcedConnections="Yes">
+                <builder Class="InteriorGround" />
+                <builder Class="MapBuilder" FileName="Snakefangox_AstralMedusae_AstralPlanulaInterior.rpm" Width="48" Height="20"
+                    ClearBeforePlace="true" />
+                <widget Blueprint="AmbientLight" />
+                <intproperty Name="AmbushChance" Value="10" />
+            </zone>
+        </cell>
+    </world>
+</worlds>

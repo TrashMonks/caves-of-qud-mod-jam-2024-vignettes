@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<objects>
+    <object Name="Snakefangox_AstralMedusae_TrailingManubrium" Inherits="StairsUp">
+        <part Name="Render" DisplayName="trailing manubrium" ColorString="&amp;G" TileColor="&amp;G" DetailColor="m"
+            Tile="Snakefangox_AstralMedusae/TrailingManubrium.png" />
+        <part Name="Snakefangox_AstralMedusae_ManubriumGrabber" Difficulty="18" />
+        <part Name="StairsUp" Connected="false" />
+        <part Name="StairHighlight" bEnabled="false" />
+        <part Name="Description"
+            Short="An immense wall of mesoglea hangs in front of you, undulations rippling skywards. The sight shouts danger from your most ancient mind." />
+        <tag Name="NoAutowalk" />
+        <tag Name="Gender" Value="neuter" />
+        <xtagGrammar iArticle="" />
+    </object>
+
+    <object Name="Snakefangox_AstralMedusae_ManubriumMidsection" Inherits="Snakefangox_AstralMedusae_TrailingManubrium">
+        <part Name="Render" DisplayName="manubrium midsection"
+            Tile="Snakefangox_AstralMedusae/ManubriumMidsection.png" />
+    </object>
+
+    <object Name="Snakefangox_AstralMedusae_MedusaeVilli" Inherits="Plant">
+        <part Name="Render" DisplayName="medusae villi" ColorString="&amp;g" DetailColor="m"
+            Tile="Snakefangox_AstralMedusae/EnzymeCoatedVilli.png" Occluding="false" />
+        <part Name="Description"
+            Short="Waving fronds of flesh peel from the floor, awash in gastro-enzymes that threaten to tear themselves across your perception." />
+        <mutation Name="LiquidFont" Liquid="selcalenzymes" Amount="1" MaxAmount="8" MaxRadius="2" Cooldown="500-1000" Chance="50" />
+        <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
+        <xtagGrammar massNoun="true" />
+    </object>
+
+    <object Name="Snakefangox_AstralMedusae_MedusaeFloor" Inherits="Floor">
+        <part Name="Render" ColorString="&amp;r" DetailColor="m" Tile="Snakefangox_AstralMedusae/MedusaeFloor.png" />
+    </object>
+
+    <object Name="Snakefangox_AstralMedusae_MedusaeShipHull" Inherits="BaseWallCyber">
+        <part Name="Physics" Weight="100" />
+        <part Name="Render" DisplayName="slick metal hull plating" ColorString="&amp;K^m" TileColor="&amp;K" DetailColor="m" />
+        <part Name="Description"
+            Short="A slice of alien armor, standing proud. Light slips off =pronouns.possessive= perfect edges and pools in the basin of =pronouns.possessive= curve." />
+        <removepart Name="Graffitied" />
+    </object>
+
+    <object Name="Snakefangox_AstralMedusae_PlanulaMembrane" Inherits="Snakefangox_AstralMedusae_MedusaeShipHull">
+        <part Name="Render" DisplayName="slick alien membrane" ColorString="&amp;K^R" TileColor="&amp;K" DetailColor="R"
+            Tile="Snakefangox_AstralMedusae/PlanulaMembrane.png" />
+        <part Name="Description"
+            Short="A taut membrane seperates master and food." />
+        <part Name="Snakefangox_AstralMedusae_OwnerAccess" />
+    </object>
+
+    <object Name="Snakefangox_AstralMedusae_ManubriumSpawner" Inherits="Widget">
+        <part Name="Snakefangox_AstralMedusae_ManubriumSpawner" />
+    </object>
+
+    <object Name="Snakefangox_AstralMedusae_OuterGanglion" Inherits="Snack">
+        <part Name="Render" DisplayName="{{snakefangox_astralmedusae_medusic|outer ganglion}}" ColorString="&amp;C" DetailColor="m"
+            Tile="Snakefangox_AstralMedusae/OuterGanglion.png" />
+        <part Name="Physics" Weight="100" />
+        <part Name="Commerce" Value="500" />
+        <part Name="Unreplicable" />
+        <part Name="Description"
+            Short="Thin dendrites grasp outwards from an inexplicably heavy mass of alien brain matter, they roam as if in search of something. They grasp, perhaps for their progeny, perhaps for you." />
+        <part Name="Snakefangox_AstralMedusae_MedusicTransformation" />
+    </object>
+
+    <object Name="Snakefangox_AstralMedusae_Macrophage" Inherits="BaseOoze">
+        <part Name="Render" DisplayName="macrophage" Tile="Creatures/sw_frustum.bmp" RenderString="J" ColorString="&amp;y" DetailColor="C" />
+        <part Name="Description"
+            Short="Operating on millennia of inborn instinct, your hunter cells traverse with a keen efficiency." />
+        <stat Name="Level" Value="18" />
+        <part Name="Engulfing" />
+        <part Name="EngulfingDamage" Amount="12-18" />
+        <part Name="EngulfingWanders" />
+        <stat Name="AV" Value="6" />
+        <stat Name="Hitpoints" Value="85" />
+        <part Name="Temporary" Duration="500" />
+    </object>
+
+    <object Name="Snakefangox_AstralMedusae_AstralPlanulaExitHatch" Inherits="VehicleGolemExit">
+        <part Name="Render" DisplayName="exit gate" RenderLayer="1" ColorString="&amp;r" TileColor="&amp;r" DetailColor="w"
+            Tile="Snakefangox_AstralMedusae/AstralPlanulaExitHatch.png" />
+        <part Name="Description"
+            Short="Flesh slides apart to reveal a space beyond space." />
+    </object>
+
+    <object Name="Snakefangox_AstralMedusae_AstralPlanulaPilotPod" Inherits="VehicleGolemSeat">
+        <part Name="Render" DisplayName="control lattice" ColorString="&amp;C" TileColor="&amp;C" DetailColor="m"
+            Tile="Snakefangox_AstralMedusae/AstralPlanulaPilotPod.png" />
+        <part Name="Description"
+            Short="Tendrils unfurl from the floor, slick with nuero-conductive fluid and heavy with conferred authority." />
+    </object>
+
+    <object Name="Snakefangox_AstralMedusae_AstralPlanula" Inherits="Creature">
+        <!-- Details -->
+        <part Name="Render" DisplayName="astral planuliform" ColorString="&amp;b" TileColor="&amp;b" DetailColor="m"
+            Tile="Snakefangox_AstralMedusae/AstralPlanula.png" />
+        <part Name="Description"
+            Short="A blunt form, resplendent with gravity and purpose, =pronouns.possessive= cilia ripple as they push against unseen currents. No mouth is visible on =pronouns.possessive= body, but as =pronouns.possessive= eye makes contact you feel a sickening tug." />
+        <tag Name="Gender" Value="neuter" />
+        <!-- Stats -->
+        <part Name="Body" Anatomy="AstralPlanula" />
+        <part Name="Brain" Factions="Playerneutral-100" />
+        <stat Name="Level" Value="40" />
+        <stat Name="AV" Value="12" />
+        <stat Name="DV" Value="14" />
+        <stat Name="MA" Value="10" />
+        <stat Name="Strength" sValue="15,1d4,(t-1)d3" />
+        <stat Name="Agility" sValue="15,1d3,(t-1)d1" />
+        <stat Name="Toughness" sValue="20,1d4,(t-1)d3" />
+        <stat Name="Intelligence" sValue="8,1d3,(t-1)d1" />
+        <stat Name="Willpower" sValue="25,1d4,(t-1)d3" />
+        <stat Name="Ego" sValue="30,1d2,(t-1)d2-1" />
+        <stat Name="Hitpoints" Value="250" />
+        <!-- Vehicle stuff -->
+        <part Name="CannotBeInfluenced"
+            Messages="Beguiling::The place where a mind should be is blank and smooth in =subject.t=.;;Persuasion_Proselytize::=subject.T's= commitment to =pronouns.possessive= cause is unwavering.;;LoveTonicApplicator::The tonic has no effect on =subject.t=.;;default::=subject.T= =verb:are= insensible to your blandishments." />
+        <part Name="Interior" Cell="Snakefangox_AstralMedusae_AstralPlanula" FallDistance="1" />
+        <part Name="Vehicle" ChargeMinimum="1000" Type="Medusae" BindBlueprint="Snakefangox_AstralMedusae_OuterGanglion" Autonomous="false"
+            IsEMPSensitive="false" IsTechScannable="false" />
+        <part Name="ActionChargeCost" Percentage="50" />
+        <part Name="LiquidVolume" MaxVolume="128" Volume="0" StartVolume="32-64" InitialLiquid="rawego-1000" />
+        <part Name="LiquidFueledEnergyCell" Liquid="rawego" ChargePerDram="15000" />
+        <part Name="Snakefangox_AstralMedusae_LiquidFilter" FilterLiquid="rawego" />
+        <!-- Extra fancy stuff -->
+        <mutation Name="Snakefangox_AstralMedusae_AxonemicSnare" />
+        <part Name="Snakefangox_AstralMedusae_CopyPilotMutations" />
+    </object>
+</objects>

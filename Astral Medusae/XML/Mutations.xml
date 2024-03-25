@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<category Name="Medusic" DisplayName="{{G|Medusic}}" Stat="Ego" Property="MentalMutationShift" ForceProperty="MentalMutationForceShift">
+    <mutation Name="Axonemic Snare" MaxSelected="0" Class="Snakefangox_AstralMedusae_AxonemicSnare" BearerDescription="voluminous"
+        Tile="Mutations/clairvoyance.bmp" />
+</category>
