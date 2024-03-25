@@ -1,8 +1,20 @@
 <wishcommands>
+  <!-- <wish DisplayName="" Commands="" Icon="" ColorPair=""/> -->
+  <!-- utility wishes -->
   <wish DisplayName="Toggle Godmode" Commands="idkfa" Icon="Mutations/light_manipulation.bmp" ColorPair="wW"/>
   <wish DisplayName="Calm creatures" Commands="calm" Icon="Mutations/narcolepsy.bmp" ColorPair="wW"/>
   <wish DisplayName="Swap bodies" Commands="swap" Icon="Mutations/domination.bmp" ColorPair="wW"/>
   <wish DisplayName="Beguile creature" Commands="beguile" Icon="Mutations/beguiling.bmp" ColorPair="wW"/>
   <wish DisplayName="Set all faction rep to 2000" Commands="allloved" Icon="Mutations/two-hearted.bmp" ColorPair="wW"/>
   <wish DisplayName="Gear up" Commands="stage6" Icon="Items/sw_longblade_1.bmp" ColorPair="wW"/>
+  <!-- wishes the grant items -->
+  <wish DisplayName="Ancient Exoskeleton" Commands="c67f_ExoVignette_Special Exo NPC" Icon="Assets_Content_Textures_Items_sw_exoskeleton.bmp" ColorPair="rW"/>
+  <wish DisplayName="Geomagnetic Folding Chair" Commands="Gnarf_GeomagneticChair" Icon="Textures/gnarf/geo_fc.png" ColorPair="cY"/>
+  <wish DisplayName="Xenonutrition" Commands="Xenonutrition" Icon="Items/sw_book_4.bmp" ColorPair="WY"/>
+  <wish DisplayName="Lost Media" Commands="BookbyBread" Icon="Items/sw_book_1.bmp" ColorPair="wG"/>
+  <!-- wishes that do more complicated stuff -->
+  <wish DisplayName="Give Me A Sign - force spawn at new generated signs" Commands="GIVEMEASIGNforcespawn" Icon="Items/sw_sign_apple.bmp" ColorPair="yr"/>
+  <wish DisplayName="Xoteotin, Mechanical Guardian" Commands="kernelmethod_vignettes2024:goto" Icon="Kernelmethod_Vignettes2024/Mech.png" ColorPair="Mg"/>
+  <wish DisplayName="Cacaphony" Commands="revealandgoto:$sophie_vignettes2024" Icon="Monosophy_Caco/slotmachinel.png" ColorPair="yR"/>
+
 </wishcommands>
