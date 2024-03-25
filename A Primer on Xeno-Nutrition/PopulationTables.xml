@@ -1,0 +1,7 @@
+<populations>
+  <population Name="Books" Load="Merge">
+    <group Name="Items" Load="Merge">
+      <object Weight="20" Blueprint="Xenonutrition" /> <!-- Weight 20 is the normal weight for the "common" books -->
+    </group>
+  </population>
+</populations>

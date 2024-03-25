@@ -5,6 +5,6 @@
     <part Name="Render" DisplayName="{{W|A Primer on Xeno-Nutrition}}" ColorString="&amp;W" RenderString="=" RenderLayer="5" Tile="Items/sw_book_4.bmp" TileColor="&amp;W" DetailColor="Y"/>
     <part Name="Description" Short="This large-print volume is made of hand-pulped and pressed banana paper. Its cover is preserved with resin."/>
     <part Name="Book" ID="Xenonutrition"/>
-    <part Name="Commerce" Value="1"/>
+    <part Name="Commerce" Value="50"/>
   </object>
 </objects>
