@@ -16,27 +16,29 @@
         <part Name="PoweredCupReputation" />
         <part Name="Commerce" Value="80" />
         <property Name="Story" Value="Bigsimple_Cup_Story" />
-        <removetag Name="DynamicObjectsTable:Items" />
+        <tag Name="ExcludeFromDynamicEncounters" />
 <!-- this is a comment -->
     </object>
 
     <object Name="Bigsimple_Perfect_Cup_Oven" Inherits="Oven">
         <part Name="Description" Short="This oven has only ever known one recipe, anything else feels like an invasion" />
+        <tag Name="ExcludeFromDynamicEncounters" />
     </object>
-    
+
     <object Name="Bigsimple_Perfect_Cup_Hookah" Inherits="Hookah">
         <part Name="Description" Short="This hookah feels trying. As if to impress. Out of jealousy, or reverence?" />
+        <tag Name="ExcludeFromDynamicEncounters" />
     </object>
 
     <object Name="Bigsimple_Perfect_Cup_Multicabinet" Inherits="Multicabinet">
         <part Name="Description" Short="Many ingredients are accessible within this cabinet, yet some feel more accessible than others"/>
         <tag Name="InventoryPopulationTable" Value="Bigsimple_Perfect_Cup_Spicey" />
+        <tag Name="ExcludeFromDynamicEncounters" />
     </object>
 
     <object Name="Bigsimple_Perfect_Low Mensa" Inherits="Low Table">
         <part Name="Description" Short="There is a small ring shaped indent eroded onto this table from thousands of gentle beverages brewed and savored. No coaster felt worthy. The Table is grateful." />
-        <removetag Name="DynamicObjectsTable:AnimatedFurniture" />
+        <tag Name="ExcludeFromDynamicEncounters" />
     </object>
 
 </objects>
-
