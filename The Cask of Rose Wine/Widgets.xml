@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<objects>
+
+	<!-- A widget to actually spawn the 3 by 3 chunk of stuff defined in the
+ 	Fortunado3x3.rpm file. Based on the various Multi-tile preset widgets. -->
+	<object Name="Gearlink_CASKOFROSEWINE_Fortunado3x3" Inherits="Widget">
+    <part Name="MapChunkPlacement" Map="Fortunado3x3.rpm" Width="3" Height="3" />
+  </object>
+
+</objects>

@@ -1,0 +1,9 @@
+{
+    "id": "Gearlink_CaskOfRoseWine",
+    "title": "The Cask Of Rose Wine",
+    "description": "Adds the remains of a murdered Consortium merchant. Made for the 2024 Vignette Mod Jam.",
+    "version": "0.1.0",
+    "author": "Gearlink",
+    "tags": "Vignette,Encounter",
+		"previewImage": "preview.png"
+}
