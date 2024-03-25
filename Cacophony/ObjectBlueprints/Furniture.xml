@@ -21,7 +21,7 @@
 	<object Name="MonosophyCacoSlotMachineR" Inherits="MonosophyCacoSlotMachineL">
     <part Name="Render" DisplayName="slot machine" RenderString="220" ColorString="&amp;y" DetailColor="R" Tile="Monosophy_Caco/slotmachiner.png" RenderLayer="6" />
 	</object>
-	<object Name="MonosophyCacoMetalStool" Inherits="Stool">
+	<object Name="MonosophyCacoMetalStool" Inherits="BaseChair">
 	<part Name="Render" DisplayName="metal stool" RenderString="220" ColorString="&amp;y" DetailColor="R" Tile="Monosophy_Caco/uncomfortablestool.png" RenderLayer="6" />
     <part Name="Physics" Weight="50" />
 	<part Name="Metal" />
