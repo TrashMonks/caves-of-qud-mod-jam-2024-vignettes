@@ -29,5 +29,16 @@
     <tag Name="Animatable" />
     <tag Name="DynamicObjectsTable:AnimatableFurniture" />
     <tag Name="Class" Value="chair" />
+    <xtagThrowVFX
+        Speed="750"
+        Rotation="2160"
+        TrailStartColor="#77bfcf00"
+        TrailEndColor="#77bfcf60"
+        TrailStartWidth="16"
+        TrailLife="0.1"
+        Slant="true"
+        Arc="?2"
+        Curve="?2"
+    />
   </object>
 </objects>
