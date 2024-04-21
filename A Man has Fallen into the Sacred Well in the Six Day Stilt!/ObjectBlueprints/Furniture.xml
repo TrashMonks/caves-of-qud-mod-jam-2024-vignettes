@@ -7,11 +7,6 @@
     <part Name="SetStateOnSeen" State="Hazzary453_amhf_SignSeen"/>
   </object>
 
-  <!--<object Name="StiltWell" Load="Merge">
-    <tag Name="ExcavatoryTerrainFeature"/>
-    <tag Name="Gender" Value="plural"/>
-  </object>-->
-
   <object Name="Hazzary453_amhf_BrokenCore" Inherits="MountedFurniture">
     <part Name="Render" RenderLayer="7" Tile="Hazzary453_amhf/CoreBroken.png" DisplayName="Plasmatic Core [{{r|broken}}]" Occluding="true" ColorString="&amp;K" DetailColor="C"/>
     <part Name="Physics" Solid="true"/>
@@ -29,8 +24,7 @@
     <part Name="LiquidProducer" Liquid="neutronflux" VariableRate="0-1" ChanceSkipSameCell="0" PureOnFloor="true"/>
     <stat Name="Hitpoints" Value="500000000" />
     <part Name="Description" Short="An awakened font of annihilation. Plasma roars held aloft above the mirror-steel basin at its crest. All that make the mistake of coming too close are hungrily rendered down into atoms and returned to the Kasaphesense."/>
-    <part Name="QuestStepFinisher" Trigger="Created" Quest="Fix the Plasmatic Core" Step="Decend into the Well"/>
-    <part Name="QuestStepFinisher" Trigger="Created" Quest="Fix the Plasmatic Core" Step="Repair the Plasmatic Core"/>
+    <part Name="QuestStepFinisher" Trigger="Created" Quest="Fix the Plasmatic Core" Step="Decend into the Well,Repair the Plasmatic Core"/>
     <part Name="NoMove"/>
   </object>
 

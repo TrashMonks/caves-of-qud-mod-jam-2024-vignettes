@@ -183,7 +183,7 @@
       <choice Target="End">
         <text>Thank you. Live and drink, chronicler.</text>
         <part Name="QuestHandler" QuestID="Fix the Plasmatic Core" Action="Complete"/>
-        <part Name="RecieveItem" Blueprints="Six Day Stilt Recoiler" Identify="Six Day Stilt Recoiler"/>
+        <part Name="ReceiveItem" Blueprints="Six Day Stilt Recoiler" Identify="Six Day Stilt Recoiler"/>
       </choice>
     </node>
 
