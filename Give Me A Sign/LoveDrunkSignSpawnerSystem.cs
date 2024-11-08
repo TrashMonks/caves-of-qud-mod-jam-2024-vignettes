@@ -11,6 +11,8 @@ namespace XRL
   [Serializable]
   public class Gearlink_GIVEMEASIGN_LoveDrunkSignSpawnerSystem : IGameSystem
   {
+    /* Because this IGameSystem is Serializable, spawned will persist across
+    the game being saved and loaded. */
     public bool spawned = false;
 
     public int chance = 5;
@@ -21,9 +23,21 @@ namespace XRL
     to it. */
     public Dictionary<string, bool> Visited = new Dictionary<string, bool>();
 
-    /* Override this virtual method of IGameSystem so this system will do something
-    whenever a zone is activated. */
-    public override void ZoneActivated(Zone zone) => this.LoveDrunkSignSpawn(zone);
+    /* Register the ZoneActivatedEvent with this system so it can do something
+    when a new zone activates. */
+    public override void Register(XRLGame Game, IEventRegistrar Registrar)
+    {
+      /* Only register if the system hasn't yet spawned the items. */
+      if ( !this.spawned )
+        Registrar.Register(ZoneActivatedEvent.ID);
+    }
+
+    /* Check if the items should be spawned each time a new zone activates. */
+    public override bool HandleEvent(ZoneActivatedEvent E)
+    {
+      this.LoveDrunkSignSpawn(E.Zone);
+      return base.HandleEvent(E);
+    }
 
     /* While string, int, and bool properties can just be marked as [Serializable]
     to persist across the game being saved and loaded, more complicated data
@@ -70,6 +84,11 @@ namespace XRL
         else
           AddGlassBottle( adjacentCell );
 
+        /* Since we don't plan on spawning anymore, unregister from the
+        ZoneActivatedEvent so this check doesn't run. */
+        this.UnregisterEvent(ZoneActivatedEvent.ID);
+        /* Still need to set spawned to true so the system knows it's already
+        spawned next time the game is loaded. */
         this.spawned = true;
       }
     }
