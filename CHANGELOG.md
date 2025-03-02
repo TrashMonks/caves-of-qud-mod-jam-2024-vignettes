@@ -7,3 +7,4 @@ These mods had updates since the last time the pack was updated:
 * Give Me A Sign
 * The Cask of Rose Wine
 * Water Bandits
+* Xoteotin, Mechanical Guardian

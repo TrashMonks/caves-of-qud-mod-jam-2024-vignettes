@@ -37,8 +37,9 @@ namespace XRL.World.Parts {
             gameObject.SetStringProperty("SpawnedFrom", ParentObject.Blueprint);
             E.ReplacementObject = gameObject;
 
-            gameObject.pBrain.FactionMembership.Clear();
-            gameObject.pBrain.FactionMembership.Add("Robots", 100);
+            gameObject.Brain.Allegiance.Clear();
+            gameObject.Brain.Allegiance.Add("Robots", 100);
+            gameObject.Brain.Hostile = false;
             gameObject
                 .RequirePart<SocialRoles>()
                 .RequireRole("follower of Xoteotin");
