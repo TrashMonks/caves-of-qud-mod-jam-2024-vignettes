@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wishcommands>
+  <wish DisplayName="Open the Vignettes Mash-Up wish menu" Commands="modjampack" Icon="items/sw_rough_gemstone.bmp" ColorPair="RY" />
+</wishcommands>

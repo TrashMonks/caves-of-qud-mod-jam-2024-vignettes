@@ -1,4 +1,4 @@
-<wishcommands>
+<vignetteswishcommands>
   <!-- utility wishes -->
   <wish DisplayName="Toggle Godmode" Commands="idkfa" Icon="Mutations/light_manipulation.bmp" ColorPair="wW"/>
   <wish DisplayName="Calm creatures" Commands="calm" Icon="Mutations/narcolepsy.bmp" ColorPair="wW"/>
@@ -28,4 +28,4 @@
   <!-- wishes that do more complicated stuff -->
   <wish ModName="Give Me A Sign" DisplayName="Force sign vignette to spawn" Author="Gearlink" Commands="GIVEMEASIGNforcespawn" Icon="Items/sw_sign_apple.bmp" ColorPair="yr"/>
   <wish ModName="The Cask of Rose Wine" DisplayName="Force cask of wine to spawn" Author="Gearlink" Commands="CASKOFROSEWINEforcespawn" Icon="Items/sw_clay_pot.bmp" ColorPair="wy"/>
-</wishcommands>
+</vignetteswishcommands>

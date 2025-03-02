@@ -57,10 +57,10 @@ namespace XRL.World.Parts.Mutation
             return base.HandleEvent(E);
         }
 
-        public override void Register(GameObject Object)
+        public override void Register(GameObject Object, IEventRegistrar Registrar)
         {
-            Object.RegisterPartEvent(this, CommandName);
-            base.Register(Object);
+            Registrar.Register(CommandName);
+            base.Register(Object, Registrar);
         }
 
         public override bool FireEvent(Event E)
@@ -100,7 +100,7 @@ namespace XRL.World.Parts.Mutation
                     if (cell.FireEvent(e, E))
                     {
                         var objs = new GameObject[cell.Objects.Count];
-                        cell.Objects.CopyTo(objs);
+                        cell.Objects.CopyTo(objs, 0);
 
                         foreach (var obj in objs)
                         {

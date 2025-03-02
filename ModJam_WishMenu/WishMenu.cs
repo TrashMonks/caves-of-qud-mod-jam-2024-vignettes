@@ -46,21 +46,12 @@ namespace XRL.World.Parts
         [ModSensitiveStaticCache]
         public static List<WishCommandXML> MenuItems = new List<WishCommandXML>();
 
-        [ModSensitiveCacheInit]
-        public static void Init()
-        {
-            if (!AbilityManager.WorldMapAllowed.Contains(COMMAND_NAME))
-            {
-                AbilityManager.WorldMapAllowed.Add(COMMAND_NAME);
-            }
-        }
-
         public static void CacheInit()
         {
             MenuItems ??= new List<WishCommandXML>();
             if (MenuItems.Count == 0)
             {
-                foreach (var stream in DataManager.YieldXMLStreamsWithRoot("wishcommands"))
+                foreach (var stream in DataManager.YieldXMLStreamsWithRoot("vignetteswishcommands"))
                 {
                     stream.HandleNodes(nodes);
                 }
@@ -74,7 +65,7 @@ namespace XRL.World.Parts
             Action<XmlDataHelper>
         >
         {
-            { "wishcommands", HandleNodes },
+            { "vignetteswishcommands", HandleNodes },
             { "wish", HandleWishNode },
         };
 
@@ -130,9 +121,13 @@ namespace XRL.World.Parts
                     {
                         firstCommand = firstCommand.Substring(5);
                     }
-                    TryCreateSample(firstCommand, out var sample);
-                    data.DisplayName = $"Spawn {sample.an(AsIfKnown: true)}";
-                    data.Renderable = new Renderable(sample.RenderForUI());
+                    if (GameObjectFactory.Factory.Blueprints.ContainsKey(firstCommand) &&
+                        TryCreateSample(firstCommand, out var sample))
+                    {
+                        data.DisplayName = $"Spawn {sample.an(AsIfKnown: true)}";
+                        data.Renderable = new Renderable(sample.RenderForUI());
+                        sample.Destroy();
+                    }
                 }
             }
             catch (Exception)

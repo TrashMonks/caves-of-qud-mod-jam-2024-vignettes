@@ -15,27 +15,7 @@ namespace XRL.World.Parts
             return true;
         }
 
-        public override bool WantTenTurnTick()
-        {
-            return true;
-        }
-
-        public override bool WantHundredTurnTick()
-        {
-            return true;
-        }
-
-        public override void TurnTick(long TurnNumber)
-        {
-            Process();
-        }
-
-        public override void TenTurnTick(long TurnNumber)
-        {
-            Process();
-        }
-
-        public override void HundredTurnTick(long TurnNumber)
+        public override void TurnTick(long TurnNumber, int Amount)
         {
             Process();
         }

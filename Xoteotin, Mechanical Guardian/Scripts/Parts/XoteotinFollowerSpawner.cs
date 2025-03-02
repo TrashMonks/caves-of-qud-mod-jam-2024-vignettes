@@ -2,7 +2,8 @@ using Qud.API;
 using System;
 using XRL.Rules;
 
-namespace XRL.World.Parts {
+namespace XRL.World.Parts
+{
     [Serializable]
     public class Kernelmethod_Vignettes2024_XoteotinFollowerSpawner : IPart {
 
@@ -31,14 +32,15 @@ namespace XRL.World.Parts {
                         (GameObjectBlueprint o) => DefaultObjectFilter(o) && !o.HasTag("Robot")
                     );
 
-                Roboticized.Roboticize(gameObject);
+                ObjectBuilders.Roboticized.Roboticize(gameObject);
             }
 
             gameObject.SetStringProperty("SpawnedFrom", ParentObject.Blueprint);
             E.ReplacementObject = gameObject;
 
-            gameObject.pBrain.FactionMembership.Clear();
-            gameObject.pBrain.FactionMembership.Add("Robots", 100);
+            gameObject.Brain.Allegiance.Clear();
+            gameObject.Brain.Allegiance.Add("Robots", 100);
+            gameObject.Brain.Allegiance.Hostile = false;
             gameObject
                 .RequirePart<SocialRoles>()
                 .RequireRole("follower of Xoteotin");

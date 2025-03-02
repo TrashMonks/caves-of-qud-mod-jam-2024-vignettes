@@ -64,9 +64,9 @@ namespace XRL.World.Parts
 				}
 
         // Show the contents of the book, appending the text of the secret.
-				BookUI.ShowBook(this.bookText + this.secret.text, this.ParentObject.DisplayName);
+				BookUI.ShowBook(this.bookText + this.secret.Text, this.ParentObject.DisplayName);
         // Reveal the secret to the player.
-				this.secret?.Reveal(false);
+				this.secret?.Reveal();
 			}
 			return base.HandleEvent(E);
 		}
