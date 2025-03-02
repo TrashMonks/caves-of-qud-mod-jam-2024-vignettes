@@ -1,12 +1,8 @@
 using System;
-using XRL.Core;
-using XRL.Rules;
-using XRL.World;
-using XRL.World.Parts;
 
 namespace XRL.World.Parts
 {
-  [Serializable]
+    [Serializable]
   public class ModTabbyspawn : IModification
   {
     public int Chance = 100;
@@ -59,15 +55,15 @@ namespace XRL.World.Parts
 
     public override bool AllowStaticRegistration() => true;
 
-    public override void Register(GameObject Object)
+    public override void Register(GameObject Object, IEventRegistrar Registrar)
     {
-      Object.RegisterPartEvent((IPart) this, "WeaponHit");
-      Object.RegisterPartEvent((IPart) this, "AttackerAfterDamage");
-      Object.RegisterPartEvent((IPart) this, "DealingMissileDamage");
-      Object.RegisterPartEvent((IPart) this, "WeaponMissileWeaponHit");
-      Object.RegisterPartEvent((IPart) this, "WeaponPseudoThrowHit");
-      Object.RegisterPartEvent((IPart) this, "WeaponThrowHit");
-      base.Register(Object);
+      Registrar.Register("WeaponHit");
+      Registrar.Register("AttackerAfterDamage");
+      Registrar.Register("DealingMissileDamage");
+      Registrar.Register("WeaponMissileWeaponHit");
+      Registrar.Register("WeaponPseudoThrowHit");
+      Registrar.Register("WeaponThrowHit");
+      base.Register(Object, Registrar);
     }
 
     public override bool FireEvent(Event E)
@@ -97,10 +93,10 @@ namespace XRL.World.Parts
               GameObject Object2 = GameObject.Create("Astral Tabby");
               Object2.MakeActive();
               randomElement.AddObject(Object2);
-              if (Object2.pBrain != null)
+              if (Object2.Brain != null)
               {
-                Object2.pBrain.PartyLeader = gameObjectParameter1;
-                Object2.pBrain.Target = gameObjectParameter2;
+                Object2.Brain.PartyLeader = gameObjectParameter1;
+                Object2.Brain.Target = gameObjectParameter2;
                 Object2.IsTrifling = true;
               }
               if (!gameObjectParameter2.IsPlayer())

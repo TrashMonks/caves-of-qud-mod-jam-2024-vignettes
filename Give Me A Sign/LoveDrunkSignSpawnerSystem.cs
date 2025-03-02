@@ -1,14 +1,12 @@
 using System;
 using System.Collections.Generic;
-using XRL.Liquids;
 using XRL.World;
 using XRL.World.Effects;
 using XRL.World.Parts;
-using XRL.World.ZoneBuilders;
 
 namespace XRL
 {
-  [Serializable]
+    [Serializable]
   public class Gearlink_GIVEMEASIGN_LoveDrunkSignSpawnerSystem : IGameSystem
   {
     /* Because this IGameSystem is Serializable, spawned will persist across
@@ -43,9 +41,9 @@ namespace XRL
     to persist across the game being saved and loaded, more complicated data
     types like a Dictionary need a custom serializer like this. These implementations
     of LoadGame and SaveGame are taken from XRL.PsychicHunterSystem. */
-    public override void LoadGame(SerializationReader Reader) => this.Visited = Reader.ReadDictionary<string, bool>();
+    public override void Read(SerializationReader Reader) => this.Visited = Reader.ReadDictionary<string, bool>();
 
-    public override void SaveGame(SerializationWriter Writer) => Writer.Write<string, bool>(this.Visited);
+    public override void Write(SerializationWriter Writer) => Writer.Write<string, bool>(this.Visited);
 
     public void LoveDrunkSignSpawn(Zone zone)
     {

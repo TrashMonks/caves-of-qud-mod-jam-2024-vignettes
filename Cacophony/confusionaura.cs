@@ -51,7 +51,7 @@ namespace XRL.World.Parts
       }
       return base.HandleEvent(E);
     }
-	
+
 	public override bool Render(RenderEvent E)
     {
       if (!this.ColorString.IsNullOrEmpty() || !this.DetailColor.IsNullOrEmpty())
@@ -69,7 +69,7 @@ namespace XRL.World.Parts
       {
         foreach (GameObject Defender in cell.Objects)
         {
-          if (Defender.pBrain != null)
+          if (Defender.Brain != null)
           {
             Mental.PerformAttack(new Mental.Attack(ConfusionAura.ApplyFear), Actor, Defender, Command: "Confuse Aura", Dice: "1d8+4", Type: 8388609, Magnitude: "1d3".RollCached());
             flag = true;
@@ -109,10 +109,10 @@ namespace XRL.World.Parts
       this.RemoveMyActivatedAbility(ref this.ActivatedAbilityID);
       return base.Unmutate(GO);
     }*/
-		
+
 	public static string RandomScreenColor()
 	{
-		int ColorIndex = Stat.RandomCosmetic(0, 5); 
+		int ColorIndex = Stat.RandomCosmetic(0, 5);
 		string[] ColorList = new string[6]{"R","W","G","C","B","M"};
 		return ColorList[ColorIndex];
 	}

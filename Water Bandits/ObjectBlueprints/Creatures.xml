@@ -8,7 +8,7 @@
     <inventoryobject Blueprint="Leather Cloak" />
     <inventoryobject Blueprint="Slate Mantle" />
     <inventoryobject Blueprint="Waterskin" Number="1-3" />
-    <inventoryobject Blueprint="Beetle Jerky " Number="0-2" />
+    <inventoryobject Blueprint="Beetle Jerky" Number="0-2" />
     <inventoryobject Blueprint="Copper Nugget" Number="1-2" Chance="40" />
     <inventoryobject Blueprint="Silver Nugget" Number="1" Chance="15"/>
     <inventoryobject Blueprint="Bronze Ingot" Number="1" Chance="2" />

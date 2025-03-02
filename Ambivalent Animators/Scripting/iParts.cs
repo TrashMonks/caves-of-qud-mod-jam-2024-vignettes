@@ -2,19 +2,10 @@ using Genkit;
 using System;
 using System.Linq;
 using System.Collections.Generic;
-using SerializeField = UnityEngine.SerializeField;
-using Qud.API;
 using static Qud.API.EncountersAPI;
-using XRL;
-using XRL.Language;
-using XRL.UI;
 using XRL.Rules;
-using XRL.World;
-using XRL.World.Parts;
-using static XRL.World.GameObjectFactory;
-using static XRL.World.GamePartBlueprint;
-using XRL.Messages;
 using NPRand = NPRandom.Sarc_Random;
+using XRL.World.AI;
 
 namespace XRL.World.Parts
 {
@@ -146,12 +137,12 @@ namespace XRL.World.Parts
             this.Safra = Safra;
         }
         public override bool WantEvent(int ID, int cascade) => base.WantEvent(ID, cascade) || ID == ObjectEnteredCellEvent.ID;
-        
+
         public override bool HandleEvent(ObjectEnteredCellEvent E)
         {
             if (!ServantsPlaced)
             {
-                
+
                 ServantsPlaced = true;
                 Cell cell = ParentObject.CurrentCell;
                 Zone zone = ParentObject.CurrentZone;
@@ -179,6 +170,12 @@ namespace XRL.World.Parts
                 {
                     tier = ServantTier.RollCached();
                     GameObject animatedServant = GetAnAnimatedServant(ParentObject, tier, num, gatheredObjects, weight, isOneType, Safra);
+                    if (animatedServant == null)
+                    {
+                        UnityEngine.Debug.LogError($"GetAnAnimatedServant({ParentObject}, {tier}, {num}, {gatheredObjects}, {weight}, {isOneType}, {Safra}) returned null");
+                        continue;
+                    }
+
                     if(Safra){animatedServant.AddPart(new FreedBySafra(i));}
                     Cell randCell = GetRandCell(minRad, maxRad, zone, ref previousAngle1, ref previousAngle2);
                     if (randCell != null)
@@ -186,12 +183,12 @@ namespace XRL.World.Parts
                         randCell.AddObject(animatedServant).MakeActive();
                     }
                 }
-                if (isPeaceful){  
+                if (isPeaceful){
                     int campAmt = NPRand.Next(5,8);
                     for (int i = 0; i < campAmt; i++){
                         var campItem = PopulationManager.CreateOneFrom("Sarcose_NeuroparentCampEnvironment");
                         Cell randCell = GetRandCell(minRad/2, maxRad/2, zone, ref previousAngle1, ref previousAngle2);
-                        if (randCell != null)
+                        if (randCell != null && campItem != null)
                         {
                             randCell.AddObject(campItem).MakeActive();
                         }
@@ -230,7 +227,7 @@ namespace XRL.World.Parts
         {
             float angleDifference1 = Math.Abs(prevAngle1 - angle);
             float angleDifference2 = Math.Abs(prevAngle2 - angle);
-            
+
             // Ensure angles are within the range [0, 2π)
             angleDifference1 %= (float)(2.0 * Math.PI);
             angleDifference2 %= (float)(2.0 * Math.PI);
@@ -278,7 +275,7 @@ namespace XRL.World.Parts
             GameObject gameObject = GameObject.Create(list.GetRandomElement().Name);
             AnimateObject.Animate(gameObject);
             if (!Safra){
-                gameObject.SetPartyLeader(ParentObject);
+                gameObject.SetAlliedLeader<AllyConstructed>(ParentObject);
                 gameObject.AddPart(new MadeByAnimator(ParentObject, tier, num));
             }
             return gameObject;
@@ -352,7 +349,7 @@ namespace XRL.World.Parts
                         chatter.inOrder = true;
                     }
                 }
-                
+
                 if (Maker.TryGetPart<NeuroParentManager>(out var part)){
                     part.OwnedAnimates.Add(ParentObject);
                 }
@@ -360,7 +357,7 @@ namespace XRL.World.Parts
             }
             return base.HandleEvent(E);
         }
-        public void MakerDied(){                
+        public void MakerDied(){
                 if(ParentObject.HasPart("Preacher")){
                     ParentObject.RemovePart("Preacher");
                     Preacher chatter = ParentObject.AddPart<Preacher>();
@@ -382,27 +379,27 @@ namespace XRL.World.Parts
                 }
             ParentObject.RemovePart("ConversationScript");
             ParentObject.AddPart(new ConversationScript("Sarcose_NeuroParentAnimate_Freed", ClearLost: true));
-            
-            ParentObject.pBrain.PartyMembers.Clear();
-            ParentObject.pBrain.PartyLeader = null;
-            ParentObject.pBrain.Goals.Clear();
-            ParentObject.pBrain.ObjectMemory.Clear();
-            if (ParentObject.pBrain.FriendlyFire != null)
+
+            ParentObject.Brain.PartyMembers.Clear();
+            ParentObject.Brain.PartyLeader = null;
+            ParentObject.Brain.Goals.Clear();
+            ParentObject.Brain.Opinions.Clear();
+            if (ParentObject.Brain.FriendlyFire != null)
             {
-                ParentObject.pBrain.FriendlyFire.Clear();
+                ParentObject.Brain.FriendlyFire.Clear();
             }
-            ParentObject.pBrain.FactionFeelings.Clear();
-            ParentObject.pBrain.Hostile = false;
-            ParentObject.pBrain.Calm = true;
+            ParentObject.Brain.FactionFeelings.Clear();
+            ParentObject.Brain.Allegiance.Clear();
+            ParentObject.Brain.Allegiance.Hostile = false;
+            ParentObject.Brain.Allegiance.Calm = true;
             ParentObject.StopFight();
             ParentObject.StopMoving();
-            ParentObject.SetFeeling(The.Player,350);
-            ParentObject.pBrain.FactionMembership.Clear();
-            ParentObject.pBrain.FactionMembership.Add("Newly Sentient Beings", 100);
-            
+            ParentObject.Brain.SetFactionFeeling("Player", 350);
+            ParentObject.Brain.SetFactionMembership("Newly Sentient Beings", 100);
+
         }
     }
-    
+
     public class NeuroParentManager : IPart
     {
         public int animateWait = 350; public int Chance = 15;
@@ -411,7 +408,7 @@ namespace XRL.World.Parts
         public List<GameObject> OwnedAnimates = new List<GameObject>();
 
         public override bool WantEvent(int ID, int cascade) => base.WantEvent(ID, cascade) || ID == EndTurnEvent.ID || ID == EarlyBeforeDeathRemovalEvent.ID;
-        
+
         public override bool HandleEvent(EndTurnEvent E){
             lastAnimated--;
             if ((lastAnimated < 0 & Chance.in100()) || doAnimate)
@@ -465,25 +462,25 @@ namespace XRL.World.Parts
         {
             _ = ParentObject.CurrentCell;
             bool isPeaceful = (ParentObject.Blueprint == "Neuroparent_Camper");
-            int tier = ParentObject.GetTag("ServantTier").RollCached();
+            int tier = ParentObject.GetTag("ServantTier", "1-3").RollCached();
             GameObject baseObject = GameObject.Create(GetValidBlueprint(tier));
-            string faction = baseObject.pBrain.FactionMembership.Aggregate((x, y) => x.Value > y.Value ? x : y).Key;
-            bool addFormer = formerFactions.Contains(faction);
+            AllegianceSet baseAllegiance = baseObject.Brain.GetBaseAllegiance();
+            bool addFormer = baseAllegiance != null && formerFactions.Any((faction) => baseAllegiance.TryGetValue(faction, out int membership) && membership > 0);
             HasAnimatedServants animservpart = baseObject.AddPart(new HasAnimatedServants(ParentObject.GetTag("ServantTier"), ParentObject.GetTag("NumberOfServants")));
-            baseObject.GiveProperName();            
+            baseObject.GiveProperName();
             if (addFormer){
                 baseObject.RequirePart<Titles>().AddTitle($"former {baseObject.GetCreatureType()}");
             }else{
-                baseObject.RequirePart<Titles>().AddTitle(baseObject.GetCreatureType());    
+                baseObject.RequirePart<Titles>().AddTitle(baseObject.GetCreatureType());
             }
-            baseObject.pBrain.FactionMembership.Clear();
-		    baseObject.pBrain.FactionMembership.Add("Humanoids", 100);
+            baseObject.Brain.Allegiance.Clear();
+		    baseObject.Brain.SetFactionMembership("Humanoids", 100);
             baseObject.RequirePart<Titles>().AddTitle(NPRand.ChooseString(new List<string>{"Neuroparent","Animator"}));
             baseObject.RequirePart<Epithets>().AddEpithet(pickEpithet());
             baseObject.RequirePart<DisplayNameColor>().SetColor("Y"); //TODO: check this
-            baseObject.pRender.ColorString = "&Y"; //TODO: color
-            baseObject.pRender.TileColor = "&C";
-            baseObject.pRender.DetailColor = "r"; 
+            baseObject.Render.ColorString = "&Y"; //TODO: color
+            baseObject.Render.TileColor = "&C";
+            baseObject.Render.DetailColor = "r";
             if (baseObject.BaseStat("Intelligence") < 20)
             {
                 baseObject.GetStat("Intelligence").BaseValue = 20;
@@ -505,27 +502,27 @@ namespace XRL.World.Parts
             NeuroParentManager manager = baseObject.AddPart<NeuroParentManager>();
             if (!isPeaceful){
                 baseObject.AddPart(new ConversationScript("Sarcose_NeuroParent", ClearLost: true));
-                (baseObject.GetPart("Description") as Description).Short = "An armchair lurches to life. A door ponders aloud what it means to open itself. A thick wall trundles forth with blind abandon. And at the nucleus, =pronouns.subjective= regards =pronouns.possessive= 'children' with a loving, mad gaze. Wearing a labcoat covering up the tattered cultural remnants of =pronouns.possessive= past, this rambling Animator long ago abandoned =pronouns.possessive= own culture, seeking instead the echoes of a naive crowd of crackling, creaking, metallic, squeaking voices built entirely of =pronouns.possessive= inane whim."; 
+                (baseObject.GetPart("Description") as Description).Short = "An armchair lurches to life. A door ponders aloud what it means to open itself. A thick wall trundles forth with blind abandon. And at the nucleus, =pronouns.subjective= regards =pronouns.possessive= 'children' with a loving, mad gaze. Wearing a labcoat covering up the tattered cultural remnants of =pronouns.possessive= past, this rambling Animator long ago abandoned =pronouns.possessive= own culture, seeking instead the echoes of a naive crowd of crackling, creaking, metallic, squeaking voices built entirely of =pronouns.possessive= inane whim.";
             }
             else{
-                (baseObject.GetPart("Description") as Description).Short = "Situated in amongst a low rumble of murmuring walls and lurching furniture, there hunches a weary, old figure. =pronouns.subjective= regards =pronouns.possessive= creations with a loving comfort, and eyes you with suspicion and curiosity. Whatever light was present in those eyes has long ago dimmed, and now what you see is entirely inscrutable. You approach, aware that at any moment, the walls may literally close in around you."; 
+                (baseObject.GetPart("Description") as Description).Short = "Situated in amongst a low rumble of murmuring walls and lurching furniture, there hunches a weary, old figure. =pronouns.subjective= regards =pronouns.possessive= creations with a loving comfort, and eyes you with suspicion and curiosity. Whatever light was present in those eyes has long ago dimmed, and now what you see is entirely inscrutable. You approach, aware that at any moment, the walls may literally close in around you.";
                 animservpart.maxRad = 10;
                 animservpart.minRad = 3;
                 animservpart.isPeaceful = true;
                 baseObject.ReceiveObject("Neuroparent_Notepage");
                 baseObject.StopFight();
-                baseObject.pBrain.Hostile = false;
-                baseObject.pBrain.Calm = true;
-                baseObject.SetFeeling(The.Player,200);
-                baseObject.pBrain.FactionMembership.Clear();
-                baseObject.pBrain.FactionMembership.Add("Pariahs",100);
+                baseObject.Brain.Allegiance.Hostile = false;
+                baseObject.Brain.Allegiance.Calm = true;
+                baseObject.Brain.SetFactionFeeling("Player",200);
+                baseObject.Brain.Allegiance.Clear();
+                baseObject.Brain.SetFactionMembership("Pariahs",100);
                 baseObject.AddPart(new ConversationScript("Sarcose_NeuroParentCamper", ClearLost: true));
             }
-            
+
 
             return baseObject;
         }
-        
+
         public static string GetValidBlueprint(int tier = 2)
         {
             List<GameObjectBlueprint> list = new List<GameObjectBlueprint>(32);
@@ -544,5 +541,5 @@ namespace XRL.World.Parts
             return list.GetRandomElement().Name;
         }
     }
-    
+
 }
