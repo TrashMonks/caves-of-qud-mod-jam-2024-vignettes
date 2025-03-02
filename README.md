@@ -12,7 +12,7 @@ This version of the pack is for the 1.0 release (209.X) of Caves of Qud.
 **Warning**: Do not run this pack simultaneous with any of the mods contained within.
 
 ## Installation
-
+* [itch.io entry](https://librarianmage.itch.io/vignettes-mash-up)
 * [GitHub download](https://github.com/TrashMonks/caves-of-qud-mod-jam-2024-vignettes/archive/refs/heads/main.zip)
 * [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=3200984750)
 * [Steam Workshop Collection](https://steamcommunity.com/sharedfiles/filedetails/?id=3199902804)
