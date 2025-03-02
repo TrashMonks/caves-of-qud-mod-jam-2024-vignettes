@@ -21,7 +21,7 @@ Please refer to the Caves of Qud Wiki for [mod installation instructions](https:
 
 ## Updates & Fixes
 
-We are not currently planning on this pack further, though we may incorporate pull requests.
+We are not currently planning on updating this pack further, though we may incorporate pull requests.
 
 ## License
 
