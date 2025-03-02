@@ -12,10 +12,10 @@ namespace XRL.World.Parts
             return true;
         }
 
-        public override void Register(GameObject Object)
+        public override void Register(GameObject Object, IEventRegistrar Registrar)
         {
-            Object.RegisterPartEvent(this, "EnteredCell");
-            base.Register(Object);
+            Registrar.Register("EnteredCell");
+            base.Register(Object, Registrar);
         }
 
         public override bool FireEvent(Event E)
@@ -25,7 +25,7 @@ namespace XRL.World.Parts
                 Zone zone = E.GetParameter<Cell>("Cell").ParentZone;
                 Random rand = Utilities.GameRandom();
 
-                Point2D center = zone.GetCenterCell().location.Point;
+                Point2D center = zone.GetCenterCell().Location.Point;
                 Point2D[] cardinals = new Point2D[] { center + new Point2D(8, 0), center + new Point2D(-8, 0), center + new Point2D(0, 7), center + new Point2D(0, -7), };
 
                 foreach (Cell c in zone.GetCells())

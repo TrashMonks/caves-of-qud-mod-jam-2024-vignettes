@@ -1,6 +1,4 @@
 using System;
-using XRL.Rules;
-using XRL.World.Parts.Skill;
 
 namespace XRL.World.Parts
 {
@@ -29,7 +27,7 @@ namespace XRL.World.Parts
                 || ID == GetTinkeringBonusEvent.ID
             ;
         }
-        
+
         public override bool HandleEvent(GetWaterRitualReputationAmountEvent E)
         {
             if (E.Actor == ParentObject.Equipped
@@ -44,7 +42,7 @@ namespace XRL.World.Parts
             }
             return base.HandleEvent(E);
         }
-        
+
         public override bool HandleEvent(GetTinkeringBonusEvent E)
         {
             if (
@@ -54,7 +52,7 @@ namespace XRL.World.Parts
             )
             {
                 E.Bonus += 2;
-                
+
             }
             return base.HandleEvent(E);
         }
@@ -64,41 +62,20 @@ namespace XRL.World.Parts
             return true;
         }
 
-        public override bool WantTenTurnTick()
+        public override void TurnTick(Int64 TurnNumber, int Amount)
         {
-            return true;
-        }
-
-        public override bool WantHundredTurnTick()
-        {
-            return true;
-        }
-
-        public override void TurnTick(Int64 TurnNumber)
-        {
-            if (ConsumeChargeIfOperational(ChargeUse:1)
+            if (ConsumeChargeIfOperational(ChargeUse: Amount)
                 && ParentObject.TryGetPart(out LiquidFueledPowerPlant plant)
                 && plant.ChargeCounter == 0)
                 {
                     XDidYToZ(
                         Actor:ParentObject.Equipped,
-                        Verb: "take", 
+                        Verb: "take",
                         Preposition: "a sip from",
                         Object:ParentObject);
                 }
 
         }
-
-        public override void TenTurnTick(Int64 TurnNumber)
-        {
-            ConsumeChargeIfOperational(ChargeUse: 10);
-        }
-
-        public override void HundredTurnTick(Int64 TurnNumber)
-        {
-            ConsumeChargeIfOperational(ChargeUse: 100);
-        }
-
 
     }
 
