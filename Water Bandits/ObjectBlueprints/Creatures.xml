@@ -34,8 +34,8 @@
 
     <skill Name="Acrobatics_SwiftReflexes" />
     <skill Name="Axe" />
-    <mutation Name="HeightenedHearing" />
-    <mutation Name="DarkVision" />
+    <mutation Name="HeightenedHearing" Level="1"/>
+    <mutation Name="DarkVision" Level="3"/>
 
     <tag Name="ExcludeFromDynamicEncounters" />
     <tag Name="Role" Value="Minion" />
