@@ -1,13 +1,13 @@
 using Qud.API;
 using System;
-using XRL.World;
 
-namespace XRL.World.Parts {
+namespace XRL.World.Parts
+{
     [Serializable]
     public class Kernelmethod_Vignettes2024_XoteotinStatue : IPart {
-        public override void Register(GameObject Object) {
-            Object.RegisterPartEvent(this, "AfterLookedAt");
-            base.Register(Object);
+        public override void Register(GameObject Object, IEventRegistrar Registrar) {
+            Registrar.Register("AfterLookedAt");
+            base.Register(Object, Registrar);
         }
 
         public override bool FireEvent(Event E) {

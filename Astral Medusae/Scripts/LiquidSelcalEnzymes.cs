@@ -129,14 +129,14 @@ namespace XRL.Liquids
 
         public override void BaseRenderPrimary(LiquidVolume Liquid)
         {
-            Liquid.ParentObject.pRender.ColorString = "&G^m";
-            Liquid.ParentObject.pRender.TileColor = "&G";
-            Liquid.ParentObject.pRender.DetailColor = "m";
+            Liquid.ParentObject.Render.ColorString = "&G^m";
+            Liquid.ParentObject.Render.TileColor = "&G";
+            Liquid.ParentObject.Render.DetailColor = "m";
         }
 
         public override void BaseRenderSecondary(LiquidVolume Liquid)
         {
-            Liquid.ParentObject.pRender.ColorString += "&m";
+            Liquid.ParentObject.Render.ColorString += "&m";
         }
 
         public override void RenderSmearPrimary(LiquidVolume Liquid, RenderEvent eRender, GameObject obj)

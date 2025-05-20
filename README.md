@@ -1,34 +1,31 @@
 # Vignettes Mash-Up Mod Pack
-Mod jam pack for the [March 2024 Caves of Qud Mod Jam: Vignettes](https://itch.io/jam/caves-of-qud-modding-jam-2). See all the entries [here](https://itch.io/jam/caves-of-qud-modding-jam-2/entries)!
+Mod jam pack for the March 2024 [Caves of Qud Mod Jam: Vignettes](https://itch.io/jam/caves-of-qud-modding-jam-2). See all the entries [here](https://itch.io/jam/caves-of-qud-modding-jam-2/entries)!
 
 A gigantic reinforced flexiweaved thanks to everyone who participated! — The mod jam organizers
 
-Press `ctrl-shift-W` (can be re-bound under `Key Mapping > Debug > Mod Jam Wish Menu`) or wish for `modjampack` to open a menu for easy wishing for the pack's contents (thanks gnarf!).
+While playing, use the in-game wish menu for easy access to the pack's contents (Debug > Wish Menu, bound to <kbd>shift</kbd>-<kbd>W</kbd> by default) or by wishing `vignetteswishmenu` (this can be bound to its own key under Debug > Vignettes Mash-Up Wish Menu).
 
 **A note on balance**: this pack is intended to let one sample from the various things added by all of the mods and will likely result a mildly chaotic Caves of Qud run. Each of these mods is available individually at the submissions page linked above, should you wish for a more curated experience.
 
-This version of the pack is for the 206.X version of Caves of Qud.
+This version of the pack is for the 1.0.4 release (build 210.X) of Caves of Qud.
 
 **Warning**: Do not run this pack simultaneous with any of the mods contained within.
 
 ## Installation
-
-* [GitHub](https://github.com/TrashMonks/caves-of-qud-mod-jam-2024-vignettes/archive/refs/heads/main.zip)
+* [itch.io entry](https://librarianmage.itch.io/vignettes-mash-up)
+* [GitHub download](https://github.com/TrashMonks/caves-of-qud-mod-jam-2024-vignettes/archive/refs/heads/main.zip)
 * [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=3200984750)
 * [Steam Workshop Collection](https://steamcommunity.com/sharedfiles/filedetails/?id=3199902804)
 
 Please refer to the Caves of Qud Wiki for [mod installation instructions](https://wiki.cavesofqud.com/wiki/Modding:Installing_a_mod).
 
 ## Updates & Fixes
-
-We will provide hands-on assistance with updating and fixing mods in the pack until the end of March 2024. Pull requests with updates will be welcome at any time!
+We are not currently planning on updating this pack further, though we may incorporate pull requests.
 
 ## License
-
 This mod pack has been licensed under Creative Commons Zero v1.0 Universal.
 
 ## Included in this pack
-
 All the entries from [here](https://itch.io/jam/caves-of-qud-modding-jam-2/entries)!
 
 ### A Man has Fallen into the Sacred Well in The Six Day Stilt by Hazzary453

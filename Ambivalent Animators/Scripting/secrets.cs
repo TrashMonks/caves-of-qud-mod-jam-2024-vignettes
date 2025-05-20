@@ -2,8 +2,6 @@ using XRL;
 using XRL.World;
 using XRL.World.WorldBuilders;
 using XRL.World.ZoneBuilders;
-using XRL.Messages;
-using NPRand = NPRandom.Sarc_Random;
 
 namespace NeuroParent
 {
@@ -82,8 +80,8 @@ namespace NeuroParent
             AddSecretSafraLocation(builder);
             AddSecretCampLocation(builder);
             AddPickleRuinLocation(builder);
-            
+
         }
     }
-    
+
 }

@@ -1,6 +1,5 @@
 using System;
 using System.Collections.Generic;
-using XRL.World.ZoneBuilders;
 
 namespace XRL.World.Parts.Mutation
 {
@@ -11,7 +10,6 @@ namespace XRL.World.Parts.Mutation
 
         public Snakefangox_AstralMedusae_Vessel()
         {
-            DisplayName = "Vessal";
             Type = "Physical";
         }
 
@@ -78,8 +76,8 @@ namespace XRL.World.Parts.Mutation
                     {
                         cell.AddObject("BloodPool");
                         GameObject obj = cell.AddObject("Snakefangox_AstralMedusae_Macrophage");
-                        obj.pBrain.Goals.Clear();
-                        obj.pBrain.PartyLeader = ParentObject;
+                        obj.Brain.Goals.Clear();
+                        obj.Brain.PartyLeader = ParentObject;
                         obj.IsTrifling = true;
                     }
                     i++;
@@ -89,11 +87,11 @@ namespace XRL.World.Parts.Mutation
             return base.HandleEvent(E);
         }
 
-        public override void Register(GameObject Object)
+        public override void Register(GameObject Object, IEventRegistrar Registrar)
         {
-            Object.RegisterPartEvent(this, "CanApplyBleeding");
-            Object.RegisterPartEvent(this, "ApplyBleeding");
-            base.Register(Object);
+            Registrar.Register("CanApplyBleeding");
+            Registrar.Register("ApplyBleeding");
+            base.Register(Object, Registrar);
         }
 
         public override bool FireEvent(Event E)

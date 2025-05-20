@@ -11,7 +11,6 @@ namespace XRL.World.Parts.Mutation
 
         public Snakefangox_AstralMedusae_AxonemicSnare()
         {
-            DisplayName = "Axonemic Snare";
             Type = "Mental";
         }
 
@@ -57,10 +56,10 @@ namespace XRL.World.Parts.Mutation
             return base.HandleEvent(E);
         }
 
-        public override void Register(GameObject Object)
+        public override void Register(GameObject Object, IEventRegistrar Registrar)
         {
-            Object.RegisterPartEvent(this, CommandName);
-            base.Register(Object);
+            Registrar.Register(CommandName);
+            base.Register(Object, Registrar);
         }
 
         public override bool FireEvent(Event E)
@@ -81,7 +80,7 @@ namespace XRL.World.Parts.Mutation
                     return false;
                 }
 
-                var circle = PickCircle(Level + 1, Range: Level * 5, VisLevel: AllowVis.OnlyVisible, Label: DisplayName);
+                var circle = PickCircle(Level + 1, Range: Level * 5, VisLevel: AllowVis.OnlyVisible, Label: GetDisplayName());
                 if (circle == null)
                 {
                     return false;
@@ -100,7 +99,7 @@ namespace XRL.World.Parts.Mutation
                     if (cell.FireEvent(e, E))
                     {
                         var objs = new GameObject[cell.Objects.Count];
-                        cell.Objects.CopyTo(objs);
+                        cell.Objects.CopyTo(objs, 0);
 
                         foreach (var obj in objs)
                         {
@@ -122,7 +121,7 @@ namespace XRL.World.Parts.Mutation
 
         public override bool Mutate(GameObject GO, int Level)
         {
-            ActivatedAbilityID = AddMyActivatedAbility(DisplayName, CommandName, "Mental Mutation", IsAttack: true, IsRealityDistortionBased: true);
+            ActivatedAbilityID = AddMyActivatedAbility(GetDisplayName(), CommandName, "Mental Mutation", IsAttack: true, IsRealityDistortionBased: true);
             return base.Mutate(GO, Level);
         }
 

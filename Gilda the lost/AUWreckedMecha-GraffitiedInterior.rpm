@@ -1,14 +1,30 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Map Width="80" Height="25">
+<Map ID="AUWreckedMecha-GraffitiedInterior.rpm" Width="80" Height="25">
   <cell X="0" Y="0">
-    <object Name="Torchpost"></object>
+    <object Name="MechInteriorWall">
+      <intproperty Name="InteriorRequired" Value="1" />
+    </object>
   </cell>
-  <cell X="1" Y="0"></cell>
+  <cell X="1" Y="0">
+    <object Name="MechInteriorWall">
+      <intproperty Name="InteriorRequired" Value="1" />
+    </object>
+  </cell>
   <cell X="2" Y="0">
-    <object Name="Torchpost"></object>
+    <object Name="MechInteriorWall">
+      <intproperty Name="InteriorRequired" Value="1" />
+    </object>
   </cell>
-  <cell X="3" Y="0"></cell>
-  <cell X="4" Y="0"></cell>
+  <cell X="3" Y="0">
+    <object Name="MechInteriorContainer">
+      <intproperty Name="InteriorRequired" Value="1" />
+    </object>
+  </cell>
+  <cell X="4" Y="0">
+    <object Name="MechInteriorGlassWall">
+      <intproperty Name="InteriorRequired" Value="1" />
+    </object>
+  </cell>
   <cell X="5" Y="0"></cell>
   <cell X="6" Y="0"></cell>
   <cell X="7" Y="0"></cell>
@@ -84,16 +100,32 @@
   <cell X="77" Y="0"></cell>
   <cell X="78" Y="0"></cell>
   <cell X="79" Y="0"></cell>
-  <cell X="0" Y="1"></cell>
+  <cell X="0" Y="1">
+    <object Name="MechInteriorWall">
+      <intproperty Name="InteriorRequired" Value="1" />
+    </object>
+  </cell>
   <cell X="1" Y="1">
-    <object Name="Floor Cushion"></object>
-    <object Name="Kernelmethod_Vignettes2024_XoteotinFollower"></object>
+    <object Name="MechExitHatch">
+      <intproperty Name="InteriorRequired" Value="1" />
+    </object>
   </cell>
   <cell X="2" Y="1">
-    <object Name="Floor Cushion"></object>
+    <object Name="MarbleFloor"></object>
+    <object Name="Bedroll"></object>
   </cell>
-  <cell X="3" Y="1"></cell>
-  <cell X="4" Y="1"></cell>
+  <cell X="3" Y="1">
+    <object Name="VehicleEjectionSlot"></object>
+    <object Name="MarbleFloor"></object>
+    <object Name="MechPilotSeat">
+      <intproperty Name="InteriorRequired" Value="2" />
+    </object>
+  </cell>
+  <cell X="4" Y="1">
+    <object Name="MechInteriorGlassWall">
+      <intproperty Name="InteriorRequired" Value="1" />
+    </object>
+  </cell>
   <cell X="5" Y="1"></cell>
   <cell X="6" Y="1"></cell>
   <cell X="7" Y="1"></cell>
@@ -170,12 +202,30 @@
   <cell X="78" Y="1"></cell>
   <cell X="79" Y="1"></cell>
   <cell X="0" Y="2">
-    <object Name="Oil Vase"></object>
+    <object Name="MechInteriorWall">
+      <intproperty Name="InteriorRequired" Value="1" />
+    </object>
   </cell>
-  <cell X="1" Y="2"></cell>
-  <cell X="2" Y="2"></cell>
-  <cell X="3" Y="2"></cell>
-  <cell X="4" Y="2"></cell>
+  <cell X="1" Y="2">
+    <object Name="MechInteriorWall">
+      <intproperty Name="InteriorRequired" Value="1" />
+    </object>
+  </cell>
+  <cell X="2" Y="2">
+    <object Name="MechInteriorWall">
+      <intproperty Name="InteriorRequired" Value="1" />
+    </object>
+  </cell>
+  <cell X="3" Y="2">
+    <object Name="MechInteriorContainer">
+      <intproperty Name="InteriorRequired" Value="1" />
+    </object>
+  </cell>
+  <cell X="4" Y="2">
+    <object Name="MechInteriorGlassWall">
+      <intproperty Name="InteriorRequired" Value="1" />
+    </object>
+  </cell>
   <cell X="5" Y="2"></cell>
   <cell X="6" Y="2"></cell>
   <cell X="7" Y="2"></cell>

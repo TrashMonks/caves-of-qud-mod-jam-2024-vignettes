@@ -5,7 +5,7 @@
         <part Name="Render" DisplayName="cup" RenderString="u" ColorString="&amp;w" DetailColor="y" RenderLayer="5" Tile="Bigsimple_Cup/Cup.png" />
         <part Name="Description" Short="Holds a warmth like a gentle hug. A thousand bonds have been forged over this vessel, thousands of favored drinks brewed and savored. This cup knows friend, and is one." />
         <part Name="Armor" WornOn="Hand" DV="1" AV="0"/>
-        <part Name="Examiner" Alternate="UnknownSmallTrinket" Unknown="UnknownSmallTrinket" Complexity="1" />
+        <part Name="Examiner" Alternate="UnknownOddTrinket" Unknown="UnknownOddTrinket" Complexity="1" />
         <part Name="Physics" Category="Trinket" />
         <part Name="RulesDescription" Text="When holding a beverage, this cup provides a bonus to reputation when performing a water ritual as well as a bonus to examining and dissassembling artifacts." />
         <part Name="LeakWhenBroken"/>
