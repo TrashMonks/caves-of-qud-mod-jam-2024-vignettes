@@ -1,9 +1,9 @@
 {
-  "id": "CavesOfQudModJam2024Vignettes",
-  "title": "Vignettes Mash-Up",
-  "description": "Compilation mod pack for the {{Y|Caves of Qud Modding Jam: Vignettes}}, ran during March 2024. See all the entries at {{C|https://itch.io/jam/caves-of-qud-modding-jam-2/entries}}!\n\nWish for 'modjampack' or press ctrl-shift-W (can be re-mapped under Key Mappings > Debug > Mod Jam Wish Menu) to open a menu for easy wishing for the pack's contents.\n\n{{W|Warning:}} Do not run this pack simultaneous with any of the mods contained within.",
-  "tags": "vignettes,mod pack",
-  "version": "1.0",
-  "author": "Mod Jam Participants and Organizers",
-  "previewimage": "pack.png"
+  "ID": "CavesOfQudModJam2024Vignettes",
+  "Title": "Vignettes Mash-Up",
+  "Description": "Compilation mod pack for the {{Y|Caves of Qud Modding Jam: Vignettes}}, which ran during March 2024. See all the entries at {{C|https://itch.io/jam/caves-of-qud-modding-jam-2/entries}}!\n\nUse the in-game wish menu (Debug > Wish Menu) for easy wishing for the pack's contents.\n\n{{W|Warning:}} Do not run this pack simultaneous with any of the mods contained within.",
+  "Tags": "vignettes,mod pack",
+  "Version": "1.1",
+  "Author": "Mod Jam Participants and Organizers",
+  "PreviewImage": "preview.png"
 }
